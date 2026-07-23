@@ -298,6 +298,30 @@ def topico_cliente_servidor():
     input("Pressione Enter para voltar...")
 
 
+def cena_abertura_etapa_1():
+    print()
+    print("=" * 60)
+    print("🎬 CENA DA ETAPA 01")
+    print("=" * 60)
+    print("Eloisa aparece na entrada da CampOne Academy.")
+    print("Ela olha para você como quem reconhece um novo começo.")
+    print()
+    print('"Bem-vindo(a) à CampOne Academy."')
+    print()
+    print('"Antes de qualquer código, você precisa enxergar o território."')
+    print('"Todo aplicativo, site ou sistema esconde um caminho invisível."')
+    print()
+    print('"Nesta etapa, sua missão é decifrar a Grande Rede."')
+    print('"Você vai entender como um pedido sai da tela, atravessa a internet,')
+    print('chega ao servidor e volta como resposta."')
+    print()
+    print("Missão atual: Decifrando a Grande Rede")
+    print("Tema real: Fundamentos da Internet")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
 def entrar_etapa_1():
     while True:
         print()
@@ -314,31 +338,34 @@ def entrar_etapa_1():
         print()
         print("TÓPICOS DESTA ETAPA")
         print("-" * 60)
-        print("1 - Internet")
-        print("2 - Cliente e servidor")
-        print("3 - HTTP e HTTPS")
-        print("4 - DNS")
-        print("5 - Endereço IP")
-        print("6 - Requisição HTTP")
-        print("7 - Ver resumo da etapa")
+        print("1 - Iniciar cena da etapa")
+        print("2 - Internet")
+        print("3 - Cliente e servidor")
+        print("4 - HTTP e HTTPS")
+        print("5 - DNS")
+        print("6 - Endereço IP")
+        print("7 - Requisição HTTP")
+        print("8 - Ver resumo da etapa")
         print("0 - Voltar ao Nível 1")
         print("=" * 60)
 
         escolha = input("Escolha uma opção: ")
 
         if escolha == "1":
-            topico_internet()
+            cena_abertura_etapa_1()
         elif escolha == "2":
-            topico_cliente_servidor()
+            topico_internet()
         elif escolha == "3":
-            topico_http_https()
+            topico_cliente_servidor()
         elif escolha == "4":
-            topico_dns()
+            topico_http_https()
         elif escolha == "5":
-            topico_endereco_ip()
+            topico_dns()
         elif escolha == "6":
-            topico_requisicao_http()
+            topico_endereco_ip()
         elif escolha == "7":
+            topico_requisicao_http()
+        elif escolha == "8":
             resumo_etapa_1()
         elif escolha == "0":
             break
