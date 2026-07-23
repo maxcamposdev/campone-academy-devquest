@@ -185,6 +185,33 @@ def topico_dns():
     input("Pressione Enter para voltar...")
 
 
+def topico_endereco_ip():
+    print()
+    print("=" * 60)
+    print("📍 TÓPICO 5: ENDEREÇO IP")
+    print("=" * 60)
+    print("Max Campos aparece na tela e olha diretamente para você.")
+    print()
+    print('"Depois que a agenda encontra o nome, ainda falta saber o número da casa."')
+    print()
+    print("Endereço IP é o número que identifica uma máquina dentro da rede.")
+    print("Ele funciona como o endereço real de um computador ou servidor.")
+    print()
+    print("Quando você digita um nome de site, o DNS ajuda a encontrar")
+    print("o endereço IP do servidor onde aquele sistema mora.")
+    print()
+    print("Sem IP, o pedido não saberia para onde viajar.")
+    print("Seria como uma carta sem endereço.")
+    print()
+    print("Resumo de sobrevivência:")
+    print("- IP = endereço numérico de uma máquina na rede.")
+    print("- DNS = agenda que encontra esse endereço.")
+    print("- Sem IP, o pedido não chega ao destino.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
 def topico_cliente_servidor():
     print()
     print("=" * 60)
@@ -251,10 +278,7 @@ def entrar_etapa_1():
         elif escolha == "4":
             topico_dns()
         elif escolha == "5":
-            print()
-            print("Tópico 5: Endereço IP")
-            print("Aqui vamos entender o endereço numérico que identifica uma máquina na rede.")
-            print("Conteúdo completo será construído em partes.")
+            topico_endereco_ip()
         elif escolha == "6":
             print()
             print("Tópico 6: Requisição HTTP")
