@@ -125,6 +125,36 @@ def topico_internet():
     input("Pressione Enter para voltar...")
 
 
+def topico_cliente_servidor():
+    print()
+    print("=" * 60)
+    print("🧭 TÓPICO 2: CLIENTE E SERVIDOR")
+    print("=" * 60)
+    print("Max Campos aparece na tela e olha diretamente para você.")
+    print()
+    print('"Toda conversa na web tem dois lados: quem pede e quem responde."')
+    print()
+    print("Cliente é quem faz o pedido.")
+    print("Na maioria das vezes, o cliente é o navegador ou o aplicativo.")
+    print()
+    print("Servidor é quem recebe o pedido, processa e devolve uma resposta.")
+    print("Ele fica em outro computador, preparado para atender muitas pessoas.")
+    print()
+    print("Exemplo simples:")
+    print("- Você abre um app e toca em um botão.")
+    print("- O app faz um pedido.")
+    print("- O servidor recebe, trabalha e responde.")
+    print("- A resposta volta para aparecer na tela.")
+    print()
+    print("Resumo de sobrevivência:")
+    print("- Cliente = quem pede.")
+    print("- Servidor = quem responde.")
+    print("- A web funciona porque esses dois lados conversam.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
 def entrar_etapa_1():
     while True:
         print()
@@ -155,10 +185,7 @@ def entrar_etapa_1():
         if escolha == "1":
             topico_internet()
         elif escolha == "2":
-            print()
-            print("Tópico 2: Cliente e servidor")
-            print("Aqui vamos entender quem faz o pedido e quem responde.")
-            print("Conteúdo completo será construído em partes.")
+            topico_cliente_servidor()
         elif escolha == "3":
             print()
             print("Tópico 3: HTTP e HTTPS")
@@ -239,6 +266,7 @@ def menu_jogador(jogador):
         else:
             print()
             print("Opção inválida.")
+
 
 escolha = tela_boas_vindas()
 
