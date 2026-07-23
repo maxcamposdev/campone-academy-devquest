@@ -125,6 +125,66 @@ def topico_internet():
     input("Pressione Enter para voltar...")
 
 
+def topico_http_https():
+    print()
+    print("=" * 60)
+    print("🔐 TÓPICO 3: HTTP E HTTPS")
+    print("=" * 60)
+    print("Max Campos aparece na tela e olha diretamente para você.")
+    print()
+    print('"Cliente e servidor precisam falar a mesma língua."')
+    print()
+    print("HTTP é o conjunto de regras da conversa na web.")
+    print("É ele que organiza pedidos e respostas entre cliente e servidor.")
+    print()
+    print("Quando você abre uma página, o cliente envia um pedido.")
+    print("O servidor entende esse pedido porque os dois seguem o mesmo combinado.")
+    print()
+    print("HTTPS é a versão segura dessa conversa.")
+    print("Ele coloca um cadeado na troca de informações.")
+    print()
+    print("Isso protege dados importantes, como senhas, dados pessoais")
+    print("e informações bancárias.")
+    print()
+    print("Resumo de sobrevivência:")
+    print("- HTTP = a língua da conversa na web.")
+    print("- HTTPS = a mesma conversa, mas protegida por um cadeado.")
+    print("- Todo sistema sério precisa usar comunicação segura.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
+def topico_dns():
+    print()
+    print("=" * 60)
+    print("📖 TÓPICO 4: DNS")
+    print("=" * 60)
+    print("Max Campos aparece na tela e olha diretamente para você.")
+    print()
+    print('"Na internet, nomes fáceis precisam virar endereços reais."')
+    print()
+    print("DNS é como a agenda da internet.")
+    print("Ele transforma nomes de sites em endereços que as máquinas entendem.")
+    print()
+    print("Quando você digita um nome como campone.com,")
+    print("o navegador precisa descobrir onde esse sistema mora de verdade.")
+    print()
+    print("O DNS faz essa tradução.")
+    print("Ele responde qual é o endereço real do servidor.")
+    print()
+    print("Sem DNS, você teria que decorar números difíceis")
+    print("em vez de nomes simples.")
+    print()
+    print("Resumo de sobrevivência:")
+    print("- DNS = agenda da internet.")
+    print("- Nome do site = nome fácil para humanos.")
+    print("- Endereço real = lugar onde o servidor mora.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
 def topico_cliente_servidor():
     print()
     print("=" * 60)
@@ -187,15 +247,9 @@ def entrar_etapa_1():
         elif escolha == "2":
             topico_cliente_servidor()
         elif escolha == "3":
-            print()
-            print("Tópico 3: HTTP e HTTPS")
-            print("Aqui vamos entender a língua da conversa na web e o cadeado de segurança.")
-            print("Conteúdo completo será construído em partes.")
+            topico_http_https()
         elif escolha == "4":
-            print()
-            print("Tópico 4: DNS")
-            print("Aqui vamos entender a agenda que transforma nome de site em endereço real.")
-            print("Conteúdo completo será construído em partes.")
+            topico_dns()
         elif escolha == "5":
             print()
             print("Tópico 5: Endereço IP")
