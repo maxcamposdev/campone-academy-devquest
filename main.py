@@ -98,6 +98,33 @@ def mostrar_etapas_nivel_1():
     print("=" * 60)
 
 
+def topico_internet():
+    print()
+    print("=" * 60)
+    print("📡 TÓPICO 1: INTERNET")
+    print("=" * 60)
+    print("Max Campos aparece na tela e olha diretamente para você.")
+    print()
+    print('"Antes de qualquer código, você precisa entender a estrada."')
+    print()
+    print("A internet é uma rede gigante de computadores conectados.")
+    print("Antes dela, cada computador era quase uma ilha.")
+    print()
+    print("Quando você abre um site ou aplicativo, seu dispositivo")
+    print("envia um pedido por essa rede.")
+    print()
+    print("Esse pedido viaja até outro computador, chamado servidor,")
+    print("e depois volta com uma resposta.")
+    print()
+    print("Resumo de sobrevivência:")
+    print("- Internet = a estrada por onde os pedidos viajam.")
+    print("- Cliente = quem faz o pedido.")
+    print("- Servidor = quem responde.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
 def entrar_etapa_1():
     while True:
         print()
@@ -126,10 +153,7 @@ def entrar_etapa_1():
         escolha = input("Escolha uma opção: ")
 
         if escolha == "1":
-            print()
-            print("Tópico 1: Internet")
-            print("Aqui vamos entender a rede gigante que conecta computadores pelo mundo.")
-            print("Conteúdo completo será construído em partes.")
+            topico_internet()
         elif escolha == "2":
             print()
             print("Tópico 2: Cliente e servidor")
