@@ -4,8 +4,8 @@ def tela_boas_vindas():
     print("=" * 60)
     print("Construa sua jornada no universo da tecnologia.")
     print()
-    print("FASE ATUAL: Teoria Imersiva")
-    print("OBJETIVO: entender o mundo dev antes da prática.")
+    print("FASE ATUAL: Treinamento de Sobrevivência")
+    print("OBJETIVO: Dominar as mecânicas básicas do código antes de entrar no mundo real da tecnologia.")
     print()
     print("-" * 60)
     print("1 - Novo jogo")
@@ -30,7 +30,7 @@ def criar_jogador():
 
     jogador = {
         "nome": nome,
-        "fase": "Teoria Imersiva",
+        "fase": "Treinamento de Sobrevivência",
         "nivel": "Trainee",
         "xp": 0,
         "energia": 100,
@@ -39,7 +39,7 @@ def criar_jogador():
 
     print()
     print(f"Bem-vindo(a), {jogador['nome']}!")
-    print("Sua jornada teórica na CampOne Academy começou.")
+    print("Seu treinamento de sobrevivência na CampOne Academy começou.")
 
     return jogador
 
@@ -81,12 +81,44 @@ def mostrar_mapa():
     print("=" * 60)
 
 
+def menu_jogador(jogador):
+    while True:
+        print()
+        print("=" * 60)
+        print("MENU DO JOGADOR")
+        print("=" * 60)
+        print("1 - Ver status")
+        print("2 - Ver mapa")
+        print("3 - Entrar no Nível 1: A Forja do Código")
+        print("4 - Sair")
+        print("=" * 60)
+
+        escolha = input("Escolha uma opção: ")
+
+        if escolha == "1":
+            mostrar_status(jogador)
+        elif escolha == "2":
+            mostrar_mapa()
+        elif escolha == "3":
+            print()
+            print("Nível 1: A Forja do Código")
+            print("Introdução do nível ainda será criada e validada.")
+        elif escolha == "4":
+            print()
+            print("Saindo da CampOne Academy. Até logo!")
+            break
+        else:
+            print()
+            print("Opção inválida.")
+
+
 escolha = tela_boas_vindas()
 
 if escolha == "1":
     jogador = criar_jogador()
     mostrar_status(jogador)
     mostrar_mapa()
+    menu_jogador(jogador)
 elif escolha == "2":
     print()
     print("Carregar jogo ainda está bloqueado.")
@@ -99,4 +131,3 @@ elif escolha == "4":
 else:
     print()
     print("Opção inválida.")
-    
