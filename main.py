@@ -81,21 +81,61 @@ def mostrar_mapa():
     print("=" * 60)
 
 
+def mostrar_etapas_nivel_1():
+    print()
+    print("=" * 60)
+    print("ETAPAS DO NÍVEL 1: A FORJA DO CÓDIGO")
+    print("=" * 60)
+    print("01. Decifrando a Grande Rede")
+    print("02. Explorando o Motor Oculto")
+    print("03. Arquivando a História do Mundo")
+    print("04. Construindo a Ponte dos Mundos")
+    print("05. Forjando a Interface Visual")
+    print("06. Erguendo os Escudos de Defesa")
+    print("07. Dominando as Linhas do Tempo")
+    print("08. O Rito da Grande Implantação")
+    print("09. Desenhando a Planta-Mestra")
+    print("=" * 60)
+
+
+def entrar_etapa_1():
+    print()
+    print("=" * 60)
+    print("01. DECIFRANDO A GRANDE REDE")
+    print("=" * 60)
+    print("Tema real: Fundamentos da Internet")
+    print("Tipo: Treinamento de Sobrevivência")
+    print("Status: Disponível")
+    print()
+    print("Esta etapa é a primeira porta da sua jornada teórica.")
+    print("O conteúdo completo será construído em partes.")
+    print("=" * 60)
+
+
 def entrar_nivel_1():
-    print()
-    print("=" * 60)
-    print("🔓 NÍVEL 1: A FORJA DO CÓDIGO")
-    print("=" * 60)
-    print("Fase: Treinamento de Sobrevivência")
-    print()
-    print("Antes de entrar no mundo real da tecnologia,")
-    print("você precisa dominar as mecânicas básicas do código.")
-    print()
-    print("Aqui você vai aprender a se orientar, testar escolhas")
-    print("e entender como pequenas decisões movem o sistema.")
-    print()
-    print("Missões deste nível ainda serão desbloqueadas em etapas.")
-    print("=" * 60)
+    while True:
+        print()
+        print("=" * 60)
+        print("🔓 NÍVEL 1: A FORJA DO CÓDIGO")
+        print("=" * 60)
+        print("Fase: Treinamento de Sobrevivência")
+        print()
+        print("1 - Ver etapas do Nível 1")
+        print("2 - Entrar na etapa 01: Decifrando a Grande Rede")
+        print("0 - Voltar ao menu do jogador")
+        print("=" * 60)
+
+        escolha = input("Escolha uma opção: ")
+
+        if escolha == "1":
+            mostrar_etapas_nivel_1()
+        elif escolha == "2":
+            entrar_etapa_1()
+        elif escolha == "0":
+            break
+        else:
+            print()
+            print("Opção inválida.")
 
 
 def menu_jogador(jogador):
