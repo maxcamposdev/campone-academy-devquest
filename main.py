@@ -99,17 +99,67 @@ def mostrar_etapas_nivel_1():
 
 
 def entrar_etapa_1():
-    print()
-    print("=" * 60)
-    print("01. DECIFRANDO A GRANDE REDE")
-    print("=" * 60)
-    print("Tema real: Fundamentos da Internet")
-    print("Tipo: Treinamento de Sobrevivência")
-    print("Status: Disponível")
-    print()
-    print("Esta etapa é a primeira porta da sua jornada teórica.")
-    print("O conteúdo completo será construído em partes.")
-    print("=" * 60)
+    while True:
+        print()
+        print("=" * 60)
+        print("01. DECIFRANDO A GRANDE REDE")
+        print("=" * 60)
+        print("Tema real: Fundamentos da Internet")
+        print("Tipo: Treinamento de Sobrevivência")
+        print("Status: Disponível")
+        print()
+        print("Objetivo:")
+        print("Entender como um pedido sai da tela, viaja pela internet,")
+        print("chega ao servidor e volta como resposta.")
+        print()
+        print("TÓPICOS DESTA ETAPA")
+        print("-" * 60)
+        print("1 - Internet")
+        print("2 - Cliente e servidor")
+        print("3 - HTTP e HTTPS")
+        print("4 - DNS")
+        print("5 - Endereço IP")
+        print("6 - Requisição HTTP")
+        print("0 - Voltar ao Nível 1")
+        print("=" * 60)
+
+        escolha = input("Escolha uma opção: ")
+
+        if escolha == "1":
+            print()
+            print("Tópico 1: Internet")
+            print("Aqui vamos entender a rede gigante que conecta computadores pelo mundo.")
+            print("Conteúdo completo será construído em partes.")
+        elif escolha == "2":
+            print()
+            print("Tópico 2: Cliente e servidor")
+            print("Aqui vamos entender quem faz o pedido e quem responde.")
+            print("Conteúdo completo será construído em partes.")
+        elif escolha == "3":
+            print()
+            print("Tópico 3: HTTP e HTTPS")
+            print("Aqui vamos entender a língua da conversa na web e o cadeado de segurança.")
+            print("Conteúdo completo será construído em partes.")
+        elif escolha == "4":
+            print()
+            print("Tópico 4: DNS")
+            print("Aqui vamos entender a agenda que transforma nome de site em endereço real.")
+            print("Conteúdo completo será construído em partes.")
+        elif escolha == "5":
+            print()
+            print("Tópico 5: Endereço IP")
+            print("Aqui vamos entender o endereço numérico que identifica uma máquina na rede.")
+            print("Conteúdo completo será construído em partes.")
+        elif escolha == "6":
+            print()
+            print("Tópico 6: Requisição HTTP")
+            print("Aqui vamos entender o pedido que sai do cliente e a resposta que volta do servidor.")
+            print("Conteúdo completo será construído em partes.")
+        elif escolha == "0":
+            break
+        else:
+            print()
+            print("Opção inválida.")
 
 
 def entrar_nivel_1():
@@ -165,7 +215,6 @@ def menu_jogador(jogador):
         else:
             print()
             print("Opção inválida.")
-
 
 escolha = tela_boas_vindas()
 
