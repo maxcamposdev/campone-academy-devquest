@@ -81,6 +81,23 @@ def mostrar_mapa():
     print("=" * 60)
 
 
+def entrar_nivel_1():
+    print()
+    print("=" * 60)
+    print("🔓 NÍVEL 1: A FORJA DO CÓDIGO")
+    print("=" * 60)
+    print("Fase: Treinamento de Sobrevivência")
+    print()
+    print("Antes de entrar no mundo real da tecnologia,")
+    print("você precisa dominar as mecânicas básicas do código.")
+    print()
+    print("Aqui você vai aprender a se orientar, testar escolhas")
+    print("e entender como pequenas decisões movem o sistema.")
+    print()
+    print("Missões deste nível ainda serão desbloqueadas em etapas.")
+    print("=" * 60)
+
+
 def menu_jogador(jogador):
     while True:
         print()
@@ -100,9 +117,7 @@ def menu_jogador(jogador):
         elif escolha == "2":
             mostrar_mapa()
         elif escolha == "3":
-            print()
-            print("Nível 1: A Forja do Código")
-            print("Introdução do nível ainda será criada e validada.")
+            entrar_nivel_1()
         elif escolha == "4":
             print()
             print("Saindo da CampOne Academy. Até logo!")
