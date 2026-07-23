@@ -212,6 +212,33 @@ def topico_endereco_ip():
     input("Pressione Enter para voltar...")
 
 
+def topico_requisicao_http():
+    print()
+    print("=" * 60)
+    print("📨 TÓPICO 6: REQUISIÇÃO HTTP")
+    print("=" * 60)
+    print("Max Campos aparece na tela e olha diretamente para você.")
+    print()
+    print('"Agora vamos juntar a estrada, os dois lados, a língua, a agenda e o endereço."')
+    print()
+    print("Requisição HTTP é o pedido que o cliente envia para o servidor.")
+    print("Resposta HTTP é o que o servidor devolve para o cliente.")
+    print()
+    print("Quando você toca em um botão, abre uma página ou envia um formulário,")
+    print("o sistema cria uma requisição.")
+    print()
+    print("Essa requisição viaja pela internet até o servidor.")
+    print("O servidor entende o pedido, trabalha e devolve uma resposta.")
+    print()
+    print("Resumo de sobrevivência:")
+    print("- Requisição = pedido que sai do cliente.")
+    print("- Resposta = retorno que vem do servidor.")
+    print("- Todo sistema web funciona nesse vai e volta.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
 def topico_cliente_servidor():
     print()
     print("=" * 60)
@@ -280,10 +307,7 @@ def entrar_etapa_1():
         elif escolha == "5":
             topico_endereco_ip()
         elif escolha == "6":
-            print()
-            print("Tópico 6: Requisição HTTP")
-            print("Aqui vamos entender o pedido que sai do cliente e a resposta que volta do servidor.")
-            print("Conteúdo completo será construído em partes.")
+            topico_requisicao_http()
         elif escolha == "0":
             break
         else:
