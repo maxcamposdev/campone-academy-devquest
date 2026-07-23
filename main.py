@@ -239,6 +239,35 @@ def topico_requisicao_http():
     input("Pressione Enter para voltar...")
 
 
+def resumo_etapa_1():
+    print()
+    print("=" * 60)
+    print("🧩 RESUMO DA ETAPA 01")
+    print("=" * 60)
+    print("Max Campos aparece na tela e olha diretamente para você.")
+    print()
+    print('"Agora você já consegue enxergar o caminho invisível."')
+    print()
+    print("Quando você usa um site ou aplicativo, nada acontece por mágica.")
+    print()
+    print("O cliente faz um pedido.")
+    print("Esse pedido usa a linguagem HTTP ou HTTPS.")
+    print("O DNS ajuda a encontrar o endereço real do servidor.")
+    print("O IP aponta para a máquina certa na rede.")
+    print("A internet carrega o pedido até lá.")
+    print("O servidor responde.")
+    print("E a resposta volta para aparecer na tela.")
+    print()
+    print("Fluxo de sobrevivência:")
+    print("Cliente → Internet → Servidor → Resposta → Tela")
+    print()
+    print("Você concluiu a visão inicial da Grande Rede.")
+    print("Ainda não há recompensa ou progresso salvo nesta versão.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
 def topico_cliente_servidor():
     print()
     print("=" * 60)
@@ -291,6 +320,7 @@ def entrar_etapa_1():
         print("4 - DNS")
         print("5 - Endereço IP")
         print("6 - Requisição HTTP")
+        print("7 - Ver resumo da etapa")
         print("0 - Voltar ao Nível 1")
         print("=" * 60)
 
@@ -308,6 +338,8 @@ def entrar_etapa_1():
             topico_endereco_ip()
         elif escolha == "6":
             topico_requisicao_http()
+        elif escolha == "7":
+            resumo_etapa_1()
         elif escolha == "0":
             break
         else:
