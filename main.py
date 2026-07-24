@@ -520,6 +520,33 @@ def prova_dominio_etapa_1():
             print('"Escolha uma das opções: 1, 2 ou 3."')
 
 
+def registro_etapa_1():
+    print()
+    print("=" * 60)
+    print("📝 REGISTRAR EXPERIÊNCIA")
+    print("=" * 60)
+    print("Eloisa aparece na tela e olha diretamente para você.")
+    print()
+    print('"Toda missão importante precisa deixar um registro."')
+    print()
+    print("Nesta etapa, você passou pelos fundamentos da Grande Rede:")
+    print()
+    print("- entendeu que a internet é a estrada dos pedidos;")
+    print("- viu que cliente pede e servidor responde;")
+    print("- conheceu HTTP, HTTPS, DNS, IP e requisição;")
+    print("- caminhou por dentro de um clique;")
+    print("- viu que erro é pista, não fim de jogo;")
+    print("- aplicou o caminho invisível em apps reais;")
+    print("- concluiu a Prova de Domínio.")
+    print()
+    print("Registro atual:")
+    print("Experiência registrada apenas na narrativa.")
+    print("Salvamento real será criado em uma fase futura.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
 def entrar_etapa_1():
     while True:
         print()
@@ -558,10 +585,7 @@ def entrar_etapa_1():
         elif escolha == "6":
             prova_dominio_etapa_1()
         elif escolha == "7":
-            print()
-            print("Registrar Experiência")
-            print("Aqui o jogo vai registrar o que foi vivido nesta etapa.")
-            print("Nesta versão, o registro ainda é apenas narrativo.")
+            registro_etapa_1()
         elif escolha == "8":
             print()
             print("Relatório Final")
