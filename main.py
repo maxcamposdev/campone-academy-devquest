@@ -470,6 +470,65 @@ def aplicacao_vida_real_etapa_1():
     input("Pressione Enter para voltar...")
 
 
+def prova_dominio_etapa_1():
+    print()
+    print("=" * 60)
+    print("🧠 PROVA DE DOMÍNIO")
+    print("=" * 60)
+    print("Eloisa aparece na tela e olha diretamente para você.")
+    print()
+    print('"Agora eu quero ver se você enxerga o caminho invisível."')
+    print()
+    print("Responda com suas palavras:")
+    print("O que acontece quando você toca em um botão de um app")
+    print("e uma informação aparece na tela?")
+    print()
+
+    resposta = input("Sua resposta: ")
+    resposta = resposta.lower()
+
+    pontos = 0
+
+    if "tela" in resposta or "app" in resposta or "aplicativo" in resposta:
+        pontos += 1
+
+    if "pedido" in resposta or "requisição" in resposta or "requisicao" in resposta:
+        pontos += 1
+
+    if "internet" in resposta or "rede" in resposta:
+        pontos += 1
+
+    if "servidor" in resposta:
+        pontos += 1
+
+    if "resposta" in resposta or "volta" in resposta or "retorna" in resposta:
+        pontos += 1
+
+    print()
+
+    if pontos >= 4:
+        print("Eloisa sorri.")
+        print('"Excelente. Você enxergou o caminho principal da Grande Rede."')
+        print('"Tela, pedido, internet, servidor e resposta estão conectados na sua explicação."')
+    elif pontos >= 2:
+        print("Eloisa observa sua resposta com atenção.")
+        print('"Você pegou parte do caminho."')
+        print('"Agora completa a rota: tela → pedido → internet → servidor → resposta → tela."')
+    else:
+        print("Eloisa levanta a mão com calma.")
+        print('"Vamos reancorar."')
+        print('"Quando você toca na tela, o app cria um pedido."')
+        print('"Esse pedido viaja pela internet até o servidor."')
+        print('"O servidor responde, e a tela mostra o resultado."')
+
+    print()
+    print("Observação:")
+    print("Nesta versão, a prova ainda não salva progresso nem dá recompensa.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
 def entrar_etapa_1():
     while True:
         print()
@@ -506,10 +565,7 @@ def entrar_etapa_1():
         elif escolha == "5":
             aplicacao_vida_real_etapa_1()
         elif escolha == "6":
-            print()
-            print("Prova de Domínio")
-            print("Esta parte vai testar se você entendeu a Grande Rede com suas próprias palavras.")
-            print("O sistema de resposta adaptativa será criado aqui em seguida.")
+            prova_dominio_etapa_1()
         elif escolha == "7":
             print()
             print("Registrar Experiência")
