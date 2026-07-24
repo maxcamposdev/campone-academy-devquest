@@ -4,8 +4,9 @@ def tela_boas_vindas():
     print("=" * 60)
     print("Construa sua jornada no universo da tecnologia.")
     print()
-    print("FASE ATUAL: Treinamento de Sobrevivência")
-    print("OBJETIVO: Dominar as mecânicas básicas do código antes de entrar no mundo real da tecnologia.")
+    print("FASE ATUAL: Recrutamento CampOne")
+    print("PROGRAMA: Treinamento de Sobrevivência")
+    print("OBJETIVO: Concluir as etapas iniciais para desbloquear oportunidades no mundo real da tecnologia.")
     print()
     print("-" * 60)
     print("1 - Novo jogo")
@@ -30,7 +31,8 @@ def criar_jogador():
 
     jogador = {
         "nome": nome,
-        "fase": "Treinamento de Sobrevivência",
+        "fase": "Recrutamento CampOne",
+        "programa": "Treinamento de Sobrevivência",
         "nivel": "Trainee",
         "xp": 0,
         "energia": 100,
@@ -39,7 +41,7 @@ def criar_jogador():
 
     print()
     print(f"Bem-vindo(a), {jogador['nome']}!")
-    print("Seu treinamento de sobrevivência na CampOne Academy começou.")
+    print("Seu recrutamento na CampOne Academy começou.")
 
     return jogador
 
@@ -51,6 +53,7 @@ def mostrar_status(jogador):
     print("=" * 60)
     print(f"Nome: {jogador['nome']}")
     print(f"Fase: {jogador['fase']}")
+    print(f"Programa: {jogador['programa']}")
     print(f"Nível: {jogador['nivel']}")
     print(f"XP: {jogador['xp']}")
     print(f"Energia: {jogador['energia']}")
@@ -307,6 +310,16 @@ def cena_abertura_etapa_1():
     print("Ela olha para você como quem reconhece um novo começo.")
     print()
     print('"Bem-vindo(a) à CampOne Academy."')
+    print()
+    print('"Você ainda não foi contratado."')
+    print('"Neste momento, você participa do recrutamento da CampOne."')
+    print()
+    print('"Nosso objetivo é avaliar sua lógica,"')
+    print('"sua interpretação de problemas"')
+    print('"e sua compreensão sobre como os sistemas realmente funcionam."')
+    print()
+    print('"Ao concluir este treinamento,"')
+    print('"você estará preparado para buscar novas oportunidades em empresas parceiras."')
     print()
     print('"Antes de qualquer código, você precisa enxergar o território."')
     print('"Todo aplicativo, site ou sistema esconde um caminho invisível."')
@@ -714,7 +727,8 @@ def entrar_nivel_1():
         print("=" * 60)
         print("🔓 NÍVEL 1: A FORJA DO CÓDIGO")
         print("=" * 60)
-        print("Fase: Treinamento de Sobrevivência")
+        print("Fase: Recrutamento CampOne")
+        print("Programa: Treinamento de Sobrevivência")
         print()
         print("1 - Ver etapas do Nível 1")
         print("2 - Entrar na etapa 01: Decifrando a Grande Rede")
