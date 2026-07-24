@@ -547,6 +547,39 @@ def registro_etapa_1():
     input("Pressione Enter para voltar...")
 
 
+def relatorio_final_etapa_1():
+    print()
+    print("=" * 60)
+    print("📋 RELATÓRIO FINAL")
+    print("=" * 60)
+    print("Eloisa aparece na tela e olha diretamente para você.")
+    print()
+    print('"Antes de seguir, revise o que você acabou de dominar."')
+    print()
+    print("Relatório da missão: Decifrando a Grande Rede")
+    print()
+    print("Você agora sabe que:")
+    print()
+    print("- a internet conecta computadores pelo mundo;")
+    print("- cliente é quem faz o pedido;")
+    print("- servidor é quem responde;")
+    print("- HTTP organiza a conversa;")
+    print("- HTTPS protege a conversa;")
+    print("- DNS encontra o endereço real do servidor;")
+    print("- IP identifica uma máquina na rede;")
+    print("- requisição é o pedido;")
+    print("- resposta é o retorno do servidor;")
+    print("- erro é pista para descobrir onde o caminho parou.")
+    print()
+    print("Conclusão:")
+    print("Você começou a enxergar o sistema por trás da tela.")
+    print()
+    print("A etapa ainda não marca conclusão permanente nesta versão.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
 def entrar_etapa_1():
     while True:
         print()
@@ -587,10 +620,7 @@ def entrar_etapa_1():
         elif escolha == "7":
             registro_etapa_1()
         elif escolha == "8":
-            print()
-            print("Relatório Final")
-            print("Aqui você vai revisar o que aprendeu antes de seguir para a próxima etapa.")
-            print("A reflexão final será adaptada da Aula 0 em seguida.")
+            relatorio_final_etapa_1()
         elif escolha == "0":
             break
         else:
