@@ -363,6 +363,34 @@ def conceito_etapa_1():
             print("Opção inválida.")
 
 
+def pratica_caminho_clique():
+    print()
+    print("=" * 60)
+    print("🛠 PRÁTICA: O CAMINHO DE UM CLIQUE")
+    print("=" * 60)
+    print("Max Campos aparece na tela e olha diretamente para você.")
+    print()
+    print('"Agora vamos caminhar por dentro de um clique."')
+    print()
+    print("Imagine que você abriu o aplicativo da CampOne Academy")
+    print("e tocou em um botão para ver uma lista de produtos.")
+    print()
+    print("O caminho invisível começa assim:")
+    print()
+    print("1. Seu toque acontece na tela.")
+    print("2. A tela monta um pedido.")
+    print("3. O pedido viaja pela internet.")
+    print("4. O servidor recebe esse pedido.")
+    print("5. O sistema busca ou processa as informações.")
+    print("6. O servidor envia uma resposta.")
+    print("7. A tela mostra o resultado para você.")
+    print()
+    print("Esse é o primeiro caminho que todo dev precisa enxergar.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
 def entrar_etapa_1():
     while True:
         print()
@@ -393,9 +421,7 @@ def entrar_etapa_1():
         elif escolha == "2":
             conceito_etapa_1()
         elif escolha == "3":
-            print()
-            print("Prática: O caminho de um clique")
-            print("Esta parte será adaptada da Aula 0 em seguida.")
+            pratica_caminho_clique()
         elif escolha == "4":
             print()
             print("Experimentação: e se algo quebrar?")
