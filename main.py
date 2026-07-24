@@ -427,6 +427,49 @@ def experimentacao_etapa_1():
     input("Pressione Enter para voltar...")
 
 
+def aplicacao_vida_real_etapa_1():
+    print()
+    print("=" * 60)
+    print("🏢 APLICAÇÃO NA VIDA REAL")
+    print("=" * 60)
+    print("Eloisa aparece na tela e olha diretamente para você.")
+    print()
+    print('"Agora você vai perceber que a Grande Rede está em todo lugar."')
+    print()
+    print("O caminho invisível não acontece só na CampOne Academy.")
+    print("Ele aparece nos aplicativos que você usa todos os dias.")
+    print()
+    print("Exemplos:")
+    print()
+    print("1. WhatsApp")
+    print("- Você envia uma mensagem.")
+    print("- O app manda um pedido pela internet.")
+    print("- O servidor recebe, guarda e entrega a mensagem.")
+    print()
+    print("2. App do banco")
+    print("- Você pede para ver seu saldo.")
+    print("- O app envia um pedido.")
+    print("- O servidor busca a informação e devolve para a tela.")
+    print()
+    print("3. Netflix")
+    print("- Você abre um filme.")
+    print("- O app pede informações ao servidor.")
+    print("- A resposta volta com capa, título, descrição e episódios.")
+    print()
+    print("4. iFood")
+    print("- Você faz um pedido.")
+    print("- O app envia os dados.")
+    print("- O servidor processa e confirma a compra.")
+    print()
+    print("Resumo de sobrevivência:")
+    print("- Todo app conectado usa pedidos e respostas.")
+    print("- A tela é só a parte visível.")
+    print("- A Grande Rede trabalha por trás.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
 def entrar_etapa_1():
     while True:
         print()
@@ -461,9 +504,7 @@ def entrar_etapa_1():
         elif escolha == "4":
             experimentacao_etapa_1()
         elif escolha == "5":
-            print()
-            print("Aplicação na vida real")
-            print("Esta parte será adaptada da Aula 0 em seguida.")
+            aplicacao_vida_real_etapa_1()
         elif escolha == "6":
             print()
             print("Validação final")
