@@ -391,6 +391,42 @@ def pratica_caminho_clique():
     input("Pressione Enter para voltar...")
 
 
+def experimentacao_etapa_1():
+    print()
+    print("=" * 60)
+    print("🧪 EXPERIMENTAÇÃO: E SE ALGO QUEBRAR?")
+    print("=" * 60)
+    print("Eloisa aparece na tela e olha diretamente para você.")
+    print()
+    print('"Quando tudo funciona, o caminho parece invisível."')
+    print('"Mas quando algo quebra, o dev precisa descobrir onde o pedido parou."')
+    print()
+    print("Vamos olhar alguns pontos onde a Grande Rede pode falhar:")
+    print()
+    print("1. O DNS falha")
+    print("- O nome do site não encontra o endereço real do servidor.")
+    print()
+    print("2. O servidor não responde")
+    print("- O pedido chega, mas ninguém devolve resposta.")
+    print()
+    print("3. O endereço não existe")
+    print("- O cliente pediu algo que o servidor não encontrou.")
+    print()
+    print("4. O banco demora ou falha")
+    print("- O servidor precisa de informação, mas a despensa não responde.")
+    print()
+    print("5. O cadeado seguro falha")
+    print("- A conversa protegida pelo HTTPS não passa confiança.")
+    print()
+    print("Resumo de sobrevivência:")
+    print("- Erro não é fim de jogo.")
+    print("- Erro é pista.")
+    print("- Um dev aprende a perguntar: onde o pedido parou?")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
 def entrar_etapa_1():
     while True:
         print()
@@ -423,9 +459,7 @@ def entrar_etapa_1():
         elif escolha == "3":
             pratica_caminho_clique()
         elif escolha == "4":
-            print()
-            print("Experimentação: e se algo quebrar?")
-            print("Esta parte será adaptada da Aula 0 em seguida.")
+            experimentacao_etapa_1()
         elif escolha == "5":
             print()
             print("Aplicação na vida real")
