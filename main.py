@@ -507,16 +507,19 @@ def entrar_etapa_1():
             aplicacao_vida_real_etapa_1()
         elif escolha == "6":
             print()
-            print("Validação final")
-            print("Esta parte será adaptada da Aula 0 em seguida.")
+            print("Prova de Domínio")
+            print("Esta parte vai testar se você entendeu a Grande Rede com suas próprias palavras.")
+            print("O sistema de resposta adaptativa será criado aqui em seguida.")
         elif escolha == "7":
             print()
-            print("Registro")
-            print("Esta parte será adaptada da Aula 0 em seguida.")
+            print("Registrar Experiência")
+            print("Aqui o jogo vai registrar o que foi vivido nesta etapa.")
+            print("Nesta versão, o registro ainda é apenas narrativo.")
         elif escolha == "8":
             print()
-            print("Reflexão final")
-            print("Esta parte será adaptada da Aula 0 em seguida.")
+            print("Relatório Final")
+            print("Aqui você vai revisar o que aprendeu antes de seguir para a próxima etapa.")
+            print("A reflexão final será adaptada da Aula 0 em seguida.")
         elif escolha == "0":
             break
         else:
