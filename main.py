@@ -125,6 +125,36 @@ def topico_internet():
     input("Pressione Enter para voltar...")
 
 
+def topico_cliente_servidor():
+    print()
+    print("=" * 60)
+    print("🧭 TÓPICO 2: CLIENTE E SERVIDOR")
+    print("=" * 60)
+    print("Max Campos aparece na tela e olha diretamente para você.")
+    print()
+    print('"Toda conversa na web tem dois lados: quem pede e quem responde."')
+    print()
+    print("Cliente é quem faz o pedido.")
+    print("Na maioria das vezes, o cliente é o navegador ou o aplicativo.")
+    print()
+    print("Servidor é quem recebe o pedido, processa e devolve uma resposta.")
+    print("Ele fica em outro computador, preparado para atender muitas pessoas.")
+    print()
+    print("Exemplo simples:")
+    print("- Você abre um app e toca em um botão.")
+    print("- O app faz um pedido.")
+    print("- O servidor recebe, trabalha e responde.")
+    print("- A resposta volta para aparecer na tela.")
+    print()
+    print("Resumo de sobrevivência:")
+    print("- Cliente = quem pede.")
+    print("- Servidor = quem responde.")
+    print("- A web funciona porque esses dois lados conversam.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
 def topico_http_https():
     print()
     print("=" * 60)
@@ -268,36 +298,6 @@ def resumo_etapa_1():
     input("Pressione Enter para voltar...")
 
 
-def topico_cliente_servidor():
-    print()
-    print("=" * 60)
-    print("🧭 TÓPICO 2: CLIENTE E SERVIDOR")
-    print("=" * 60)
-    print("Max Campos aparece na tela e olha diretamente para você.")
-    print()
-    print('"Toda conversa na web tem dois lados: quem pede e quem responde."')
-    print()
-    print("Cliente é quem faz o pedido.")
-    print("Na maioria das vezes, o cliente é o navegador ou o aplicativo.")
-    print()
-    print("Servidor é quem recebe o pedido, processa e devolve uma resposta.")
-    print("Ele fica em outro computador, preparado para atender muitas pessoas.")
-    print()
-    print("Exemplo simples:")
-    print("- Você abre um app e toca em um botão.")
-    print("- O app faz um pedido.")
-    print("- O servidor recebe, trabalha e responde.")
-    print("- A resposta volta para aparecer na tela.")
-    print()
-    print("Resumo de sobrevivência:")
-    print("- Cliente = quem pede.")
-    print("- Servidor = quem responde.")
-    print("- A web funciona porque esses dois lados conversam.")
-    print("=" * 60)
-
-    input("Pressione Enter para voltar...")
-
-
 def cena_abertura_etapa_1():
     print()
     print("=" * 60)
@@ -374,6 +374,31 @@ def entrar_etapa_1():
             print("Opção inválida.")
 
 
+def entrar_etapa_2():
+    print()
+    print("=" * 60)
+    print("02. EXPLORANDO O MOTOR OCULTO")
+    print("=" * 60)
+    print("Tema real: Backend")
+    print("Tipo: Treinamento de Sobrevivência")
+    print("Status: Disponível")
+    print()
+    print("David aparece em uma sala cheia de painéis e processos invisíveis.")
+    print("Ele olha para você como quem vai abrir o capô de uma máquina.")
+    print()
+    print('"Toda tela bonita precisa de um motor trabalhando por trás."')
+    print()
+    print("Nesta etapa, você vai começar a entender o backend:")
+    print("- onde as regras do sistema vivem;")
+    print("- como o servidor processa pedidos;")
+    print("- por que a tela não faz tudo sozinha.")
+    print()
+    print("Os tópicos completos desta etapa serão desbloqueados em partes.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
 def entrar_nivel_1():
     while True:
         print()
@@ -384,6 +409,7 @@ def entrar_nivel_1():
         print()
         print("1 - Ver etapas do Nível 1")
         print("2 - Entrar na etapa 01: Decifrando a Grande Rede")
+        print("3 - Entrar na etapa 02: Explorando o Motor Oculto")
         print("0 - Voltar ao menu do jogador")
         print("=" * 60)
 
@@ -393,6 +419,8 @@ def entrar_nivel_1():
             mostrar_etapas_nivel_1()
         elif escolha == "2":
             entrar_etapa_1()
+        elif escolha == "3":
+            entrar_etapa_2()
         elif escolha == "0":
             break
         else:
