@@ -471,62 +471,53 @@ def aplicacao_vida_real_etapa_1():
 
 
 def prova_dominio_etapa_1():
-    print()
-    print("=" * 60)
-    print("🧠 PROVA DE DOMÍNIO")
-    print("=" * 60)
-    print("Eloisa aparece na tela e olha diretamente para você.")
-    print()
-    print('"Agora eu quero ver se você enxerga o caminho invisível."')
-    print()
-    print("Responda com suas palavras:")
-    print("O que acontece quando você toca em um botão de um app")
-    print("e uma informação aparece na tela?")
-    print()
+    while True:
+        print()
+        print("=" * 60)
+        print("🧠 PROVA DE DOMÍNIO")
+        print("=" * 60)
+        print("Eloisa aparece na tela e olha diretamente para você.")
+        print()
+        print('"Vamos confirmar se você enxerga o caminho invisível."')
+        print()
+        print("Quando você toca em um botão de um app")
+        print("e uma informação aparece na tela, o que acontece por trás?")
+        print()
+        print("1 - O botão faz tudo sozinho dentro da tela.")
+        print("2 - O app cria um pedido, envia pela internet, o servidor responde e a tela mostra o resultado.")
+        print("3 - A internet guarda a informação e mostra direto para o usuário.")
+        print("=" * 60)
 
-    resposta = input("Sua resposta: ")
-    resposta = resposta.lower()
+        escolha = input("Escolha uma resposta: ")
 
-    pontos = 0
+        print()
 
-    if "tela" in resposta or "app" in resposta or "aplicativo" in resposta:
-        pontos += 1
-
-    if "pedido" in resposta or "requisição" in resposta or "requisicao" in resposta:
-        pontos += 1
-
-    if "internet" in resposta or "rede" in resposta:
-        pontos += 1
-
-    if "servidor" in resposta:
-        pontos += 1
-
-    if "resposta" in resposta or "volta" in resposta or "retorna" in resposta:
-        pontos += 1
-
-    print()
-
-    if pontos >= 4:
-        print("Eloisa sorri.")
-        print('"Excelente. Você enxergou o caminho principal da Grande Rede."')
-        print('"Tela, pedido, internet, servidor e resposta estão conectados na sua explicação."')
-    elif pontos >= 2:
-        print("Eloisa observa sua resposta com atenção.")
-        print('"Você pegou parte do caminho."')
-        print('"Agora completa a rota: tela → pedido → internet → servidor → resposta → tela."')
-    else:
-        print("Eloisa levanta a mão com calma.")
-        print('"Vamos reancorar."')
-        print('"Quando você toca na tela, o app cria um pedido."')
-        print('"Esse pedido viaja pela internet até o servidor."')
-        print('"O servidor responde, e a tela mostra o resultado."')
-
-    print()
-    print("Observação:")
-    print("Nesta versão, a prova ainda não salva progresso nem dá recompensa.")
-    print("=" * 60)
-
-    input("Pressione Enter para voltar...")
+        if escolha == "2":
+            print("Eloisa sorri.")
+            print('"Exato. Você enxergou o caminho principal."')
+            print('"A tela não faz tudo sozinha: ela envia um pedido, o servidor responde e a tela mostra o resultado."')
+            print()
+            print("Prova de Domínio concluída nesta versão.")
+            print("Ainda não há XP, recompensa ou progresso salvo.")
+            print("=" * 60)
+            input("Pressione Enter para voltar...")
+            break
+        elif escolha == "1":
+            print("Eloisa levanta a mão com calma.")
+            print('"Quase, mas cuidado: o botão não faz tudo sozinho."')
+            print('"O botão inicia o pedido. Depois esse pedido precisa viajar até o servidor."')
+            print()
+            print("Tente de novo pensando no caminho:")
+            print("tela → pedido → internet → servidor → resposta → tela")
+        elif escolha == "3":
+            print("Eloisa aponta para o caminho da Grande Rede.")
+            print('"A internet não é a despensa que guarda tudo."')
+            print('"Ela é a estrada por onde o pedido viaja. Quem responde é o servidor."')
+            print()
+            print("Tente de novo pensando no papel de cada parte.")
+        else:
+            print("Eloisa inclina a cabeça.")
+            print('"Escolha uma das opções: 1, 2 ou 3."')
 
 
 def entrar_etapa_1():
