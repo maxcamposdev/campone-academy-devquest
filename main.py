@@ -588,7 +588,7 @@ def entrar_etapa_1():
         print("=" * 60)
         print("Tema real: Fundamentos da Internet")
         print("Tipo: Treinamento de Sobrevivência")
-        print("Status: Disponível")
+        print("Status: Operacional")
         print()
         print("CENTRO DE OPERAÇÕES")
         print("-" * 60)
