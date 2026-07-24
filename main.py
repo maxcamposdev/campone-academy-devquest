@@ -375,28 +375,83 @@ def entrar_etapa_1():
 
 
 def entrar_etapa_2():
-    print()
-    print("=" * 60)
-    print("02. EXPLORANDO O MOTOR OCULTO")
-    print("=" * 60)
-    print("Tema real: Backend")
-    print("Tipo: Treinamento de Sobrevivência")
-    print("Status: Disponível")
-    print()
-    print("David aparece em uma sala cheia de painéis e processos invisíveis.")
-    print("Ele olha para você como quem vai abrir o capô de uma máquina.")
-    print()
-    print('"Toda tela bonita precisa de um motor trabalhando por trás."')
-    print()
-    print("Nesta etapa, você vai começar a entender o backend:")
-    print("- onde as regras do sistema vivem;")
-    print("- como o servidor processa pedidos;")
-    print("- por que a tela não faz tudo sozinha.")
-    print()
-    print("Os tópicos completos desta etapa serão desbloqueados em partes.")
-    print("=" * 60)
+    while True:
+        print()
+        print("=" * 60)
+        print("02. EXPLORANDO O MOTOR OCULTO")
+        print("=" * 60)
+        print("Tema real: Backend")
+        print("Tipo: Treinamento de Sobrevivência")
+        print("Status: Disponível")
+        print()
+        print("Objetivo:")
+        print("Entender o motor invisível que processa pedidos,")
+        print("aplica regras e responde para a tela.")
+        print()
+        print("TÓPICOS DESTA ETAPA")
+        print("-" * 60)
+        print("1 - Iniciar cena da etapa")
+        print("2 - O que é Backend")
+        print("3 - Servidor Web")
+        print("4 - Lógica de Negócio")
+        print("5 - API")
+        print("6 - API REST")
+        print("7 - Endpoints")
+        print("8 - Rotas")
+        print("9 - JSON")
+        print("0 - Voltar ao Nível 1")
+        print("=" * 60)
 
-    input("Pressione Enter para voltar...")
+        escolha = input("Escolha uma opção: ")
+
+        if escolha == "1":
+            print()
+            print("Cena da etapa 02 ainda será construída.")
+        elif escolha == "2":
+            print()
+            print("Tópico 1: O que é Backend")
+            print("Aqui vamos entender a parte invisível que processa as regras do sistema.")
+            print("Conteúdo completo será construído em partes.")
+        elif escolha == "3":
+            print()
+            print("Tópico 2: Servidor Web")
+            print("Aqui vamos entender o programa que recebe pedidos e entrega respostas.")
+            print("Conteúdo completo será construído em partes.")
+        elif escolha == "4":
+            print()
+            print("Tópico 3: Lógica de Negócio")
+            print("Aqui vamos entender onde vivem as regras específicas da empresa.")
+            print("Conteúdo completo será construído em partes.")
+        elif escolha == "5":
+            print()
+            print("Tópico 4: API")
+            print("Aqui vamos entender o balcão de conversa entre sistemas.")
+            print("Conteúdo completo será construído em partes.")
+        elif escolha == "6":
+            print()
+            print("Tópico 5: API REST")
+            print("Aqui vamos entender um padrão comum para organizar APIs.")
+            print("Conteúdo completo será construído em partes.")
+        elif escolha == "7":
+            print()
+            print("Tópico 6: Endpoints")
+            print("Aqui vamos entender os endereços específicos de uma API.")
+            print("Conteúdo completo será construído em partes.")
+        elif escolha == "8":
+            print()
+            print("Tópico 7: Rotas")
+            print("Aqui vamos entender como o backend decide para onde cada pedido vai.")
+            print("Conteúdo completo será construído em partes.")
+        elif escolha == "9":
+            print()
+            print("Tópico 8: JSON")
+            print("Aqui vamos entender o formato usado para trocar dados entre sistemas.")
+            print("Conteúdo completo será construído em partes.")
+        elif escolha == "0":
+            break
+        else:
+            print()
+            print("Opção inválida.")
 
 
 def entrar_nivel_1():
