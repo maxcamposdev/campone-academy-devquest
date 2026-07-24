@@ -322,6 +322,47 @@ def cena_abertura_etapa_1():
     input("Pressione Enter para voltar...")
 
 
+def conceito_etapa_1():
+    while True:
+        print()
+        print("=" * 60)
+        print("💡 CONCEITO: O TERRITÓRIO")
+        print("=" * 60)
+        print("Aqui ficam os fundamentos da Grande Rede.")
+        print()
+        print("1 - Internet")
+        print("2 - Cliente e servidor")
+        print("3 - HTTP e HTTPS")
+        print("4 - DNS")
+        print("5 - Endereço IP")
+        print("6 - Requisição HTTP")
+        print("7 - Ver resumo do conceito")
+        print("0 - Voltar à etapa 01")
+        print("=" * 60)
+
+        escolha = input("Escolha uma opção: ")
+
+        if escolha == "1":
+            topico_internet()
+        elif escolha == "2":
+            topico_cliente_servidor()
+        elif escolha == "3":
+            topico_http_https()
+        elif escolha == "4":
+            topico_dns()
+        elif escolha == "5":
+            topico_endereco_ip()
+        elif escolha == "6":
+            topico_requisicao_http()
+        elif escolha == "7":
+            resumo_etapa_1()
+        elif escolha == "0":
+            break
+        else:
+            print()
+            print("Opção inválida.")
+
+
 def entrar_etapa_1():
     while True:
         print()
@@ -332,20 +373,16 @@ def entrar_etapa_1():
         print("Tipo: Treinamento de Sobrevivência")
         print("Status: Disponível")
         print()
-        print("Objetivo:")
-        print("Entender como um pedido sai da tela, viaja pela internet,")
-        print("chega ao servidor e volta como resposta.")
-        print()
-        print("TÓPICOS DESTA ETAPA")
+        print("ROTEIRO DA ETAPA")
         print("-" * 60)
-        print("1 - Iniciar cena da etapa")
-        print("2 - Internet")
-        print("3 - Cliente e servidor")
-        print("4 - HTTP e HTTPS")
-        print("5 - DNS")
-        print("6 - Endereço IP")
-        print("7 - Requisição HTTP")
-        print("8 - Ver resumo da etapa")
+        print("1 - Cena de abertura")
+        print("2 - Conceito: O Território")
+        print("3 - Prática: O caminho de um clique")
+        print("4 - Experimentação: e se algo quebrar?")
+        print("5 - Aplicação na vida real")
+        print("6 - Validação final")
+        print("7 - Registro")
+        print("8 - Reflexão final")
         print("0 - Voltar ao Nível 1")
         print("=" * 60)
 
@@ -354,19 +391,31 @@ def entrar_etapa_1():
         if escolha == "1":
             cena_abertura_etapa_1()
         elif escolha == "2":
-            topico_internet()
+            conceito_etapa_1()
         elif escolha == "3":
-            topico_cliente_servidor()
+            print()
+            print("Prática: O caminho de um clique")
+            print("Esta parte será adaptada da Aula 0 em seguida.")
         elif escolha == "4":
-            topico_http_https()
+            print()
+            print("Experimentação: e se algo quebrar?")
+            print("Esta parte será adaptada da Aula 0 em seguida.")
         elif escolha == "5":
-            topico_dns()
+            print()
+            print("Aplicação na vida real")
+            print("Esta parte será adaptada da Aula 0 em seguida.")
         elif escolha == "6":
-            topico_endereco_ip()
+            print()
+            print("Validação final")
+            print("Esta parte será adaptada da Aula 0 em seguida.")
         elif escolha == "7":
-            topico_requisicao_http()
+            print()
+            print("Registro")
+            print("Esta parte será adaptada da Aula 0 em seguida.")
         elif escolha == "8":
-            resumo_etapa_1()
+            print()
+            print("Reflexão final")
+            print("Esta parte será adaptada da Aula 0 em seguida.")
         elif escolha == "0":
             break
         else:
