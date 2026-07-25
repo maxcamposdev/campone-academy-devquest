@@ -666,6 +666,33 @@ def cena_abertura_etapa_2():
     input("Pressione Enter para voltar...")
 
 
+def topico_backend():
+    print()
+    print("=" * 60)
+    print("⚙️ TÓPICO 1: O QUE É BACKEND")
+    print("=" * 60)
+    print("David aparece na tela e olha diretamente para você.")
+    print()
+    print('"Backend é a parte do sistema que trabalha por trás da tela."')
+    print()
+    print("Quando o jogador toca em um botão, a tela não resolve tudo sozinha.")
+    print("Ela envia um pedido para o servidor.")
+    print()
+    print("No servidor, o backend recebe esse pedido, aplica regras,")
+    print("busca ou organiza informações e prepara uma resposta.")
+    print()
+    print("É por isso que ele é chamado de motor oculto:")
+    print("o usuário não vê, mas sem ele o sistema não funciona.")
+    print()
+    print("Resumo de sobrevivência:")
+    print("- Backend = parte invisível que processa pedidos.")
+    print("- Ele roda no servidor.")
+    print("- Ele aplica regras e prepara respostas para a tela.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
 def entrar_etapa_2():
     while True:
         print()
@@ -699,10 +726,7 @@ def entrar_etapa_2():
         if escolha == "1":
             cena_abertura_etapa_2()
         elif escolha == "2":
-            print()
-            print("Tópico 1: O que é Backend")
-            print("Aqui vamos entender a parte invisível que processa as regras do sistema.")
-            print("Conteúdo completo será construído em partes.")
+            topico_backend()
         elif escolha == "3":
             print()
             print("Tópico 2: Servidor Web")
