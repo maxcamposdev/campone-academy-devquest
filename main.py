@@ -1380,12 +1380,12 @@ def prova_dominio_etapa_2():
         print("=" * 60)
         print("David aparece na tela e olha diretamente para você.")
         print()
-        print("Quando a tela envia um pedido para buscar dados de produtos,")
-        print("qual opção representa melhor o trabalho do backend?")
+        print("Um cliente abre a tela de produtos e o sistema precisa buscar a lista no backend.")
+        print("Qual caminho representa melhor o Motor Oculto trabalhando?")
         print()
-        print("1 - A tela acessa o banco diretamente, pega os produtos e mostra tudo sozinha.")
-        print("2 - O servidor web recebe o pedido, o backend aplica regras, pode buscar dados no banco e devolve uma resposta organizada.")
-        print("3 - A API guarda os dados permanentemente e entrega tudo para o usuário quando ele clica.")
+        print("1 - A tela acessa o banco diretamente, pega os produtos e monta tudo sozinha.")
+        print("2 - O pedido chega ao servidor web, passa pela rota e endpoint corretos, o backend aplica regras, busca dados se precisar, organiza a resposta em JSON e devolve para a tela.")
+        print("3 - A API guarda os produtos, escolhe as cores da tela e envia tudo direto para o usuário.")
         print("=" * 60)
 
         escolha = input("Escolha uma resposta: ")
@@ -1394,9 +1394,10 @@ def prova_dominio_etapa_2():
         print()
 
         if escolha == "2":
-            print("David confirma com a cabeça.")
-            print('"Isso. Você enxergou o Motor Oculto."')
-            print('"O backend recebe o pedido, aplica regras, conversa com outras partes quando precisa e devolve uma resposta que a tela consegue usar."')
+            print("David confirma.")
+            print('"Isso. Agora você conectou as peças."')
+            print('"Servidor web, rota, endpoint, backend, regras, banco, JSON e resposta fazem parte do caminho completo."')
+            print('"Você não decorou nomes. Você enxergou o motor funcionando."')
             print()
             print("Prova de Domínio concluída nesta versão.")
             print("Ainda não há XP, recompensa ou progresso salvo.")
@@ -1406,16 +1407,19 @@ def prova_dominio_etapa_2():
 
         elif escolha == "1":
             print("David aponta para a divisão entre tela e servidor.")
-            print('"Faz sentido suspeitar da tela, porque é nela que o usuário clica."')
-            print('"Mas a tela não deve acessar o banco diretamente."')
-            print('"Se qualquer tela pudesse entrar no banco, seria como deixar a despensa aberta para qualquer pessoa."')
-            print('"O frontend pede. O backend recebe, decide, conversa com o banco quando precisa e responde."')
+            print('"Essa opção pula o Motor Oculto."')
+            print('"A tela não deve entrar direto no banco."')
+            print('"Ela faz o pedido. O backend recebe, decide, busca dados se precisar e responde."')
+            print()
+            print('"Tenta de novo seguindo o caminho completo do pedido."')
 
         elif escolha == "3":
             print("David levanta a mão com calma.")
-            print('"Boa tentativa. A API realmente participa da conversa."')
-            print('"Mas a API não é a despensa do sistema. Ela é o canal organizado por onde os pedidos passam."')
-            print('"Quem guarda dados é o banco. Quem organiza a resposta é o backend."')
+            print('"Essa opção mistura papéis."')
+            print('"A API não guarda produtos, não escolhe cores e não substitui o backend."')
+            print('"Ela organiza a conversa."')
+            print()
+            print('"Quem guarda é o banco. Quem processa é o backend. Quem mostra a tela é o frontend."')
 
         else:
             print("David inclina a cabeça.")
@@ -1424,19 +1428,22 @@ def prova_dominio_etapa_2():
 
         if tentativas >= 3:
             print()
-            print("David se aproxima da tela com calma.")
+            print("David se aproxima da tela.")
             print('"Vamos fechar juntos."')
-            print('"A resposta correta é a opção 2."')
-            print('"Quando a tela precisa de produtos, ela faz um pedido."')
-            print('"O servidor web recebe esse pedido."')
-            print('"O backend aplica regras, busca dados quando precisa e devolve uma resposta organizada para a tela."')
+            print('"A resposta certa é a opção 2."')
             print()
-            print('"Guarda isso: a tela pede, o backend trabalha, o banco guarda, e a resposta volta."')
+            print('"Quando a tela precisa de produtos, ela faz um pedido."')
+            print('"O servidor web recebe, a rota direciona, o endpoint certo é acionado,"')
+            print('"o backend aplica regras, busca dados se precisar, organiza em JSON e devolve a resposta."')
+            print()
+            print('"Esse é o Motor Oculto trabalhando."')
             print()
             print("A prova segue sem punição nesta versão.")
             print("=" * 60)
             input("Pressione Enter para voltar...")
             break
+
+
 
 
 def entrar_etapa_2():
