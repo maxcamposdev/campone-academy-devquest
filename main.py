@@ -879,6 +879,35 @@ def topico_endpoints():
     input("Pressione Enter para voltar...")
 
 
+def topico_rotas():
+    print()
+    print("=" * 60)
+    print("🛣️ TÓPICO 7: ROTAS")
+    print("=" * 60)
+    print("David aparece na tela e olha diretamente para você.")
+    print()
+    print('"Quando o pedido chega, o backend precisa saber para onde mandar."')
+    print()
+    print("Rota é o caminho que liga um pedido a uma parte específica do backend.")
+    print("Ela ajuda o sistema a decidir qual função deve responder.")
+    print()
+    print("Exemplo simples:")
+    print("- pedido para ver produtos vai para a rota de produtos;")
+    print("- pedido para cadastrar cliente vai para a rota de clientes;")
+    print("- pedido para buscar reserva vai para a rota de reservas.")
+    print()
+    print("Sem rotas, o backend receberia pedidos,")
+    print("mas não saberia qual parte do sistema deveria agir.")
+    print()
+    print("Resumo de sobrevivência:")
+    print("- Rota = caminho interno que direciona o pedido.")
+    print("- Ela liga o endpoint à ação certa.")
+    print("- Ajuda o backend a organizar o que deve acontecer.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
 def entrar_etapa_2():
     while True:
         print()
@@ -924,10 +953,7 @@ def entrar_etapa_2():
         elif escolha == "7":
             topico_endpoints()
         elif escolha == "8":
-            print()
-            print("Tópico 7: Rotas")
-            print("Aqui vamos entender como o backend decide para onde cada pedido vai.")
-            print("Conteúdo completo será construído em partes.")
+            topico_rotas()
         elif escolha == "9":
             print()
             print("Tópico 8: JSON")
