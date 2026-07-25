@@ -981,6 +981,33 @@ def reconhecimento_etapa_2():
             print("Opção inválida.")
 
 
+def campo_treinamento_etapa_2():
+    print()
+    print("=" * 60)
+    print("🛠 CAMPO DE TREINAMENTO: O PEDIDO ENTRA NO MOTOR")
+    print("=" * 60)
+    print("David aparece na tela e olha diretamente para você.")
+    print()
+    print('"Agora vamos seguir um pedido quando ele chega ao backend."')
+    print()
+    print("Imagine que o jogador abriu uma tela e pediu uma lista de produtos.")
+    print()
+    print("O caminho dentro do motor começa assim:")
+    print()
+    print("1. O servidor web recebe o pedido.")
+    print("2. A rota identifica para onde esse pedido deve ir.")
+    print("3. O endpoint certo é acionado.")
+    print("4. O backend aplica as regras necessárias.")
+    print("5. Se precisar, o backend busca dados no banco.")
+    print("6. O backend organiza a resposta em JSON.")
+    print("7. A resposta volta para a tela.")
+    print()
+    print("Esse é o caminho básico do Motor Oculto.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
 def entrar_etapa_2():
     while True:
         print()
@@ -1011,10 +1038,7 @@ def entrar_etapa_2():
         elif escolha == "2":
             reconhecimento_etapa_2()
         elif escolha == "3":
-            print()
-            print("Campo de Treinamento")
-            print("Esta parte vai praticar o caminho de um pedido dentro do backend.")
-            print("Será adaptada em seguida.")
+            campo_treinamento_etapa_2()
         elif escolha == "4":
             print()
             print("Laboratório de Falhas")
