@@ -1128,6 +1128,75 @@ def relatorio_final_etapa_2():
     input("Pressione Enter para voltar...")
 
 
+def prova_dominio_etapa_2():
+    tentativas = 0
+
+    while True:
+        print()
+        print("=" * 60)
+        print("🧠 PROVA DE DOMÍNIO — MOTOR OCULTO")
+        print("=" * 60)
+        print("David aparece na tela e olha diretamente para você.")
+        print()
+        print("Quando a tela envia um pedido para buscar dados de produtos,")
+        print("qual opção representa melhor o trabalho do backend?")
+        print()
+        print("1 - A tela acessa o banco diretamente, pega os produtos e mostra tudo sozinha.")
+        print("2 - O servidor web recebe o pedido, o backend aplica regras, pode buscar dados no banco e devolve uma resposta organizada.")
+        print("3 - A API guarda os dados permanentemente e entrega tudo para o usuário quando ele clica.")
+        print("=" * 60)
+
+        escolha = input("Escolha uma resposta: ")
+        tentativas += 1
+
+        print()
+
+        if escolha == "2":
+            print("David confirma com a cabeça.")
+            print('"Isso. Você enxergou o Motor Oculto."')
+            print('"O backend recebe o pedido, aplica regras, conversa com outras partes quando precisa e devolve uma resposta que a tela consegue usar."')
+            print()
+            print("Prova de Domínio concluída nesta versão.")
+            print("Ainda não há XP, recompensa ou progresso salvo.")
+            print("=" * 60)
+            input("Pressione Enter para voltar...")
+            break
+
+        elif escolha == "1":
+            print("David aponta para a divisão entre tela e servidor.")
+            print('"Faz sentido suspeitar da tela, porque é nela que o usuário clica."')
+            print('"Mas a tela não deve acessar o banco diretamente."')
+            print('"Se qualquer tela pudesse entrar no banco, seria como deixar a despensa aberta para qualquer pessoa."')
+            print('"O frontend pede. O backend recebe, decide, conversa com o banco quando precisa e responde."')
+
+        elif escolha == "3":
+            print("David levanta a mão com calma.")
+            print('"Boa tentativa. A API realmente participa da conversa."')
+            print('"Mas a API não é a despensa do sistema. Ela é o canal organizado por onde os pedidos passam."')
+            print('"Quem guarda dados é o banco. Quem organiza a resposta é o backend."')
+
+        else:
+            print("David inclina a cabeça.")
+            print('"Escolha uma das opções: 1, 2 ou 3."')
+            tentativas -= 1
+
+        if tentativas >= 3:
+            print()
+            print("David se aproxima da tela com calma.")
+            print('"Vamos fechar juntos."')
+            print('"A resposta correta é a opção 2."')
+            print('"Quando a tela precisa de produtos, ela faz um pedido."')
+            print('"O servidor web recebe esse pedido."')
+            print('"O backend aplica regras, busca dados quando precisa e devolve uma resposta organizada para a tela."')
+            print()
+            print('"Guarda isso: a tela pede, o backend trabalha, o banco guarda, e a resposta volta."')
+            print()
+            print("A prova segue sem punição nesta versão.")
+            print("=" * 60)
+            input("Pressione Enter para voltar...")
+            break
+
+
 def entrar_etapa_2():
     while True:
         print()
@@ -1164,9 +1233,7 @@ def entrar_etapa_2():
         elif escolha == "5":
             missao_producao_etapa_2()
         elif escolha == "6":
-            print()
-            print("Prova de Domínio")
-            print("As perguntas e respostas serão apresentadas em roteiro antes de virar código.")
+            prova_dominio_etapa_2()
         elif escolha == "7":
             registro_etapa_2()
         elif escolha == "8":
