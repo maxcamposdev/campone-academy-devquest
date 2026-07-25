@@ -1040,6 +1040,37 @@ def laboratorio_falhas_etapa_2():
     input("Pressione Enter para voltar...")
 
 
+def missao_producao_etapa_2():
+    print()
+    print("=" * 60)
+    print("🏢 MISSÃO EM PRODUÇÃO: BACKEND NO DIA A DIA")
+    print("=" * 60)
+    print("David aparece na tela e olha diretamente para você.")
+    print()
+    print('"Agora vamos tirar o backend da teoria e olhar para o uso real."')
+    print()
+    print("Imagine um e-commerce recebendo pedidos de clientes.")
+    print()
+    print("Quando alguém compra um produto, o backend precisa:")
+    print()
+    print("1. receber o pedido;")
+    print("2. conferir as regras da compra;")
+    print("3. verificar informações importantes;")
+    print("4. conversar com o banco quando necessário;")
+    print("5. preparar uma resposta para a tela.")
+    print()
+    print("Se uma regra estiver errada, o cliente pode pagar errado.")
+    print("Se a resposta vier mal organizada, a tela pode quebrar.")
+    print()
+    print("Resumo de sobrevivência:")
+    print("- Backend aparece em compras, cadastros, login e relatórios.")
+    print("- Ele transforma regras reais em respostas do sistema.")
+    print("- Quando o backend erra, o impacto chega no usuário.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
 def entrar_etapa_2():
     while True:
         print()
@@ -1074,10 +1105,7 @@ def entrar_etapa_2():
         elif escolha == "4":
             laboratorio_falhas_etapa_2()
         elif escolha == "5":
-            print()
-            print("Missão em Produção")
-            print("Aqui o backend será conectado com situações reais de uso.")
-            print("Será adaptada em seguida.")
+            missao_producao_etapa_2()
         elif escolha == "6":
             print()
             print("Prova de Domínio")
