@@ -740,6 +740,35 @@ def topico_servidor_web():
     input("Pressione Enter para voltar...")
 
 
+def topico_logica_negocio():
+    print()
+    print("=" * 60)
+    print("🧠 TÓPICO 3: LÓGICA DE NEGÓCIO")
+    print("=" * 60)
+    print("David aparece na tela e olha diretamente para você.")
+    print()
+    print('"Todo sistema precisa saber quais regras seguir."')
+    print()
+    print("Lógica de negócio é o conjunto de regras específicas de uma empresa.")
+    print("Ela define como o sistema deve agir em cada situação.")
+    print()
+    print("Exemplo simples:")
+    print("- Se o cliente compra acima de um valor, ganha desconto.")
+    print("- Se o produto está sem estoque, não pode ser vendido.")
+    print("- Se o usuário não tem permissão, não acessa aquela área.")
+    print()
+    print("Essas regras normalmente vivem no backend,")
+    print("porque é ali que o sistema toma decisões importantes.")
+    print()
+    print("Resumo de sobrevivência:")
+    print("- Lógica de negócio = regras da empresa dentro do sistema.")
+    print("- Ela transforma decisões reais em comportamento do software.")
+    print("- Backend é onde essas regras costumam ser processadas.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
 def entrar_etapa_2():
     while True:
         print()
@@ -777,10 +806,7 @@ def entrar_etapa_2():
         elif escolha == "3":
             topico_servidor_web()
         elif escolha == "4":
-            print()
-            print("Tópico 3: Lógica de Negócio")
-            print("Aqui vamos entender onde vivem as regras específicas da empresa.")
-            print("Conteúdo completo será construído em partes.")
+            topico_logica_negocio()
         elif escolha == "5":
             print()
             print("Tópico 4: API")
