@@ -873,32 +873,63 @@ def topico_logica_negocio():
 
 
 def topico_api():
-    print()
-    print("=" * 60)
-    print("🔌 TÓPICO 4: API")
-    print("=" * 60)
-    print("David aparece na tela e olha diretamente para você.")
-    print()
-    print('"O backend não conversa com o mundo de qualquer jeito."')
-    print()
-    print("API é o canal organizado por onde sistemas conversam.")
-    print("Ela define como um pedido deve chegar e como a resposta deve voltar.")
-    print()
-    print("Pense na API como um balcão:")
-    print("- o frontend faz um pedido no balcão;")
-    print("- o backend entende o pedido;")
-    print("- o backend devolve uma resposta organizada.")
-    print()
-    print("A API esconde a bagunça interna do sistema.")
-    print("Quem usa a API não precisa saber como a cozinha funciona por dentro.")
-    print()
-    print("Resumo de sobrevivência:")
-    print("- API = canal de conversa entre sistemas.")
-    print("- Ela organiza pedidos e respostas.")
-    print("- Frontend e backend normalmente conversam por API.")
-    print("=" * 60)
+    while True:
+        print()
+        print("=" * 60)
+        print("🔌 TÓPICO 4: API")
+        print("=" * 60)
+        print("David aparece na tela e olha diretamente para você.")
+        print()
+        print('"O backend não conversa com o mundo de qualquer jeito."')
+        print()
+        print("API é o canal organizado por onde sistemas conversam.")
+        print("Ela define como um pedido deve chegar e como a resposta deve voltar.")
+        print()
+        print("Pense na API como um balcão:")
+        print("- o frontend faz um pedido no balcão;")
+        print("- o backend entende o pedido;")
+        print("- o backend devolve uma resposta organizada.")
+        print()
+        print("A API esconde a bagunça interna do sistema.")
+        print("Quem usa a API não precisa saber como a cozinha funciona por dentro.")
+        print()
+        print("Pergunta de domínio:")
+        print("Qual é o papel de uma API na comunicação entre frontend e backend?")
+        print()
+        print("1 - Ser o canal organizado por onde sistemas fazem pedidos e recebem respostas.")
+        print("2 - Guardar os dados permanentes da empresa em tabelas.")
+        print("3 - Desenhar a aparência visual da tela para o usuário.")
+        print("=" * 60)
 
-    input("Pressione Enter para voltar...")
+        escolha = input("Escolha uma resposta: ")
+
+        print()
+
+        if escolha == "1":
+            print("David confirma.")
+            print('"Isso. API é o canal organizado da conversa."')
+            print('"Ela permite que o frontend peça algo ao backend sem precisar conhecer a bagunça interna do sistema."')
+            print()
+            print("Tópico validado nesta versão.")
+            print("=" * 60)
+            input("Pressione Enter para voltar...")
+            break
+        elif escolha == "2":
+            print("David aponta para a despensa do sistema.")
+            print('"Essa opção fala do banco de dados."')
+            print('"O banco guarda informações. A API não é onde os dados moram; ela é o caminho organizado para pedir e receber dados."')
+            print()
+            print('"Tenta de novo pensando no canal de conversa."')
+        elif escolha == "3":
+            print("David aponta para a tela.")
+            print('"Essa opção fala do frontend."')
+            print('"A aparência visual pertence à tela. A API trabalha na comunicação entre partes do sistema."')
+            print()
+            print('"Tenta de novo pensando no balcão onde o pedido passa."')
+        else:
+            print("David inclina a cabeça.")
+            print('"Escolha uma das opções: 1, 2 ou 3."')
+
 
 
 def topico_api_rest():
