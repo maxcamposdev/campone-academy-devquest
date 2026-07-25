@@ -641,6 +641,31 @@ def entrar_etapa_1():
             print("Opção inválida.")
 
 
+def cena_abertura_etapa_2():
+    print()
+    print("=" * 60)
+    print("🎬 CENA DA ETAPA 02")
+    print("=" * 60)
+    print("David aparece em uma sala cheia de painéis e processos invisíveis.")
+    print("Ele olha diretamente para você, como quem vai abrir o capô de uma máquina.")
+    print()
+    print('"Bem-vindo ao Motor Oculto."')
+    print()
+    print('"Na etapa anterior, você aprendeu que um pedido sai da tela,')
+    print('viaja pela internet, chega ao servidor e volta como resposta."')
+    print()
+    print('"Agora você vai entender o que acontece dentro do servidor."')
+    print()
+    print('"Toda tela bonita precisa de um motor trabalhando por trás."')
+    print('"Esse motor é o backend."')
+    print()
+    print("Missão atual: Explorando o Motor Oculto")
+    print("Tema real: Backend")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
 def entrar_etapa_2():
     while True:
         print()
@@ -672,8 +697,7 @@ def entrar_etapa_2():
         escolha = input("Escolha uma opção: ")
 
         if escolha == "1":
-            print()
-            print("Cena da etapa 02 ainda será construída.")
+            cena_abertura_etapa_2()
         elif escolha == "2":
             print()
             print("Tópico 1: O que é Backend")
