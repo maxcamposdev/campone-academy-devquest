@@ -908,6 +908,35 @@ def topico_rotas():
     input("Pressione Enter para voltar...")
 
 
+def topico_json():
+    print()
+    print("=" * 60)
+    print("📦 TÓPICO 8: JSON")
+    print("=" * 60)
+    print("David aparece na tela e olha diretamente para você.")
+    print()
+    print('"Quando o backend responde, ele precisa entregar dados de um jeito organizado."')
+    print()
+    print("JSON é um formato simples para transportar informações entre sistemas.")
+    print("Ele organiza dados em pares de nome e valor.")
+    print()
+    print("Exemplo de ideia:")
+    print("- nome: Teclado Mecânico")
+    print("- preço: 249.90")
+    print("- estoque: 15")
+    print()
+    print("O frontend recebe esses dados e consegue montar a tela para o usuário.")
+    print("Por isso JSON aparece tanto em APIs.")
+    print()
+    print("Resumo de sobrevivência:")
+    print("- JSON = formato organizado para trocar dados.")
+    print("- Backend costuma enviar respostas em JSON.")
+    print("- Frontend usa esses dados para mostrar informações na tela.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
 def entrar_etapa_2():
     while True:
         print()
@@ -955,10 +984,7 @@ def entrar_etapa_2():
         elif escolha == "8":
             topico_rotas()
         elif escolha == "9":
-            print()
-            print("Tópico 8: JSON")
-            print("Aqui vamos entender o formato usado para trocar dados entre sistemas.")
-            print("Conteúdo completo será construído em partes.")
+            topico_json()
         elif escolha == "0":
             break
         else:
