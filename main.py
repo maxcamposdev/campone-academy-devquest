@@ -769,6 +769,35 @@ def topico_logica_negocio():
     input("Pressione Enter para voltar...")
 
 
+def topico_api():
+    print()
+    print("=" * 60)
+    print("🔌 TÓPICO 4: API")
+    print("=" * 60)
+    print("David aparece na tela e olha diretamente para você.")
+    print()
+    print('"O backend não conversa com o mundo de qualquer jeito."')
+    print()
+    print("API é o canal organizado por onde sistemas conversam.")
+    print("Ela define como um pedido deve chegar e como a resposta deve voltar.")
+    print()
+    print("Pense na API como um balcão:")
+    print("- o frontend faz um pedido no balcão;")
+    print("- o backend entende o pedido;")
+    print("- o backend devolve uma resposta organizada.")
+    print()
+    print("A API esconde a bagunça interna do sistema.")
+    print("Quem usa a API não precisa saber como a cozinha funciona por dentro.")
+    print()
+    print("Resumo de sobrevivência:")
+    print("- API = canal de conversa entre sistemas.")
+    print("- Ela organiza pedidos e respostas.")
+    print("- Frontend e backend normalmente conversam por API.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
 def entrar_etapa_2():
     while True:
         print()
@@ -808,10 +837,7 @@ def entrar_etapa_2():
         elif escolha == "4":
             topico_logica_negocio()
         elif escolha == "5":
-            print()
-            print("Tópico 4: API")
-            print("Aqui vamos entender o balcão de conversa entre sistemas.")
-            print("Conteúdo completo será construído em partes.")
+            topico_api()
         elif escolha == "6":
             print()
             print("Tópico 5: API REST")
