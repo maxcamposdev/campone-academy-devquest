@@ -687,30 +687,55 @@ def cena_abertura_etapa_2():
 
 
 def topico_backend():
-    print()
-    print("=" * 60)
-    print("⚙️ TÓPICO 1: O QUE É BACKEND")
-    print("=" * 60)
-    print("David aparece na tela e olha diretamente para você.")
-    print()
-    print('"Backend é a parte do sistema que trabalha por trás da tela."')
-    print()
-    print("Quando o jogador toca em um botão, a tela não resolve tudo sozinha.")
-    print("Ela envia um pedido para o servidor.")
-    print()
-    print("No servidor, o backend recebe esse pedido, aplica regras,")
-    print("busca ou organiza informações e prepara uma resposta.")
-    print()
-    print("É por isso que ele é chamado de motor oculto:")
-    print("o usuário não vê, mas sem ele o sistema não funciona.")
-    print()
-    print("Resumo de sobrevivência:")
-    print("- Backend = parte invisível que processa pedidos.")
-    print("- Ele roda no servidor.")
-    print("- Ele aplica regras e prepara respostas para a tela.")
-    print("=" * 60)
+    while True:
+        print()
+        print("=" * 60)
+        print("⚙️ TÓPICO 1: O QUE É BACKEND")
+        print("=" * 60)
+        print("David aparece na tela e olha diretamente para você.")
+        print()
+        print('"Backend é a parte do sistema que trabalha por trás da tela."')
+        print()
+        print("Quando o jogador toca em um botão, a tela não resolve tudo sozinha.")
+        print("Ela envia um pedido para o servidor.")
+        print()
+        print("No servidor, o backend recebe esse pedido, aplica regras,")
+        print("busca ou organiza informações e prepara uma resposta.")
+        print()
+        print("É por isso que ele é chamado de motor oculto:")
+        print("o usuário não vê, mas sem ele o sistema não funciona.")
+        print()
+        print("Pergunta de domínio:")
+        print("O que o backend faz dentro de um sistema?")
+        print()
+        print("1 - Desenha os botões e cores que aparecem na tela.")
+        print("2 - Recebe pedidos, aplica regras e prepara respostas.")
+        print("3 - Guarda todos os dados sozinho, sem precisar de servidor.")
+        print("=" * 60)
 
-    input("Pressione Enter para voltar...")
+        escolha = input("Escolha uma resposta: ")
+
+        print()
+
+        if escolha == "2":
+            print("David confirma com a cabeça.")
+            print('"Isso. O backend é o motor que processa pedidos e aplica regras."')
+            print('"A tela mostra o resultado, mas o trabalho pesado acontece por trás."')
+            print("=" * 60)
+            input("Pressione Enter para voltar...")
+            break
+        elif escolha == "1":
+            print("David aponta para a tela.")
+            print('"Botões, cores e aparência pertencem ao frontend."')
+            print('"O backend trabalha atrás da tela, processando pedidos e regras."')
+        elif escolha == "3":
+            print("David cruza os braços, com calma.")
+            print('"Guardar dados é papel do banco de dados."')
+            print('"O backend pode pedir dados ao banco, mas ele não é a despensa inteira."')
+        else:
+            print("David inclina a cabeça.")
+            print('"Escolha uma das opções: 1, 2 ou 3."')
+
 
 
 def topico_servidor_web():
