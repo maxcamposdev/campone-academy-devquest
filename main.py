@@ -933,30 +933,63 @@ def topico_api():
 
 
 def topico_api_rest():
-    print()
-    print("=" * 60)
-    print("🧱 TÓPICO 5: API REST")
-    print("=" * 60)
-    print("David aparece na tela e olha diretamente para você.")
-    print()
-    print('"Quando muitos sistemas conversam, eles precisam de um padrão."')
-    print()
-    print("API REST é um jeito organizado de criar APIs.")
-    print("Ela usa endereços e métodos da web para separar recursos e ações.")
-    print()
-    print("Na prática, cada coisa importante do sistema ganha um caminho.")
-    print("Produtos, clientes, pedidos e reservas podem ter seus próprios endereços.")
-    print()
-    print("Assim, o backend sabe com clareza o que está sendo pedido.")
-    print("Buscar, criar, atualizar ou apagar deixam de ser bagunça.")
-    print()
-    print("Resumo de sobrevivência:")
-    print("- REST = padrão para organizar APIs.")
-    print("- Cada recurso ganha um endereço.")
-    print("- O pedido fica mais claro para o backend.")
-    print("=" * 60)
+    while True:
+        print()
+        print("=" * 60)
+        print("🧱 TÓPICO 5: API REST")
+        print("=" * 60)
+        print("David aparece na tela e olha diretamente para você.")
+        print()
+        print('"Quando muitos sistemas conversam, eles precisam de um padrão."')
+        print()
+        print("API REST é um jeito organizado de criar APIs.")
+        print("Ela usa endereços e métodos da web para separar recursos e ações.")
+        print()
+        print("Na prática, cada coisa importante do sistema ganha um caminho.")
+        print("Produtos, clientes, pedidos e reservas podem ter seus próprios endereços.")
+        print()
+        print("Assim, o backend sabe com clareza o que está sendo pedido.")
+        print("Buscar, criar, atualizar ou apagar deixam de ser bagunça.")
+        print()
+        print("Pergunta de domínio:")
+        print("Para que serve o padrão REST em uma API?")
+        print()
+        print("1 - Para organizar os caminhos e ações da API de um jeito previsível.")
+        print("2 - Para deixar a tela mais bonita com cores e espaçamentos.")
+        print("3 - Para guardar os produtos e clientes dentro do banco de dados.")
+        print("=" * 60)
 
-    input("Pressione Enter para voltar...")
+        escolha = input("Escolha uma resposta: ")
+
+        print()
+
+        if escolha == "1":
+            print("David confirma.")
+            print('"Isso. REST ajuda a organizar a API."')
+            print('"Com ele, recursos como produtos, clientes e pedidos podem ter caminhos claros, e o backend entende melhor o que está sendo pedido."')
+            print()
+            print("Tópico validado nesta versão.")
+            print("=" * 60)
+            input("Pressione Enter para voltar...")
+            break
+        elif escolha == "2":
+            print("David aponta para a interface.")
+            print('"Essa opção fala de aparência visual."')
+            print('"Cores e espaçamentos são trabalho do frontend."')
+            print('"REST organiza a conversa da API, não a aparência da tela."')
+            print()
+            print('"Tenta de novo pensando na organização dos pedidos."')
+        elif escolha == "3":
+            print("David aponta para a despensa.")
+            print('"Essa opção fala do banco de dados."')
+            print('"O banco guarda produtos e clientes."')
+            print('"REST não é onde os dados moram; é um padrão para organizar como a API recebe pedidos."')
+            print()
+            print('"Tenta de novo pensando nos caminhos da API."')
+        else:
+            print("David inclina a cabeça.")
+            print('"Escolha uma das opções: 1, 2 ou 3."')
+
 
 
 def topico_endpoints():
