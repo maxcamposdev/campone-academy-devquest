@@ -713,6 +713,33 @@ def topico_backend():
     input("Pressione Enter para voltar...")
 
 
+def topico_servidor_web():
+    print()
+    print("=" * 60)
+    print("🖥️ TÓPICO 2: SERVIDOR WEB")
+    print("=" * 60)
+    print("David aparece na tela e olha diretamente para você.")
+    print()
+    print('"Todo motor precisa de um lugar para ficar ligado."')
+    print()
+    print("Servidor web é o programa que fica esperando pedidos chegarem.")
+    print("Ele recebe requisições vindas da internet e devolve respostas.")
+    print()
+    print("Quando muita gente acessa um sistema ao mesmo tempo,")
+    print("o servidor web precisa organizar esse fluxo de entrada e saída.")
+    print()
+    print("Ele é como uma porta de atendimento sempre aberta.")
+    print("O usuário não vê, mas todo sistema online depende dele.")
+    print()
+    print("Resumo de sobrevivência:")
+    print("- Servidor web = programa que recebe pedidos na internet.")
+    print("- Ele entrega respostas para clientes, navegadores ou aplicativos.")
+    print("- Sem ele, o backend não teria uma porta de entrada.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
 def entrar_etapa_2():
     while True:
         print()
@@ -748,10 +775,7 @@ def entrar_etapa_2():
         elif escolha == "2":
             topico_backend()
         elif escolha == "3":
-            print()
-            print("Tópico 2: Servidor Web")
-            print("Aqui vamos entender o programa que recebe pedidos e entrega respostas.")
-            print("Conteúdo completo será construído em partes.")
+            topico_servidor_web()
         elif escolha == "4":
             print()
             print("Tópico 3: Lógica de Negócio")
