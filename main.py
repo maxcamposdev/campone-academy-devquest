@@ -752,30 +752,62 @@ def topico_backend():
 
 
 def topico_servidor_web():
-    print()
-    print("=" * 60)
-    print("🖥️ TÓPICO 2: SERVIDOR WEB")
-    print("=" * 60)
-    print("David aparece na tela e olha diretamente para você.")
-    print()
-    print('"Todo motor precisa de um lugar para ficar ligado."')
-    print()
-    print("Servidor web é o programa que fica esperando pedidos chegarem.")
-    print("Ele recebe requisições vindas da internet e devolve respostas.")
-    print()
-    print("Quando muita gente acessa um sistema ao mesmo tempo,")
-    print("o servidor web precisa organizar esse fluxo de entrada e saída.")
-    print()
-    print("Ele é como uma porta de atendimento sempre aberta.")
-    print("O usuário não vê, mas todo sistema online depende dele.")
-    print()
-    print("Resumo de sobrevivência:")
-    print("- Servidor web = programa que recebe pedidos na internet.")
-    print("- Ele entrega respostas para clientes, navegadores ou aplicativos.")
-    print("- Sem ele, o backend não teria uma porta de entrada.")
-    print("=" * 60)
+    while True:
+        print()
+        print("=" * 60)
+        print("🖥️ TÓPICO 2: SERVIDOR WEB")
+        print("=" * 60)
+        print("David aparece na tela e olha diretamente para você.")
+        print()
+        print('"Todo motor precisa de um lugar para ficar ligado."')
+        print()
+        print("Servidor web é o programa que fica esperando pedidos chegarem.")
+        print("Ele recebe requisições vindas da internet e devolve respostas.")
+        print()
+        print("Quando muita gente acessa um sistema ao mesmo tempo,")
+        print("o servidor web precisa organizar esse fluxo de entrada e saída.")
+        print()
+        print("Ele é como uma porta de atendimento sempre aberta.")
+        print("O usuário não vê, mas todo sistema online depende dele.")
+        print()
+        print("Pergunta de domínio:")
+        print("Qual é o papel do servidor web em um sistema online?")
+        print()
+        print("1 - Receber pedidos vindos da internet e devolver respostas.")
+        print("2 - Escolher as cores, fontes e botões que aparecem na tela.")
+        print("3 - Guardar permanentemente todos os dados da empresa.")
+        print("=" * 60)
 
-    input("Pressione Enter para voltar...")
+        escolha = input("Escolha uma resposta: ")
+
+        print()
+
+        if escolha == "1":
+            print("David confirma.")
+            print('"Isso. O servidor web é a porta de entrada dos pedidos na internet."')
+            print('"Ele fica esperando requisições chegarem e devolve respostas para clientes, navegadores ou aplicativos."')
+            print()
+            print("Tópico validado nesta versão.")
+            print("=" * 60)
+            input("Pressione Enter para voltar...")
+            break
+        elif escolha == "2":
+            print("David aponta para a interface.")
+            print('"Essa opção fala da aparência da tela."')
+            print('"Cores, fontes e botões pertencem ao frontend."')
+            print('"O servidor web não desenha a tela; ele recebe pedidos que chegam pela internet."')
+            print()
+            print('"Tenta de novo pensando na porta de entrada do sistema."')
+        elif escolha == "3":
+            print("David aponta para a despensa do sistema.")
+            print('"Guardar dados permanentes é papel do banco de dados."')
+            print('"O servidor web pode receber um pedido que depois leva o backend até o banco, mas ele não é o lugar onde tudo fica guardado."')
+            print()
+            print('"Tenta de novo pensando em quem recebe os pedidos primeiro."')
+        else:
+            print("David inclina a cabeça.")
+            print('"Escolha uma das opções: 1, 2 ou 3."')
+
 
 
 def topico_logica_negocio():
