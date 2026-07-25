@@ -1008,6 +1008,38 @@ def campo_treinamento_etapa_2():
     input("Pressione Enter para voltar...")
 
 
+def laboratorio_falhas_etapa_2():
+    print()
+    print("=" * 60)
+    print("🧪 LABORATÓRIO DE FALHAS: QUANDO O MOTOR ENGASGA")
+    print("=" * 60)
+    print("David aparece na tela e olha diretamente para você.")
+    print()
+    print('"Backend também falha. E quando falha, ele deixa pistas."')
+    print()
+    print("Alguns problemas comuns dentro do Motor Oculto:")
+    print()
+    print("1. Rota inexistente")
+    print("- O pedido chega, mas o backend não encontra o caminho.")
+    print()
+    print("2. Regra de negócio incorreta")
+    print("- O sistema aplica uma regra errada e devolve resultado errado.")
+    print()
+    print("3. Banco de dados indisponível")
+    print("- O backend precisa de dados, mas a despensa não responde.")
+    print()
+    print("4. Resposta mal formatada")
+    print("- O backend responde, mas a tela não consegue entender.")
+    print()
+    print("Resumo de sobrevivência:")
+    print("- Falha no backend não é chute.")
+    print("- O dev segue o pedido até descobrir onde o motor engasgou.")
+    print("- Cada erro aponta para uma parte do caminho.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
 def entrar_etapa_2():
     while True:
         print()
@@ -1040,10 +1072,7 @@ def entrar_etapa_2():
         elif escolha == "3":
             campo_treinamento_etapa_2()
         elif escolha == "4":
-            print()
-            print("Laboratório de Falhas")
-            print("Aqui o jogador vai observar falhas típicas do backend.")
-            print("Será adaptado em seguida.")
+            laboratorio_falhas_etapa_2()
         elif escolha == "5":
             print()
             print("Missão em Produção")
