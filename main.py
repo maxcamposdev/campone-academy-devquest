@@ -850,6 +850,35 @@ def topico_api_rest():
     input("Pressione Enter para voltar...")
 
 
+def topico_endpoints():
+    print()
+    print("=" * 60)
+    print("📍 TÓPICO 6: ENDPOINTS")
+    print("=" * 60)
+    print("David aparece na tela e olha diretamente para você.")
+    print()
+    print('"Dentro de uma API, cada serviço precisa ter um endereço claro."')
+    print()
+    print("Endpoint é um endereço específico dentro de uma API.")
+    print("É o lugar onde um pedido chega para buscar ou executar alguma coisa.")
+    print()
+    print("Exemplos simples:")
+    print("- um endpoint para listar produtos;")
+    print("- um endpoint para cadastrar cliente;")
+    print("- um endpoint para buscar uma reserva.")
+    print()
+    print("Sem endpoints claros, o frontend não sabe onde pedir")
+    print("e o backend não sabe qual parte deve responder.")
+    print()
+    print("Resumo de sobrevivência:")
+    print("- Endpoint = endereço específico dentro da API.")
+    print("- Cada endpoint tem uma responsabilidade.")
+    print("- Ele ajuda o pedido a chegar no lugar certo.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
 def entrar_etapa_2():
     while True:
         print()
@@ -893,10 +922,7 @@ def entrar_etapa_2():
         elif escolha == "6":
             topico_api_rest()
         elif escolha == "7":
-            print()
-            print("Tópico 6: Endpoints")
-            print("Aqui vamos entender os endereços específicos de uma API.")
-            print("Conteúdo completo será construído em partes.")
+            topico_endpoints()
         elif escolha == "8":
             print()
             print("Tópico 7: Rotas")
