@@ -937,6 +937,50 @@ def topico_json():
     input("Pressione Enter para voltar...")
 
 
+def reconhecimento_etapa_2():
+    while True:
+        print()
+        print("=" * 60)
+        print("💡 RECONHECIMENTO: O MOTOR OCULTO")
+        print("=" * 60)
+        print("David organiza os primeiros conceitos do Backend.")
+        print()
+        print("1 - O que é Backend")
+        print("2 - Servidor Web")
+        print("3 - Lógica de Negócio")
+        print("4 - API")
+        print("5 - API REST")
+        print("6 - Endpoints")
+        print("7 - Rotas")
+        print("8 - JSON")
+        print("0 - Voltar à etapa 02")
+        print("=" * 60)
+
+        escolha = input("Escolha uma opção: ")
+
+        if escolha == "1":
+            topico_backend()
+        elif escolha == "2":
+            topico_servidor_web()
+        elif escolha == "3":
+            topico_logica_negocio()
+        elif escolha == "4":
+            topico_api()
+        elif escolha == "5":
+            topico_api_rest()
+        elif escolha == "6":
+            topico_endpoints()
+        elif escolha == "7":
+            topico_rotas()
+        elif escolha == "8":
+            topico_json()
+        elif escolha == "0":
+            break
+        else:
+            print()
+            print("Opção inválida.")
+
+
 def entrar_etapa_2():
     while True:
         print()
@@ -947,22 +991,17 @@ def entrar_etapa_2():
         print("Tipo: Treinamento de Sobrevivência")
         print("Status: Disponível")
         print()
-        print("Objetivo:")
-        print("Entender o motor invisível que processa pedidos,")
-        print("aplica regras e responde para a tela.")
-        print()
-        print("TÓPICOS DESTA ETAPA")
+        print("CENTRO DE OPERAÇÕES")
         print("-" * 60)
-        print("1 - Iniciar cena da etapa")
-        print("2 - O que é Backend")
-        print("3 - Servidor Web")
-        print("4 - Lógica de Negócio")
-        print("5 - API")
-        print("6 - API REST")
-        print("7 - Endpoints")
-        print("8 - Rotas")
-        print("9 - JSON")
-        print("0 - Voltar ao Nível 1")
+        print("1 - Iniciar Missão")
+        print("2 - Reconhecimento")
+        print("3 - Campo de Treinamento")
+        print("4 - Laboratório de Falhas")
+        print("5 - Missão em Produção")
+        print("6 - Prova de Domínio")
+        print("7 - Registrar Experiência")
+        print("8 - Relatório Final")
+        print("0 - Retornar ao Nível 1")
         print("=" * 60)
 
         escolha = input("Escolha uma opção: ")
@@ -970,21 +1009,36 @@ def entrar_etapa_2():
         if escolha == "1":
             cena_abertura_etapa_2()
         elif escolha == "2":
-            topico_backend()
+            reconhecimento_etapa_2()
         elif escolha == "3":
-            topico_servidor_web()
+            print()
+            print("Campo de Treinamento")
+            print("Esta parte vai praticar o caminho de um pedido dentro do backend.")
+            print("Será adaptada em seguida.")
         elif escolha == "4":
-            topico_logica_negocio()
+            print()
+            print("Laboratório de Falhas")
+            print("Aqui o jogador vai observar falhas típicas do backend.")
+            print("Será adaptado em seguida.")
         elif escolha == "5":
-            topico_api()
+            print()
+            print("Missão em Produção")
+            print("Aqui o backend será conectado com situações reais de uso.")
+            print("Será adaptada em seguida.")
         elif escolha == "6":
-            topico_api_rest()
+            print()
+            print("Prova de Domínio")
+            print("As perguntas e respostas serão apresentadas em roteiro antes de virar código.")
         elif escolha == "7":
-            topico_endpoints()
+            print()
+            print("Registrar Experiência")
+            print("Aqui o jogo vai registrar o que foi vivido nesta etapa.")
+            print("Nesta versão, o registro ainda é apenas narrativo.")
         elif escolha == "8":
-            topico_rotas()
-        elif escolha == "9":
-            topico_json()
+            print()
+            print("Relatório Final")
+            print("Aqui o jogador revisará o que aprendeu sobre o Motor Oculto.")
+            print("Será adaptado em seguida.")
         elif escolha == "0":
             break
         else:
