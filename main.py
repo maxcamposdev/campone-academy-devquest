@@ -1071,6 +1071,63 @@ def missao_producao_etapa_2():
     input("Pressione Enter para voltar...")
 
 
+def registro_etapa_2():
+    print()
+    print("=" * 60)
+    print("📝 REGISTRAR EXPERIÊNCIA — MOTOR OCULTO")
+    print("=" * 60)
+    print("David aparece na tela e olha diretamente para você.")
+    print()
+    print('"Todo motor entendido deixa um rastro de aprendizado."')
+    print()
+    print("Nesta etapa, você começou a reconhecer o backend:")
+    print()
+    print("- entendeu que ele trabalha por trás da tela;")
+    print("- viu que ele roda no servidor;")
+    print("- conheceu servidor web, regras, API, REST, endpoints, rotas e JSON;")
+    print("- caminhou pelo caminho interno de um pedido;")
+    print("- viu falhas comuns do Motor Oculto;")
+    print("- observou o backend em situações reais de uso.")
+    print()
+    print("Registro atual:")
+    print("Experiência registrada apenas na narrativa.")
+    print("Salvamento real será criado em uma fase futura.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
+def relatorio_final_etapa_2():
+    print()
+    print("=" * 60)
+    print("📋 RELATÓRIO FINAL — MOTOR OCULTO")
+    print("=" * 60)
+    print("David aparece na tela e olha diretamente para você.")
+    print()
+    print('"Antes de seguir, revise o que você encontrou dentro do servidor."')
+    print()
+    print("Relatório da missão: Explorando o Motor Oculto")
+    print()
+    print("Você agora sabe que:")
+    print()
+    print("- backend é a parte invisível que processa pedidos;")
+    print("- servidor web recebe requisições e devolve respostas;")
+    print("- lógica de negócio guarda regras da empresa;")
+    print("- API organiza a conversa entre sistemas;")
+    print("- REST ajuda a estruturar APIs;")
+    print("- endpoints são endereços específicos;")
+    print("- rotas direcionam pedidos para a ação certa;")
+    print("- JSON organiza dados para trafegar entre backend e frontend.")
+    print()
+    print("Conclusão:")
+    print("Você começou a entender o motor que trabalha por trás da tela.")
+    print()
+    print("A etapa ainda não marca conclusão permanente nesta versão.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
 def entrar_etapa_2():
     while True:
         print()
@@ -1111,15 +1168,9 @@ def entrar_etapa_2():
             print("Prova de Domínio")
             print("As perguntas e respostas serão apresentadas em roteiro antes de virar código.")
         elif escolha == "7":
-            print()
-            print("Registrar Experiência")
-            print("Aqui o jogo vai registrar o que foi vivido nesta etapa.")
-            print("Nesta versão, o registro ainda é apenas narrativo.")
+            registro_etapa_2()
         elif escolha == "8":
-            print()
-            print("Relatório Final")
-            print("Aqui o jogador revisará o que aprendeu sobre o Motor Oculto.")
-            print("Será adaptado em seguida.")
+            relatorio_final_etapa_2()
         elif escolha == "0":
             break
         else:
