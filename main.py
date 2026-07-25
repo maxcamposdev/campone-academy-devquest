@@ -798,6 +798,33 @@ def topico_api():
     input("Pressione Enter para voltar...")
 
 
+def topico_api_rest():
+    print()
+    print("=" * 60)
+    print("🧱 TÓPICO 5: API REST")
+    print("=" * 60)
+    print("David aparece na tela e olha diretamente para você.")
+    print()
+    print('"Quando muitos sistemas conversam, eles precisam de um padrão."')
+    print()
+    print("API REST é um jeito organizado de criar APIs.")
+    print("Ela usa endereços e métodos da web para separar recursos e ações.")
+    print()
+    print("Na prática, cada coisa importante do sistema ganha um caminho.")
+    print("Produtos, clientes, pedidos e reservas podem ter seus próprios endereços.")
+    print()
+    print("Assim, o backend sabe com clareza o que está sendo pedido.")
+    print("Buscar, criar, atualizar ou apagar deixam de ser bagunça.")
+    print()
+    print("Resumo de sobrevivência:")
+    print("- REST = padrão para organizar APIs.")
+    print("- Cada recurso ganha um endereço.")
+    print("- O pedido fica mais claro para o backend.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
 def entrar_etapa_2():
     while True:
         print()
@@ -839,10 +866,7 @@ def entrar_etapa_2():
         elif escolha == "5":
             topico_api()
         elif escolha == "6":
-            print()
-            print("Tópico 5: API REST")
-            print("Aqui vamos entender um padrão comum para organizar APIs.")
-            print("Conteúdo completo será construído em partes.")
+            topico_api_rest()
         elif escolha == "7":
             print()
             print("Tópico 6: Endpoints")
