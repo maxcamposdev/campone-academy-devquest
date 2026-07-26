@@ -1684,6 +1684,35 @@ def topico_banco_dados():
     input("Pressione Enter para voltar...")
 
 
+def topico_sql():
+    print()
+    print("=" * 60)
+    print("🧾 TÓPICO 2: SQL")
+    print("=" * 60)
+    print("Letícia aparece na tela e olha diretamente para você.")
+    print()
+    print('"Guardar informação é importante. Mas também precisamos conversar com ela."')
+    print()
+    print("SQL é uma linguagem usada para conversar com bancos de dados relacionais.")
+    print("Ela permite pedir, inserir, atualizar e remover informações.")
+    print()
+    print("Na prática, o sistema usa SQL para fazer perguntas ao banco, como:")
+    print("- quais produtos existem?")
+    print("- qual é o preço deste item?")
+    print("- esse cliente já está cadastrado?")
+    print()
+    print("Você não precisa decorar comandos agora.")
+    print("Por enquanto, entenda o papel: SQL é a língua da despensa.")
+    print()
+    print("Resumo de sobrevivência:")
+    print("- SQL = linguagem para conversar com o banco.")
+    print("- Serve para buscar, gravar, alterar e remover dados.")
+    print("- Backend pode usar SQL quando precisa falar com a despensa.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
 def reconhecimento_etapa_3():
     while True:
         print()
@@ -1707,10 +1736,7 @@ def reconhecimento_etapa_3():
         if escolha == "1":
             topico_banco_dados()
         elif escolha == "2":
-            print()
-            print("Tópico 2: SQL")
-            print("Aqui vamos entender a língua usada para conversar com bancos relacionais.")
-            print("Conteúdo completo será construído em partes.")
+            topico_sql()
         elif escolha == "3":
             print()
             print("Tópico 3: Tabelas")
