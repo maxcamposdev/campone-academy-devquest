@@ -1713,6 +1713,37 @@ def topico_sql():
     input("Pressione Enter para voltar...")
 
 
+def topico_tabelas():
+    print()
+    print("=" * 60)
+    print("📊 TÓPICO 3: TABELAS")
+    print("=" * 60)
+    print("Letícia aparece na tela e olha diretamente para você.")
+    print()
+    print('"Um banco de dados precisa guardar informações com ordem."')
+    print()
+    print("Tabela é uma estrutura que organiza dados em linhas e colunas.")
+    print("Ela funciona como uma planilha dentro do banco.")
+    print()
+    print("Cada tabela costuma guardar um tipo de informação.")
+    print()
+    print("Exemplos:")
+    print("- tabela de clientes;")
+    print("- tabela de produtos;")
+    print("- tabela de pedidos;")
+    print("- tabela de reservas.")
+    print()
+    print("Sem tabelas, os dados ficariam misturados e difíceis de encontrar.")
+    print()
+    print("Resumo de sobrevivência:")
+    print("- Tabela = gaveta organizada dentro do banco.")
+    print("- Cada tabela guarda um tipo de coisa.")
+    print("- Linhas e colunas ajudam o sistema a encontrar informações.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
 def reconhecimento_etapa_3():
     while True:
         print()
@@ -1738,10 +1769,7 @@ def reconhecimento_etapa_3():
         elif escolha == "2":
             topico_sql()
         elif escolha == "3":
-            print()
-            print("Tópico 3: Tabelas")
-            print("Aqui vamos entender as gavetas onde cada tipo de informação fica organizado.")
-            print("Conteúdo completo será construído em partes.")
+            topico_tabelas()
         elif escolha == "4":
             print()
             print("Tópico 4: Registros e Colunas")
