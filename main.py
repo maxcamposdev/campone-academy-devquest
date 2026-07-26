@@ -1773,6 +1773,35 @@ def topico_registros_colunas():
     input("Pressione Enter para voltar...")
 
 
+def topico_chave_primaria():
+    print()
+    print("=" * 60)
+    print("🔑 TÓPICO 5: CHAVE PRIMÁRIA")
+    print("=" * 60)
+    print("Letícia aparece na tela e olha diretamente para você.")
+    print()
+    print('"Quando existem muitos registros, o sistema precisa saber quem é quem."')
+    print()
+    print("Chave primária é um identificador único dentro de uma tabela.")
+    print("Ela ajuda o banco a encontrar exatamente um registro.")
+    print()
+    print("Exemplo:")
+    print("- dois clientes podem ter o mesmo nome;")
+    print("- mas cada cliente precisa ter um ID diferente;")
+    print("- esse ID pode funcionar como chave primária.")
+    print()
+    print("Sem chave primária, o sistema pode se confundir")
+    print("na hora de buscar, atualizar ou apagar informações.")
+    print()
+    print("Resumo de sobrevivência:")
+    print("- Chave primária = identificador único de um registro.")
+    print("- Ela evita confusão entre registros parecidos.")
+    print("- Normalmente aparece como um ID.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
 def reconhecimento_etapa_3():
     while True:
         print()
@@ -1802,10 +1831,7 @@ def reconhecimento_etapa_3():
         elif escolha == "4":
             topico_registros_colunas()
         elif escolha == "5":
-            print()
-            print("Tópico 5: Chave Primária")
-            print("Aqui vamos entender o identificador único de cada registro.")
-            print("Conteúdo completo será construído em partes.")
+            topico_chave_primaria()
         elif escolha == "6":
             print()
             print("Tópico 6: Chave Estrangeira")
