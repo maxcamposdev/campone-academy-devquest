@@ -1654,30 +1654,63 @@ def entrar_etapa_2():
 
 
 def topico_banco_dados():
-    print()
-    print("=" * 60)
-    print("🗄️ TÓPICO 1: BANCO DE DADOS")
-    print("=" * 60)
-    print("Letícia aparece na tela e olha diretamente para você.")
-    print()
-    print('"Todo sistema precisa ter memória."')
-    print()
-    print("Pensa em um aplicativo de banco, loja ou agenda.")
-    print("Se ele esquecesse tudo quando fechasse, não serviria para quase nada.")
-    print()
-    print("O banco de dados existe para isso:")
-    print("guardar informações importantes de forma organizada.")
-    print()
-    print("É ali que podem ficar clientes, produtos, pedidos, reservas")
-    print("e o histórico do que aconteceu no sistema.")
-    print()
-    print("Resumo de sobrevivência:")
-    print("- Banco de dados = memória organizada do sistema.")
-    print("- Ele guarda informações para o sistema não esquecer.")
-    print("- Sem banco, muita coisa sumiria ao fechar o programa.")
-    print("=" * 60)
+    while True:
+        print()
+        print("=" * 60)
+        print("🗄️ TÓPICO 1: BANCO DE DADOS")
+        print("=" * 60)
+        print("Letícia aparece na tela e olha diretamente para você.")
+        print()
+        print('"Todo sistema precisa ter memória."')
+        print()
+        print("Pensa em um aplicativo de banco, loja ou agenda.")
+        print("Se ele esquecesse tudo quando fechasse, não serviria para quase nada.")
+        print()
+        print("O banco de dados existe para isso:")
+        print("guardar informações importantes de forma organizada.")
+        print()
+        print("É ali que podem ficar clientes, produtos, pedidos, reservas")
+        print("e o histórico do que aconteceu no sistema.")
+        print()
+        print("Pergunta de domínio:")
+        print("Por que um sistema precisa de um banco de dados?")
+        print()
+        print("1 - Para guardar informações importantes de forma organizada e não esquecer tudo quando o programa fecha.")
+        print("2 - Para escolher as cores e os botões que aparecem na tela.")
+        print("3 - Para substituir o backend e processar todas as regras sozinho.")
+        print("=" * 60)
 
-    input("Pressione Enter para voltar...")
+        escolha = input("Escolha uma resposta: ")
+
+        print()
+
+        if escolha == "1":
+            print("Letícia confirma.")
+            print('"Isso. O banco de dados é a memória organizada do sistema."')
+            print('"Ele guarda informações importantes para que o sistema não esqueça clientes, produtos, pedidos e históricos."')
+            print()
+            print("Tópico validado nesta versão.")
+            print("=" * 60)
+            input("Pressione Enter para voltar...")
+            break
+        elif escolha == "2":
+            print("Letícia aponta para a tela.")
+            print('"Essa opção fala da aparência visual."')
+            print('"Cores e botões pertencem ao frontend."')
+            print('"O banco não cuida da aparência; ele cuida da memória do sistema."')
+            print()
+            print('"Tenta de novo pensando no que o sistema precisa lembrar."')
+        elif escolha == "3":
+            print("Letícia aponta para a cozinha do sistema.")
+            print('"Essa opção mistura banco com backend."')
+            print('"O backend processa regras. O banco guarda informações para que essas regras tenham dados para consultar."')
+            print()
+            print('"Tenta de novo pensando em memória, não em processamento."')
+        else:
+            print("Letícia inclina a cabeça.")
+            print('"Escolha uma das opções: 1, 2 ou 3."')
+
+
 
 def topico_sql():
     print()
