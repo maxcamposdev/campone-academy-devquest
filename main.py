@@ -2600,6 +2600,38 @@ def reconhecimento_etapa_4():
             print()
             print("Opção inválida.")
 
+
+def campo_treinamento_etapa_4():
+    print()
+    print("=" * 60)
+    print("🛠️ CAMPO DE TREINAMENTO: A VIAGEM DO PEDIDO")
+    print("=" * 60)
+    print("Agora vamos acompanhar um clique por dentro do sistema.")
+    print()
+    print("Cena:")
+    print("O usuário abre o app da CampOne e clica em:")
+    print('"Ver produtos"')
+    print()
+    print("1. A tela entende que precisa buscar informações.")
+    print("2. Ela prepara um pedido do tipo GET.")
+    print("3. Esse pedido viaja pela internet até o servidor.")
+    print("4. O servidor entrega o pedido para o backend.")
+    print("5. O backend entende que precisa da lista de produtos.")
+    print("6. O backend consulta o banco de dados.")
+    print("7. O banco devolve os produtos encontrados.")
+    print("8. O backend organiza a resposta em JSON.")
+    print("9. A resposta volta com o código 200.")
+    print("10. A tela recebe tudo e mostra os produtos para o usuário.")
+    print()
+    print("Resumo da viagem:")
+    print("clique → pedido → backend → banco → resposta → tela atualizada")
+    print()
+    print("Ideia de sobrevivência:")
+    print("quando algo falha, você procura em qual parte dessa viagem o caminho quebrou.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
 def entrar_etapa_4():
     while True:
         print()
@@ -2633,9 +2665,7 @@ def entrar_etapa_4():
         elif escolha == "2":
             reconhecimento_etapa_4()
         elif escolha == "3":
-            print()
-            print("Campo de Treinamento da etapa 04 será criado depois do roteiro.")
-            input("Pressione Enter para voltar...")
+            campo_treinamento_etapa_4()
         elif escolha == "4":
             print()
             print("Laboratório de Falhas da etapa 04 será criado depois do roteiro.")
