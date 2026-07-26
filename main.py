@@ -1833,30 +1833,64 @@ def topico_tabelas():
 
 
 def topico_registros_colunas():
-    print()
-    print("=" * 60)
-    print("📋 TÓPICO 4: REGISTROS E COLUNAS")
-    print("=" * 60)
-    print("Letícia aparece na tela e olha diretamente para você.")
-    print()
-    print('"Depois de abrir uma gaveta, você precisa entender como as fichas são organizadas."')
-    print()
-    print("Dentro de uma tabela, cada item guardado é como uma ficha.")
-    print("Essa ficha é o registro.")
-    print()
-    print("As informações dentro da ficha são as colunas.")
-    print()
-    print("Exemplo:")
-    print("- um produto é um registro;")
-    print("- nome, preço e estoque são colunas desse produto.")
-    print()
-    print("Resumo de sobrevivência:")
-    print("- Registro = uma ficha dentro da tabela.")
-    print("- Coluna = uma informação dessa ficha.")
-    print("- Juntos, eles deixam os dados organizados.")
-    print("=" * 60)
+    while True:
+        print()
+        print("=" * 60)
+        print("📋 TÓPICO 4: REGISTROS E COLUNAS")
+        print("=" * 60)
+        print("Letícia aparece na tela e olha diretamente para você.")
+        print()
+        print('"Depois de abrir uma gaveta, você precisa entender como as fichas são organizadas."')
+        print()
+        print("Dentro de uma tabela, cada item guardado é como uma ficha.")
+        print("Essa ficha é o registro.")
+        print()
+        print("As informações dentro da ficha são as colunas.")
+        print()
+        print("Exemplo:")
+        print("- um produto é um registro;")
+        print("- nome, preço e estoque são colunas desse produto.")
+        print()
+        print("Pergunta de domínio:")
+        print("Dentro de uma tabela, o que são registros e colunas?")
+        print()
+        print("1 - Registro é uma ficha/linha da tabela, e coluna é uma informação dessa ficha.")
+        print("2 - Registro é a cor da tela, e coluna é o botão que o usuário clica.")
+        print("3 - Registro é o servidor inteiro, e coluna é a internet por onde o pedido viaja.")
+        print("=" * 60)
 
-    input("Pressione Enter para voltar...")
+        escolha = input("Escolha uma resposta: ")
+
+        print()
+
+        if escolha == "1":
+            print("Letícia confirma.")
+            print('"Isso. Registro é uma ficha dentro da tabela."')
+            print('"Colunas são as informações dessa ficha, como nome, preço ou estoque."')
+            print()
+            print("Tópico validado nesta versão.")
+            print("=" * 60)
+            input("Pressione Enter para voltar...")
+            break
+        elif escolha == "2":
+            print("Letícia aponta para a tela.")
+            print('"Essa opção mistura banco com frontend."')
+            print('"Cores e botões pertencem à interface visual."')
+            print('"Registro e coluna são organização interna dos dados."')
+            print()
+            print('"Tenta de novo pensando nas fichas dentro da tabela."')
+        elif escolha == "3":
+            print("Letícia aponta para o caminho da Grande Rede.")
+            print('"Essa opção mistura banco com servidor e internet."')
+            print('"Servidor e internet fazem parte do caminho do pedido."')
+            print('"Registro e coluna ficam dentro da tabela, organizando os dados."')
+            print()
+            print('"Tenta de novo pensando na gaveta do banco."')
+        else:
+            print("Letícia inclina a cabeça.")
+            print('"Escolha uma das opções: 1, 2 ou 3."')
+
+
 
 def topico_chave_primaria():
     print()
