@@ -1809,6 +1809,35 @@ def topico_chave_estrangeira():
 
     input("Pressione Enter para voltar...")
 
+def topico_relacionamento():
+    print()
+    print("=" * 60)
+    print("🔄 TÓPICO 7: RELACIONAMENTO")
+    print("=" * 60)
+    print("Letícia aparece na tela e olha diretamente para você.")
+    print()
+    print('"Agora que você viu as fichas, precisa entender como elas se conectam."')
+    print()
+    print("Em um sistema real, as informações não vivem isoladas.")
+    print("Um cliente pode ter vários pedidos.")
+    print("Um pedido pode ter vários produtos.")
+    print()
+    print("Relacionamento é essa ligação entre tabelas.")
+    print()
+    print("Ele ajuda o sistema a responder perguntas como:")
+    print("- quais pedidos pertencem a este cliente?")
+    print("- quais produtos fazem parte deste pedido?")
+    print("- qual cliente fez esta compra?")
+    print()
+    print("Resumo de sobrevivência:")
+    print("- Relacionamento = ligação entre tabelas.")
+    print("- Ele mostra como uma informação depende de outra.")
+    print("- Sem relacionamento, o banco vira um monte de gavetas soltas.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
 def reconhecimento_etapa_3():
     while True:
         print()
@@ -1842,10 +1871,7 @@ def reconhecimento_etapa_3():
         elif escolha == "6":
             topico_chave_estrangeira()
         elif escolha == "7":
-            print()
-            print("Tópico 7: Relacionamento")
-            print("Aqui vamos entender como as tabelas se conectam para formar o sistema.")
-            print("Conteúdo completo será construído em partes.")
+            topico_relacionamento()
         elif escolha == "0":
             break
         else:
