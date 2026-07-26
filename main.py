@@ -2149,6 +2149,38 @@ def campo_treinamento_etapa_3():
     input("Pressione Enter para voltar...")
 
 
+def laboratorio_falhas_etapa_3():
+    print()
+    print("=" * 60)
+    print("🧪 LABORATÓRIO DE FALHAS: QUANDO A DESPENSA BAGUNÇA")
+    print("=" * 60)
+    print("Letícia aparece na tela e olha diretamente para você.")
+    print()
+    print('"Dados também quebram sistemas quando estão mal organizados."')
+    print()
+    print("Algumas falhas comuns no banco:")
+    print()
+    print("1. Registro duplicado")
+    print("- duas fichas representam a mesma coisa sem necessidade.")
+    print()
+    print("2. Dado sem identificação")
+    print("- o sistema não sabe exatamente qual ficha deve buscar.")
+    print()
+    print("3. Ligação quebrada")
+    print("- um pedido aponta para um cliente que não existe.")
+    print()
+    print("4. Informação no lugar errado")
+    print("- dado de produto misturado com dado de cliente.")
+    print()
+    print("Resumo de sobrevivência:")
+    print("- Banco bagunçado gera resposta bagunçada.")
+    print("- Chaves ajudam o sistema a não se perder.")
+    print("- Dados bem organizados evitam muitos bugs.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
 def entrar_etapa_3():
     while True:
         print()
@@ -2183,10 +2215,7 @@ def entrar_etapa_3():
         elif escolha == "3":
             campo_treinamento_etapa_3()
         elif escolha == "4":
-            print()
-            print("Laboratório de Falhas")
-            print("Aqui o jogador vai observar problemas comuns em dados e relacionamentos.")
-            print("Será adaptado em seguida.")
+            laboratorio_falhas_etapa_3()
         elif escolha == "5":
             print()
             print("Missão em Produção")
