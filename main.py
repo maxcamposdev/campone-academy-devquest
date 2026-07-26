@@ -2632,6 +2632,53 @@ def campo_treinamento_etapa_4():
 
     input("Pressione Enter para voltar...")
 
+
+def laboratorio_falhas_etapa_4():
+    print()
+    print("=" * 60)
+    print("🧪 LABORATÓRIO DE FALHAS: QUANDO A RESPOSTA NÃO É 200")
+    print("=" * 60)
+    print("Nem toda viagem volta com sucesso.")
+    print()
+    print("Às vezes a tela manda o pedido,")
+    print("o backend recebe,")
+    print("mas a resposta volta com uma etiqueta diferente de 200.")
+    print()
+    print("Essa etiqueta ajuda você a descobrir onde procurar o problema.")
+    print()
+    print("Falhas comuns nessa ponte:")
+    print()
+    print("1. 400 — pedido incompleto")
+    print("A tela mandou um pedido faltando alguma informação importante.")
+    print()
+    print("2. 401 — falta identificação")
+    print("O sistema recebeu o pedido, mas não sabe quem está pedindo.")
+    print()
+    print("3. 404 — não encontrou")
+    print("O pedido chegou, mas o backend não encontrou o que foi pedido.")
+    print()
+    print("4. 500 — erro dentro do servidor")
+    print("O pedido chegou, mas algo quebrou dentro da casa:")
+    print("backend, lógica ou banco.")
+    print()
+    print("Resumo de sobrevivência:")
+    print("200 — deu certo.")
+    print("400 — o pedido veio com problema.")
+    print("401 — falta provar quem é.")
+    print("404 — não encontrou o que foi pedido.")
+    print("500 — quebrou algo dentro do servidor.")
+    print()
+    print("Fechamento:")
+    print("Quando algo falha, você não precisa entrar em pânico.")
+    print("Primeiro olhe a etiqueta da resposta.")
+    print()
+    print("Ela não resolve tudo sozinha,")
+    print("mas mostra para qual lado você deve olhar:")
+    print("pedido, login, endereço, backend ou banco.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
 def entrar_etapa_4():
     while True:
         print()
@@ -2667,9 +2714,7 @@ def entrar_etapa_4():
         elif escolha == "3":
             campo_treinamento_etapa_4()
         elif escolha == "4":
-            print()
-            print("Laboratório de Falhas da etapa 04 será criado depois do roteiro.")
-            input("Pressione Enter para voltar...")
+            laboratorio_falhas_etapa_4()
         elif escolha == "5":
             print()
             print("Missão em Produção da etapa 04 será criada depois do roteiro.")
