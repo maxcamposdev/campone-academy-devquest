@@ -2396,6 +2396,210 @@ def entrar_etapa_3():
 
 
 
+
+def topico_comunicacao_frontend_backend_etapa_4():
+    print()
+    print("=" * 60)
+    print("🌉 TÓPICO 1: COMO FRONTEND E BACKEND SE COMUNICAM")
+    print("=" * 60)
+    print("A tela não faz tudo sozinha.")
+    print()
+    print("Quando o usuário clica em um botão, a tela faz um pedido.")
+    print("Esse pedido viaja até o backend.")
+    print("O backend recebe, trabalha e devolve uma resposta.")
+    print()
+    print("Ideia de sobrevivência:")
+    print("frontend pede, backend responde, frontend mostra.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
+def topico_api_rest_pratica_etapa_4():
+    print()
+    print("=" * 60)
+    print("🧭 TÓPICO 2: API REST NA PRÁTICA")
+    print("=" * 60)
+    print("Pedido sem caminho combinado vira bagunça.")
+    print()
+    print("A API REST é um jeito organizado de combinar os pedidos")
+    print("entre a tela e o backend.")
+    print()
+    print("Pensa como um cardápio de portas:")
+    print("uma porta para produtos, outra para clientes, outra para pedidos.")
+    print()
+    print("Ideia de sobrevivência:")
+    print("API REST organiza como a tela pede e como o backend entende.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
+def topico_get_etapa_4():
+    print()
+    print("=" * 60)
+    print("🔎 TÓPICO 3: GET — BUSCAR DADOS")
+    print("=" * 60)
+    print("Às vezes a tela só quer olhar uma informação.")
+    print()
+    print("GET é o pedido usado para buscar dados sem mudar nada.")
+    print()
+    print("Exemplo:")
+    print("abrir uma lista de produtos, ver um perfil ou carregar um catálogo.")
+    print()
+    print("Ideia de sobrevivência:")
+    print("GET é olhar, não mexer.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
+def topico_post_etapa_4():
+    print()
+    print("=" * 60)
+    print("📨 TÓPICO 4: POST — ENVIAR ALGO NOVO")
+    print("=" * 60)
+    print("Às vezes a tela precisa mandar uma informação nova.")
+    print()
+    print("POST é o pedido usado para criar ou enviar dados novos.")
+    print()
+    print("Exemplo:")
+    print("criar uma conta, fazer uma compra ou enviar uma mensagem.")
+    print()
+    print("Ideia de sobrevivência:")
+    print("POST leva algo novo para o backend guardar ou processar.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
+def topico_put_etapa_4():
+    print()
+    print("=" * 60)
+    print("✏️ TÓPICO 5: PUT — ATUALIZAR DADOS")
+    print("=" * 60)
+    print("O que já existe pode precisar ser corrigido.")
+    print()
+    print("PUT é o pedido usado para atualizar uma informação existente.")
+    print()
+    print("Exemplo:")
+    print("alterar endereço, editar perfil ou mudar o status de um pedido.")
+    print()
+    print("Ideia de sobrevivência:")
+    print("PUT mexe em algo que já existe.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
+def topico_delete_etapa_4():
+    print()
+    print("=" * 60)
+    print("🗑️ TÓPICO 6: DELETE — APAGAR DADOS")
+    print("=" * 60)
+    print("Às vezes uma informação precisa sair do sistema.")
+    print()
+    print("DELETE é o pedido usado para apagar um dado.")
+    print()
+    print("Exemplo:")
+    print("remover um item, excluir uma foto ou cancelar um registro.")
+    print()
+    print("Ideia de sobrevivência:")
+    print("DELETE apaga. Por isso exige cuidado.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
+def topico_status_code_etapa_4():
+    print()
+    print("=" * 60)
+    print("🏷️ TÓPICO 7: CÓDIGOS DE RESULTADO")
+    print("=" * 60)
+    print("Toda resposta do backend vem com uma etiqueta.")
+    print()
+    print("Essa etiqueta diz se deu certo ou se algo falhou.")
+    print()
+    print("Exemplos importantes:")
+    print("200 — deu certo")
+    print("400 — o pedido veio incompleto ou estranho")
+    print("401 — falta provar quem é")
+    print("404 — não encontrou o que foi pedido")
+    print("500 — quebrou algo dentro do servidor")
+    print()
+    print("Ideia de sobrevivência:")
+    print("o código ajuda a descobrir onde procurar o problema.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
+def topico_fluxo_completo_etapa_4():
+    print()
+    print("=" * 60)
+    print("🔁 TÓPICO 8: FLUXO COMPLETO")
+    print("=" * 60)
+    print("Agora juntamos tudo em uma viagem só.")
+    print()
+    print("Usuário clica.")
+    print("A tela manda um pedido.")
+    print("O pedido viaja pela internet.")
+    print("O servidor recebe.")
+    print("O backend trabalha.")
+    print("O banco pode ser consultado.")
+    print("A resposta volta.")
+    print("A tela mostra o resultado.")
+    print()
+    print("Ideia de sobrevivência:")
+    print("todo app moderno vive esse caminho de ida e volta.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
+def reconhecimento_etapa_4():
+    while True:
+        print()
+        print("=" * 60)
+        print("💡 RECONHECIMENTO: A PONTE ENTRE OS MUNDOS")
+        print("=" * 60)
+        print("Aqui você começa a organizar como a tela conversa com o backend.")
+        print()
+        print("1 - Como frontend e backend se comunicam")
+        print("2 - API REST na prática")
+        print("3 - GET — buscar dados")
+        print("4 - POST — enviar algo novo")
+        print("5 - PUT — atualizar dados")
+        print("6 - DELETE — apagar dados")
+        print("7 - Códigos de resultado")
+        print("8 - Fluxo completo")
+        print("0 - Voltar à etapa 04")
+        print("=" * 60)
+
+        escolha = input("Escolha uma opção: ")
+
+        if escolha == "1":
+            topico_comunicacao_frontend_backend_etapa_4()
+        elif escolha == "2":
+            topico_api_rest_pratica_etapa_4()
+        elif escolha == "3":
+            topico_get_etapa_4()
+        elif escolha == "4":
+            topico_post_etapa_4()
+        elif escolha == "5":
+            topico_put_etapa_4()
+        elif escolha == "6":
+            topico_delete_etapa_4()
+        elif escolha == "7":
+            topico_status_code_etapa_4()
+        elif escolha == "8":
+            topico_fluxo_completo_etapa_4()
+        elif escolha == "0":
+            break
+        else:
+            print()
+            print("Opção inválida.")
+
 def entrar_etapa_4():
     while True:
         print()
@@ -2427,10 +2631,7 @@ def entrar_etapa_4():
             print("Na próxima fase, vamos organizar a missão usando a aula de origem.")
             input("Pressione Enter para voltar...")
         elif escolha == "2":
-            print()
-            print("Reconhecimento da etapa 04 será criado na Fase B.")
-            print("Aqui vamos entender como frontend e backend conversam.")
-            input("Pressione Enter para voltar...")
+            reconhecimento_etapa_4()
         elif escolha == "3":
             print()
             print("Campo de Treinamento da etapa 04 será criado depois do roteiro.")
