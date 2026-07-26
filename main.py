@@ -2181,6 +2181,41 @@ def laboratorio_falhas_etapa_3():
     input("Pressione Enter para voltar...")
 
 
+def missao_producao_etapa_3():
+    print()
+    print("=" * 60)
+    print("🏢 MISSÃO EM PRODUÇÃO: DADOS NO DIA A DIA")
+    print("=" * 60)
+    print("Letícia aparece na tela e olha diretamente para você.")
+    print()
+    print('"Agora vamos ver a despensa funcionando em uma situação real."')
+    print()
+    print("Imagine um e-commerce recebendo uma compra.")
+    print()
+    print("O sistema precisa guardar:")
+    print("- quem comprou;")
+    print("- qual produto foi comprado;")
+    print("- qual foi o valor;")
+    print("- quando o pedido aconteceu;")
+    print("- qual é o status da entrega.")
+    print()
+    print("Essas informações não podem ficar soltas.")
+    print("Elas precisam entrar nas tabelas certas e se conectar corretamente.")
+    print()
+    print("Assim, depois o sistema consegue responder:")
+    print("- quais pedidos um cliente fez?")
+    print("- quais produtos saíram do estoque?")
+    print("- qual compra ainda está pendente?")
+    print()
+    print("Resumo de sobrevivência:")
+    print("- Banco bem organizado sustenta decisões reais.")
+    print("- Dados conectados ajudam o sistema a contar a história.")
+    print("- Sem organização, o negócio perde confiança.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
 def entrar_etapa_3():
     while True:
         print()
@@ -2217,10 +2252,7 @@ def entrar_etapa_3():
         elif escolha == "4":
             laboratorio_falhas_etapa_3()
         elif escolha == "5":
-            print()
-            print("Missão em Produção")
-            print("Aqui o banco será conectado com situações reais de uso.")
-            print("Será adaptada em seguida.")
+            missao_producao_etapa_3()
         elif escolha == "6":
             print()
             print("Prova de Domínio")
