@@ -2288,6 +2288,63 @@ def prova_dominio_etapa_3():
             break
 
 
+def registro_etapa_3():
+    print()
+    print("=" * 60)
+    print("📝 REGISTRAR EXPERIÊNCIA — DESPENSA DOS DADOS")
+    print("=" * 60)
+    print("Letícia aparece na tela e olha diretamente para você.")
+    print()
+    print('"Toda informação bem guardada ajuda o sistema a lembrar sua própria história."')
+    print()
+    print("Nesta etapa, você começou a reconhecer o banco de dados:")
+    print()
+    print("- entendeu que o sistema precisa ter memória;")
+    print("- viu que SQL é uma forma de conversar com o banco;")
+    print("- conheceu tabelas, registros e colunas;")
+    print("- entendeu chave primária e chave estrangeira;")
+    print("- viu que relacionamentos conectam informações;")
+    print("- acompanhou como uma compra pode virar história guardada.")
+    print()
+    print("Registro atual:")
+    print("Experiência registrada apenas na narrativa.")
+    print("Salvamento real será criado em uma fase futura.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
+def relatorio_final_etapa_3():
+    print()
+    print("=" * 60)
+    print("📋 RELATÓRIO FINAL — DESPENSA DOS DADOS")
+    print("=" * 60)
+    print("Letícia aparece na tela e olha diretamente para você.")
+    print()
+    print('"Antes de seguir, revise o que você encontrou na despensa dos dados."')
+    print()
+    print("Relatório da missão: Arquivando a História do Mundo")
+    print()
+    print("Você agora sabe que:")
+    print()
+    print("- banco de dados é a memória organizada do sistema;")
+    print("- SQL é uma forma de conversar com o banco;")
+    print("- tabelas separam tipos de informação;")
+    print("- registros são fichas dentro das tabelas;")
+    print("- colunas são informações dessas fichas;")
+    print("- chave primária identifica um registro;")
+    print("- chave estrangeira conecta tabelas;")
+    print("- relacionamentos mostram como as informações dependem umas das outras.")
+    print()
+    print("Conclusão:")
+    print("Você começou a entender como o sistema guarda sua própria história.")
+    print()
+    print("A etapa ainda não marca conclusão permanente nesta versão.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
 def entrar_etapa_3():
     while True:
         print()
@@ -2328,15 +2385,9 @@ def entrar_etapa_3():
         elif escolha == "6":
             prova_dominio_etapa_3()
         elif escolha == "7":
-            print()
-            print("Registrar Experiência")
-            print("Aqui o jogo vai registrar o que foi vivido nesta etapa.")
-            print("Nesta versão, o registro ainda é apenas narrativo.")
+            registro_etapa_3()
         elif escolha == "8":
-            print()
-            print("Relatório Final")
-            print("Aqui o jogador revisará o que aprendeu sobre Banco de Dados.")
-            print("Será adaptado em seguida.")
+            relatorio_final_etapa_3()
         elif escolha == "0":
             break
         else:
