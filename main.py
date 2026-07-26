@@ -1893,30 +1893,64 @@ def topico_registros_colunas():
 
 
 def topico_chave_primaria():
-    print()
-    print("=" * 60)
-    print("🔑 TÓPICO 5: CHAVE PRIMÁRIA")
-    print("=" * 60)
-    print("Letícia aparece na tela e olha diretamente para você.")
-    print()
-    print('"Quando existem muitas fichas, o sistema precisa saber exatamente qual é qual."')
-    print()
-    print("Imagine dois clientes com o mesmo nome.")
-    print("Só o nome não basta para saber quem é quem.")
-    print()
-    print("Por isso cada registro precisa de uma identificação única.")
-    print("Essa identificação é a chave primária.")
-    print()
-    print("Na prática, ela costuma aparecer como um ID.")
-    print("Esse ID ajuda o sistema a buscar, alterar ou apagar a ficha certa.")
-    print()
-    print("Resumo de sobrevivência:")
-    print("- Chave primária = identificação única de um registro.")
-    print("- Ela evita confusão entre fichas parecidas.")
-    print("- Normalmente aparece como um ID.")
-    print("=" * 60)
+    while True:
+        print()
+        print("=" * 60)
+        print("🔑 TÓPICO 5: CHAVE PRIMÁRIA")
+        print("=" * 60)
+        print("Letícia aparece na tela e olha diretamente para você.")
+        print()
+        print('"Quando existem muitas fichas, o sistema precisa saber exatamente qual é qual."')
+        print()
+        print("Imagine dois clientes com o mesmo nome.")
+        print("Só o nome não basta para saber quem é quem.")
+        print()
+        print("Por isso cada registro precisa de uma identificação única.")
+        print("Essa identificação é a chave primária.")
+        print()
+        print("Na prática, ela costuma aparecer como um ID.")
+        print("Esse ID ajuda o sistema a buscar, alterar ou apagar a ficha certa.")
+        print()
+        print("Pergunta de domínio:")
+        print("Para que serve uma chave primária em uma tabela?")
+        print()
+        print("1 - Para identificar de forma única cada registro da tabela.")
+        print("2 - Para escolher a cor da tela onde os dados aparecem.")
+        print("3 - Para conectar a internet ao servidor da aplicação.")
+        print("=" * 60)
 
-    input("Pressione Enter para voltar...")
+        escolha = input("Escolha uma resposta: ")
+
+        print()
+
+        if escolha == "1":
+            print("Letícia confirma.")
+            print('"Isso. A chave primária é a identificação única de uma ficha."')
+            print('"Ela ajuda o banco a saber exatamente qual registro buscar, alterar ou apagar."')
+            print()
+            print("Tópico validado nesta versão.")
+            print("=" * 60)
+            input("Pressione Enter para voltar...")
+            break
+        elif escolha == "2":
+            print("Letícia aponta para a tela.")
+            print('"Essa opção fala de aparência visual."')
+            print('"A cor da tela não identifica uma ficha no banco."')
+            print('"Chave primária serve para diferenciar registros."')
+            print()
+            print('"Tenta de novo pensando em identificação única."')
+        elif escolha == "3":
+            print("Letícia aponta para a estrada da rede.")
+            print('"Essa opção mistura banco com internet."')
+            print('"Conectar internet ao servidor faz parte do caminho da rede."')
+            print('"Chave primária vive dentro da tabela, ajudando o banco a encontrar um registro específico."')
+            print()
+            print('"Tenta de novo pensando em como o banco sabe quem é quem."')
+        else:
+            print("Letícia inclina a cabeça.")
+            print('"Escolha uma das opções: 1, 2 ou 3."')
+
+
 
 def topico_chave_estrangeira():
     print()
