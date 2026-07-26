@@ -2114,6 +2114,41 @@ def reconhecimento_etapa_3():
             print("Opção inválida.")
 
 
+def campo_treinamento_etapa_3():
+    print()
+    print("=" * 60)
+    print("🛠 CAMPO DE TREINAMENTO: SEGUINDO UMA INFORMAÇÃO")
+    print("=" * 60)
+    print("Letícia aparece na tela e olha diretamente para você.")
+    print()
+    print('"Agora vamos seguir uma informação dentro da despensa."')
+    print()
+    print("Imagine que um cliente faz uma compra na CampOne.")
+    print()
+    print("O sistema precisa guardar essa história:")
+    print()
+    print("1. O cliente existe na tabela de clientes.")
+    print("2. O produto existe na tabela de produtos.")
+    print("3. O pedido vira um novo registro na tabela de pedidos.")
+    print("4. O pedido recebe uma chave primária própria.")
+    print("5. O pedido guarda uma chave estrangeira apontando para o cliente.")
+    print("6. O pedido também se relaciona com os produtos comprados.")
+    print()
+    print("Assim o sistema consegue responder depois:")
+    print("- quem comprou?")
+    print("- o que comprou?")
+    print("- quando comprou?")
+    print("- qual pedido pertence a qual cliente?")
+    print()
+    print("Resumo de sobrevivência:")
+    print("- Banco guarda a história.")
+    print("- Tabelas organizam a história.")
+    print("- Chaves ligam as partes da história.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
 def entrar_etapa_3():
     while True:
         print()
@@ -2146,10 +2181,7 @@ def entrar_etapa_3():
         elif escolha == "2":
             reconhecimento_etapa_3()
         elif escolha == "3":
-            print()
-            print("Campo de Treinamento")
-            print("Esta parte vai praticar como os dados são guardados e encontrados.")
-            print("Será adaptada em seguida.")
+            campo_treinamento_etapa_3()
         elif escolha == "4":
             print()
             print("Laboratório de Falhas")
