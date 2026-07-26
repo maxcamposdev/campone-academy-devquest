@@ -1744,6 +1744,35 @@ def topico_tabelas():
     input("Pressione Enter para voltar...")
 
 
+def topico_registros_colunas():
+    print()
+    print("=" * 60)
+    print("📋 TÓPICO 4: REGISTROS E COLUNAS")
+    print("=" * 60)
+    print("Letícia aparece na tela e olha diretamente para você.")
+    print()
+    print('"Depois de conhecer a tabela, você precisa entender o que existe dentro dela."')
+    print()
+    print("Em uma tabela, cada linha é um registro.")
+    print("Cada coluna é uma característica daquele registro.")
+    print()
+    print("Exemplo em uma tabela de produtos:")
+    print("- cada produto é um registro;")
+    print("- nome, preço e estoque são colunas.")
+    print()
+    print("Se a tabela fosse uma ficha organizada,")
+    print("o registro seria uma ficha completa,")
+    print("e as colunas seriam os campos dessa ficha.")
+    print()
+    print("Resumo de sobrevivência:")
+    print("- Registro = uma linha da tabela.")
+    print("- Coluna = uma característica guardada.")
+    print("- Juntos, registros e colunas organizam os dados.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
 def reconhecimento_etapa_3():
     while True:
         print()
@@ -1771,10 +1800,7 @@ def reconhecimento_etapa_3():
         elif escolha == "3":
             topico_tabelas()
         elif escolha == "4":
-            print()
-            print("Tópico 4: Registros e Colunas")
-            print("Aqui vamos entender linhas e características dentro de uma tabela.")
-            print("Conteúdo completo será construído em partes.")
+            topico_registros_colunas()
         elif escolha == "5":
             print()
             print("Tópico 5: Chave Primária")
