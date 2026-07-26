@@ -1953,30 +1953,63 @@ def topico_chave_primaria():
 
 
 def topico_chave_estrangeira():
-    print()
-    print("=" * 60)
-    print("🔗 TÓPICO 6: CHAVE ESTRANGEIRA")
-    print("=" * 60)
-    print("Letícia aparece na tela e olha diretamente para você.")
-    print()
-    print('"Algumas fichas precisam lembrar de outras fichas."')
-    print()
-    print("Um pedido, por exemplo, precisa saber de qual cliente ele é.")
-    print("Em vez de copiar todos os dados do cliente dentro do pedido,")
-    print("o sistema guarda uma referência para o cliente certo.")
-    print()
-    print("Essa ligação é chamada de chave estrangeira.")
-    print()
-    print("Ela aponta de uma tabela para outra.")
-    print("Assim, pedido e cliente continuam conectados sem repetir tudo.")
-    print()
-    print("Resumo de sobrevivência:")
-    print("- Chave estrangeira = ligação entre informações de tabelas diferentes.")
-    print("- Ela aponta para um registro que está em outra tabela.")
-    print("- Ajuda o banco a conectar dados sem bagunça.")
-    print("=" * 60)
+    while True:
+        print()
+        print("=" * 60)
+        print("🔗 TÓPICO 6: CHAVE ESTRANGEIRA")
+        print("=" * 60)
+        print("Letícia aparece na tela e olha diretamente para você.")
+        print()
+        print('"Algumas fichas precisam lembrar de outras fichas."')
+        print()
+        print("Um pedido, por exemplo, precisa saber de qual cliente ele é.")
+        print("Em vez de copiar todos os dados do cliente dentro do pedido,")
+        print("o sistema guarda uma referência para o cliente certo.")
+        print()
+        print("Essa ligação é chamada de chave estrangeira.")
+        print()
+        print("Ela aponta de uma tabela para outra.")
+        print("Assim, pedido e cliente continuam conectados sem repetir tudo.")
+        print()
+        print("Pergunta de domínio:")
+        print("Para que serve uma chave estrangeira em um banco de dados?")
+        print()
+        print("1 - Para ligar uma informação de uma tabela a um registro de outra tabela.")
+        print("2 - Para dar uma cor diferente para cada linha da tela.")
+        print("3 - Para apagar todos os dados repetidos automaticamente.")
+        print("=" * 60)
 
-    input("Pressione Enter para voltar...")
+        escolha = input("Escolha uma resposta: ")
+
+        print()
+
+        if escolha == "1":
+            print("Letícia confirma.")
+            print('"Isso. A chave estrangeira cria uma ligação entre tabelas."')
+            print('"Ela permite que um pedido lembre de qual cliente ele pertence, sem copiar todos os dados do cliente."')
+            print()
+            print("Tópico validado nesta versão.")
+            print("=" * 60)
+            input("Pressione Enter para voltar...")
+            break
+        elif escolha == "2":
+            print("Letícia aponta para a tela.")
+            print('"Essa opção fala de aparência visual."')
+            print('"Cor de linha é coisa de interface."')
+            print('"Chave estrangeira não pinta nada; ela conecta informações."')
+            print()
+            print('"Tenta de novo pensando em uma ficha lembrando de outra."')
+        elif escolha == "3":
+            print("Letícia balança a cabeça com calma.")
+            print('"Essa opção parece útil, mas não é o papel da chave estrangeira."')
+            print('"Ela ajuda a evitar repetição porque conecta dados, mas não sai apagando tudo automaticamente."')
+            print()
+            print('"Tenta de novo pensando em ligação entre tabelas."')
+        else:
+            print("Letícia inclina a cabeça.")
+            print('"Escolha uma das opções: 1, 2 ou 3."')
+
+
 
 def topico_relacionamento():
     print()
