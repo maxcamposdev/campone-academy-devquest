@@ -1653,6 +1653,68 @@ def entrar_etapa_2():
             print("Opção inválida.")
 
 
+def reconhecimento_etapa_3():
+    while True:
+        print()
+        print("=" * 60)
+        print("💡 RECONHECIMENTO: A DESPENSA DOS DADOS")
+        print("=" * 60)
+        print("Letícia organiza os primeiros conceitos de Banco de Dados.")
+        print()
+        print("1 - Banco de Dados")
+        print("2 - SQL")
+        print("3 - Tabelas")
+        print("4 - Registros e Colunas")
+        print("5 - Chave Primária")
+        print("6 - Chave Estrangeira")
+        print("7 - Relacionamento")
+        print("0 - Voltar à etapa 03")
+        print("=" * 60)
+
+        escolha = input("Escolha uma opção: ")
+
+        if escolha == "1":
+            print()
+            print("Tópico 1: Banco de Dados")
+            print("Aqui vamos entender onde o sistema guarda informações para não esquecer.")
+            print("Conteúdo completo será construído em partes.")
+        elif escolha == "2":
+            print()
+            print("Tópico 2: SQL")
+            print("Aqui vamos entender a língua usada para conversar com bancos relacionais.")
+            print("Conteúdo completo será construído em partes.")
+        elif escolha == "3":
+            print()
+            print("Tópico 3: Tabelas")
+            print("Aqui vamos entender as gavetas onde cada tipo de informação fica organizado.")
+            print("Conteúdo completo será construído em partes.")
+        elif escolha == "4":
+            print()
+            print("Tópico 4: Registros e Colunas")
+            print("Aqui vamos entender linhas e características dentro de uma tabela.")
+            print("Conteúdo completo será construído em partes.")
+        elif escolha == "5":
+            print()
+            print("Tópico 5: Chave Primária")
+            print("Aqui vamos entender o identificador único de cada registro.")
+            print("Conteúdo completo será construído em partes.")
+        elif escolha == "6":
+            print()
+            print("Tópico 6: Chave Estrangeira")
+            print("Aqui vamos entender como uma tabela aponta para outra.")
+            print("Conteúdo completo será construído em partes.")
+        elif escolha == "7":
+            print()
+            print("Tópico 7: Relacionamento")
+            print("Aqui vamos entender como as tabelas se conectam para formar o sistema.")
+            print("Conteúdo completo será construído em partes.")
+        elif escolha == "0":
+            break
+        else:
+            print()
+            print("Opção inválida.")
+
+
 def entrar_etapa_3():
     while True:
         print()
@@ -1683,21 +1745,7 @@ def entrar_etapa_3():
             print("Cena da etapa 03 já foi apresentada na primeira versão.")
             print("A ponte David → Letícia será refinada em seguida.")
         elif escolha == "2":
-            print()
-            print("=" * 60)
-            print("💡 RECONHECIMENTO: A DESPENSA DOS DADOS")
-            print("=" * 60)
-            print("Letícia organiza os primeiros conceitos de Banco de Dados.")
-            print()
-            print("1 - Banco de Dados")
-            print("2 - SQL")
-            print("3 - Tabelas")
-            print("4 - Registros e Colunas")
-            print("5 - Chave Primária")
-            print("6 - Chave Estrangeira")
-            print("7 - Relacionamento")
-            print("0 - Voltar à etapa 03")
-            print("=" * 60)
+            reconhecimento_etapa_3()
         elif escolha == "3":
             print()
             print("Campo de Treinamento")
