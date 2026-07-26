@@ -1802,6 +1802,34 @@ def topico_chave_primaria():
     input("Pressione Enter para voltar...")
 
 
+def topico_chave_estrangeira():
+    print()
+    print("=" * 60)
+    print("🔗 TÓPICO 6: CHAVE ESTRANGEIRA")
+    print("=" * 60)
+    print("Letícia aparece na tela e olha diretamente para você.")
+    print()
+    print('"Nem toda informação vive sozinha. Algumas precisam apontar para outras."')
+    print()
+    print("Chave estrangeira é uma coluna que aponta para a chave primária de outra tabela.")
+    print("Ela cria uma ligação entre informações diferentes.")
+    print()
+    print("Exemplo:")
+    print("- um pedido pertence a um cliente;")
+    print("- o pedido pode guardar o ID desse cliente;")
+    print("- esse ID aponta para a tabela de clientes.")
+    print()
+    print("Assim o sistema evita repetir dados e mantém as informações conectadas.")
+    print()
+    print("Resumo de sobrevivência:")
+    print("- Chave estrangeira = ligação entre tabelas.")
+    print("- Ela aponta para a chave primária de outra tabela.")
+    print("- Ajuda o banco a manter relações organizadas.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
 def reconhecimento_etapa_3():
     while True:
         print()
@@ -1833,10 +1861,7 @@ def reconhecimento_etapa_3():
         elif escolha == "5":
             topico_chave_primaria()
         elif escolha == "6":
-            print()
-            print("Tópico 6: Chave Estrangeira")
-            print("Aqui vamos entender como uma tabela aponta para outra.")
-            print("Conteúdo completo será construído em partes.")
+            topico_chave_estrangeira()
         elif escolha == "7":
             print()
             print("Tópico 7: Relacionamento")
