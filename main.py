@@ -1774,29 +1774,63 @@ def topico_sql():
 
 
 def topico_tabelas():
-    print()
-    print("=" * 60)
-    print("📊 TÓPICO 3: TABELAS")
-    print("=" * 60)
-    print("Letícia aparece na tela e olha diretamente para você.")
-    print()
-    print('"Uma memória bagunçada também vira problema."')
-    print()
-    print("Imagine jogar clientes, produtos e pedidos todos na mesma gaveta.")
-    print("Na hora de procurar qualquer coisa, seria um caos.")
-    print()
-    print("Por isso o banco separa as informações em tabelas.")
-    print("Uma tabela pode guardar clientes.")
-    print("Outra pode guardar produtos.")
-    print("Outra pode guardar pedidos.")
-    print()
-    print("Resumo de sobrevivência:")
-    print("- Tabela = gaveta organizada do banco.")
-    print("- Cada tabela guarda um tipo de informação.")
-    print("- Isso ajuda o sistema a encontrar dados sem bagunça.")
-    print("=" * 60)
+    while True:
+        print()
+        print("=" * 60)
+        print("📊 TÓPICO 3: TABELAS")
+        print("=" * 60)
+        print("Letícia aparece na tela e olha diretamente para você.")
+        print()
+        print('"Uma memória bagunçada também vira problema."')
+        print()
+        print("Imagine jogar clientes, produtos e pedidos todos na mesma gaveta.")
+        print("Na hora de procurar qualquer coisa, seria um caos.")
+        print()
+        print("Por isso o banco separa as informações em tabelas.")
+        print("Uma tabela pode guardar clientes.")
+        print("Outra pode guardar produtos.")
+        print("Outra pode guardar pedidos.")
+        print()
+        print("Pergunta de domínio:")
+        print("Para que servem as tabelas dentro de um banco de dados?")
+        print()
+        print("1 - Para separar e organizar tipos diferentes de informação, como clientes, produtos e pedidos.")
+        print("2 - Para decidir as regras de desconto e permissão do sistema.")
+        print("3 - Para desenhar a tela que o usuário vê no aplicativo.")
+        print("=" * 60)
 
-    input("Pressione Enter para voltar...")
+        escolha = input("Escolha uma resposta: ")
+
+        print()
+
+        if escolha == "1":
+            print("Letícia confirma.")
+            print('"Isso. Tabelas são como gavetas organizadas dentro do banco."')
+            print('"Cada tabela guarda um tipo de informação, para o sistema não misturar tudo."')
+            print()
+            print("Tópico validado nesta versão.")
+            print("=" * 60)
+            input("Pressione Enter para voltar...")
+            break
+        elif escolha == "2":
+            print("Letícia aponta para o motor do sistema.")
+            print('"Essa opção fala de lógica de negócio."')
+            print('"Regras de desconto e permissão são decisões do sistema."')
+            print('"Tabelas servem para organizar dados guardados."')
+            print()
+            print('"Tenta de novo pensando em gavetas de informações."')
+        elif escolha == "3":
+            print("Letícia aponta para a tela.")
+            print('"Essa opção fala do frontend."')
+            print('"A tela mostra informações para o usuário."')
+            print('"Tabelas ficam no banco, organizando os dados que o sistema precisa lembrar."')
+            print()
+            print('"Tenta de novo pensando na despensa dos dados."')
+        else:
+            print("Letícia inclina a cabeça.")
+            print('"Escolha uma das opções: 1, 2 ou 3."')
+
+
 
 def topico_registros_colunas():
     print()
