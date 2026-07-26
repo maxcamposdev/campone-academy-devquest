@@ -2216,6 +2216,78 @@ def missao_producao_etapa_3():
     input("Pressione Enter para voltar...")
 
 
+def prova_dominio_etapa_3():
+    tentativas = 0
+
+    while True:
+        print()
+        print("=" * 60)
+        print("🧠 PROVA DE DOMÍNIO — DESPENSA DOS DADOS")
+        print("=" * 60)
+        print("Letícia aparece na tela e olha diretamente para você.")
+        print()
+        print("Um cliente faz uma compra em uma loja online.")
+        print("O sistema precisa guardar quem comprou, o que comprou e qual pedido foi gerado.")
+        print("Qual caminho representa melhor a organização correta desses dados?")
+        print()
+        print("1 - Guardar tudo em uma única gaveta misturada, sem separar cliente, produto e pedido.")
+        print("2 - Separar os dados em tabelas, dar identificação única aos registros e ligar pedido, cliente e produto por relacionamentos.")
+        print("3 - Deixar a tela guardar tudo sozinha, porque é nela que o cliente faz a compra.")
+        print("=" * 60)
+
+        escolha = input("Escolha uma resposta: ")
+        tentativas += 1
+
+        print()
+
+        if escolha == "2":
+            print("Letícia confirma.")
+            print('"Isso. Você enxergou a despensa funcionando."')
+            print('"Clientes, produtos e pedidos ficam organizados em tabelas."')
+            print('"Cada registro precisa de identificação, e as relações mostram como uma informação se conecta à outra."')
+            print()
+            print("Prova de Domínio concluída nesta versão.")
+            print("Ainda não há XP, recompensa ou progresso salvo.")
+            print("=" * 60)
+            input("Pressione Enter para voltar...")
+            break
+
+        elif escolha == "1":
+            print("Letícia aponta para uma gaveta bagunçada.")
+            print('"Essa opção cria confusão."')
+            print('"Se tudo fica misturado, o sistema não sabe encontrar com segurança quem comprou, o que comprou e qual pedido foi gerado."')
+            print()
+            print('"Tenta de novo pensando em gavetas separadas e organizadas."')
+
+        elif escolha == "3":
+            print("Letícia aponta para a tela.")
+            print('"Essa opção coloca responsabilidade demais no frontend."')
+            print('"A tela inicia a compra e mostra informações, mas quem guarda a história é o banco de dados."')
+            print()
+            print('"Tenta de novo pensando em onde o sistema guarda memória."')
+
+        else:
+            print("Letícia inclina a cabeça.")
+            print('"Escolha uma das opções: 1, 2 ou 3."')
+            tentativas -= 1
+
+        if tentativas >= 3:
+            print()
+            print("Letícia se aproxima com calma.")
+            print('"Vamos fechar juntos."')
+            print('"A resposta certa é a opção 2."')
+            print()
+            print('"O sistema organiza clientes, produtos e pedidos em tabelas."')
+            print('"Cada registro tem uma identificação, e as ligações entre tabelas mostram como uma compra pertence a um cliente e envolve produtos."')
+            print()
+            print('"Essa é a história do mundo ficando arquivada."')
+            print()
+            print("A prova segue sem punição nesta versão.")
+            print("=" * 60)
+            input("Pressione Enter para voltar...")
+            break
+
+
 def entrar_etapa_3():
     while True:
         print()
@@ -2254,9 +2326,7 @@ def entrar_etapa_3():
         elif escolha == "5":
             missao_producao_etapa_3()
         elif escolha == "6":
-            print()
-            print("Prova de Domínio")
-            print("As perguntas e respostas serão apresentadas em roteiro antes de virar código.")
+            prova_dominio_etapa_3()
         elif escolha == "7":
             print()
             print("Registrar Experiência")
