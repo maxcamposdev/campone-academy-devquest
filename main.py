@@ -1653,6 +1653,37 @@ def entrar_etapa_2():
             print("Opção inválida.")
 
 
+def topico_banco_dados():
+    print()
+    print("=" * 60)
+    print("🗄️ TÓPICO 1: BANCO DE DADOS")
+    print("=" * 60)
+    print("Letícia aparece na tela e olha diretamente para você.")
+    print()
+    print('"Todo sistema precisa lembrar do que aconteceu."')
+    print()
+    print("Banco de dados é o lugar organizado onde o sistema guarda informações.")
+    print("Sem ele, o sistema esqueceria tudo quando fosse desligado.")
+    print()
+    print("É no banco que podem morar dados como:")
+    print("- clientes;")
+    print("- produtos;")
+    print("- pedidos;")
+    print("- reservas;")
+    print("- histórico de ações.")
+    print()
+    print("Pensa nele como a despensa do sistema:")
+    print("não é onde as regras são preparadas, mas é onde as informações ficam guardadas.")
+    print()
+    print("Resumo de sobrevivência:")
+    print("- Banco de dados = lugar onde o sistema guarda informações.")
+    print("- Ele permite que o sistema lembre das coisas.")
+    print("- Sem banco, dados importantes se perdem.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
 def reconhecimento_etapa_3():
     while True:
         print()
@@ -1674,10 +1705,7 @@ def reconhecimento_etapa_3():
         escolha = input("Escolha uma opção: ")
 
         if escolha == "1":
-            print()
-            print("Tópico 1: Banco de Dados")
-            print("Aqui vamos entender onde o sistema guarda informações para não esquecer.")
-            print("Conteúdo completo será construído em partes.")
+            topico_banco_dados()
         elif escolha == "2":
             print()
             print("Tópico 2: SQL")
