@@ -1653,6 +1653,40 @@ def entrar_etapa_2():
             print("Opção inválida.")
 
 
+def entrar_etapa_3():
+    print()
+    print("=" * 60)
+    print("03. ARQUIVANDO A HISTÓRIA DO MUNDO")
+    print("=" * 60)
+    print("Tema real: Banco de Dados")
+    print("Tipo: Treinamento de Sobrevivência")
+    print("Status: Disponível")
+    print()
+    print("David aparece ao lado de uma porta cheia de gavetas digitais.")
+    print("Ele olha para você e depois olha para Letícia.")
+    print()
+    print('"Você já entendeu o motor que processa os pedidos."')
+    print('"Agora precisa conhecer onde a história do sistema fica guardada."')
+    print()
+    print("Letícia se aproxima e olha diretamente para você.")
+    print()
+    print('"Eu sou Letícia."')
+    print('"Meu trabalho é organizar os dados para que o sistema não esqueça o que aconteceu."')
+    print()
+    print('"Aqui você vai conhecer a despensa do mundo digital: o banco de dados."')
+    print()
+    print("Nesta etapa, você vai começar a entender:")
+    print("- onde as informações ficam guardadas;")
+    print("- como dados são organizados em tabelas;")
+    print("- por que registros, colunas e chaves importam;")
+    print("- como uma informação se relaciona com outra.")
+    print()
+    print("Os tópicos completos desta etapa serão desbloqueados em partes.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
 def entrar_nivel_1():
     while True:
         print()
@@ -1665,6 +1699,7 @@ def entrar_nivel_1():
         print("1 - Ver etapas do Nível 1")
         print("2 - Entrar na etapa 01: Decifrando a Grande Rede")
         print("3 - Entrar na etapa 02: Explorando o Motor Oculto")
+        print("4 - Entrar na etapa 03: Arquivando a História do Mundo")
         print("0 - Voltar ao menu do jogador")
         print("=" * 60)
 
@@ -1676,6 +1711,8 @@ def entrar_nivel_1():
             entrar_etapa_1()
         elif escolha == "3":
             entrar_etapa_2()
+        elif escolha == "4":
+            entrar_etapa_3()
         elif escolha == "0":
             break
         else:
