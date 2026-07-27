@@ -2398,21 +2398,55 @@ def entrar_etapa_3():
 
 
 def topico_comunicacao_frontend_backend_etapa_4():
-    print()
-    print("=" * 60)
-    print("🌉 TÓPICO 1: COMO FRONTEND E BACKEND SE COMUNICAM")
-    print("=" * 60)
-    print("A tela não faz tudo sozinha.")
-    print()
-    print("Quando o usuário clica em um botão, a tela faz um pedido.")
-    print("Esse pedido viaja até o backend.")
-    print("O backend recebe, trabalha e devolve uma resposta.")
-    print()
-    print("Ideia de sobrevivência:")
-    print("frontend pede, backend responde, frontend mostra.")
-    print("=" * 60)
+    while True:
+        print()
+        print("=" * 60)
+        print("🌉 TÓPICO 1: COMO FRONTEND E BACKEND SE COMUNICAM")
+        print("=" * 60)
+        print("A tela não faz tudo sozinha.")
+        print()
+        print("Quando o usuário clica em um botão, a tela faz um pedido.")
+        print("Esse pedido viaja até o backend.")
+        print("O backend recebe, trabalha e devolve uma resposta.")
+        print()
+        print("Ideia de sobrevivência:")
+        print("frontend pede, backend responde, frontend mostra.")
+        print()
+        print("PERGUNTA:")
+        print("Quando o usuário clica em uma tela para ver produtos,")
+        print("o que melhor descreve a conversa entre frontend e backend?")
+        print()
+        print("1 - A tela faz um pedido, o backend recebe, trabalha e devolve uma resposta para a tela mostrar.")
+        print("2 - A tela resolve tudo sozinha, sem precisar conversar com o backend.")
+        print("3 - O banco de dados aparece direto na tela e escolhe o que o usuário vai ver.")
+        print("=" * 60)
 
-    input("Pressione Enter para voltar...")
+        escolha = input("Escolha uma opção: ")
+
+        if escolha == "1":
+            print()
+            print("Renato confirma.")
+            print('"Isso. A tela pede, o backend entende, trabalha e responde."')
+            print('"Essa é a ponte básica entre os dois mundos."')
+            input("Pressione Enter para voltar...")
+            break
+        elif escolha == "2":
+            print()
+            print("Renato reancora com calma.")
+            print('"Quase. A tela é importante, mas ela não carrega o sistema inteiro sozinha."')
+            print('"Ela mostra, pergunta e recebe respostas."')
+            print('"Quem trabalha por trás é o backend."')
+            input("Pressione Enter para tentar novamente...")
+        elif escolha == "3":
+            print()
+            print("Renato aponta para a ponte entre as partes.")
+            print('"Boa tentativa. O banco guarda informações, mas ele não aparece direto para o usuário."')
+            print('"Normalmente, quem conversa com o banco é o backend."')
+            print('"A tela recebe uma resposta já preparada."')
+            input("Pressione Enter para tentar novamente...")
+        else:
+            print()
+            print("Escolha uma das opções: 1, 2 ou 3.")
 
 
 def topico_api_rest_pratica_etapa_4():
