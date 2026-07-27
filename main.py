@@ -3127,6 +3127,80 @@ def prova_dominio_etapa_4():
             print()
             print("Escolha uma das opções: 1, 2 ou 3.")
 
+
+def registro_etapa_4():
+    print()
+    print("=" * 60)
+    print("📝 REGISTRAR EXPERIÊNCIA — A PONTE ENTRE OS MUNDOS")
+    print("=" * 60)
+    print("Renato aparece na tela e olha diretamente para você.")
+    print()
+    print('"Vamos registrar o que você atravessou nesta etapa."')
+    print()
+    print("Você reconheceu que:")
+    print()
+    print("- a tela não faz tudo sozinha;")
+    print("- o frontend faz pedidos;")
+    print("- o backend recebe, trabalha e responde;")
+    print("- a API organiza os caminhos dessa conversa;")
+    print("- GET busca informações sem mexer nos dados;")
+    print("- POST envia algo novo para o sistema;")
+    print("- PUT atualiza algo que já existe;")
+    print("- DELETE remove algo que precisa sair;")
+    print("- códigos como 200, 404 e 500 ajudam a entender o que aconteceu;")
+    print("- o fluxo completo liga usuário, tela, pedido, backend, banco, resposta e tela atualizada.")
+    print()
+    print("Renato confirma:")
+    print()
+    print('"Isso ainda não é programação prática."')
+    print('"É visão de sistema."')
+    print()
+    print('"Você agora entende a ponte antes de aprender a operar as ferramentas."')
+    print()
+    print("Experiência registrada apenas na narrativa.")
+    print("Salvamento real será criado em uma fase futura.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
+def relatorio_final_etapa_4():
+    print()
+    print("=" * 60)
+    print("📋 RELATÓRIO FINAL — A PONTE ENTRE OS MUNDOS")
+    print("=" * 60)
+    print("Renato aparece na tela e olha diretamente para você.")
+    print()
+    print('"Antes de seguir, revise a ponte inteira."')
+    print()
+    print("Relatório da missão: Construindo a Ponte dos Mundos")
+    print()
+    print("Você agora sabe que:")
+    print()
+    print("- frontend é a parte que o usuário vê e usa;")
+    print("- backend é a parte que trabalha por trás;")
+    print("- a comunicação entre os dois acontece por pedidos e respostas;")
+    print("- API REST organiza os caminhos dessa conversa;")
+    print("- GET é usado para buscar;")
+    print("- POST é usado para enviar algo novo;")
+    print("- PUT é usado para atualizar;")
+    print("- DELETE é usado para apagar;")
+    print("- códigos de resultado ajudam a diagnosticar o que aconteceu;")
+    print("- o fluxo completo mostra a viagem do clique até a resposta na tela.")
+    print()
+    print("Conclusão:")
+    print()
+    print("Você começou a enxergar que todo app moderno depende dessa ponte.")
+    print()
+    print("Quando algo não aparece, não salva ou volta com erro,")
+    print("você já sabe que existe um caminho para investigar:")
+    print("tela, pedido, backend, banco ou resposta.")
+    print()
+    print("A etapa ainda não marca conclusão permanente nesta versão.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
 def entrar_etapa_4():
     while True:
         print()
@@ -3165,13 +3239,9 @@ def entrar_etapa_4():
         elif escolha == "6":
             prova_dominio_etapa_4()
         elif escolha == "7":
-            print()
-            print("Registro da etapa 04 será criado quando a etapa estiver consolidada.")
-            input("Pressione Enter para voltar...")
+            registro_etapa_4()
         elif escolha == "8":
-            print()
-            print("Relatório Final da etapa 04 será criado no fechamento da etapa.")
-            input("Pressione Enter para voltar...")
+            relatorio_final_etapa_4()
         elif escolha == "0":
             break
         else:
