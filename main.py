@@ -4020,6 +4020,76 @@ def prova_dominio_etapa_5():
             print()
             print("Escolha uma das opções: 1, 2 ou 3.")
 
+
+def registro_etapa_5():
+    print()
+    print("=" * 60)
+    print("📝 REGISTRAR EXPERIÊNCIA — A INTERFACE VISUAL")
+    print("=" * 60)
+    print("Irlene aparece na tela e olha diretamente para você.")
+    print()
+    print('"Vamos registrar o que você enxergou por trás da tela."')
+    print()
+    print("Você reconheceu que:")
+    print()
+    print("- frontend é a parte visível do sistema;")
+    print("- HTML define a estrutura do que existe na tela;")
+    print("- CSS organiza a aparência visual;")
+    print("- JavaScript faz a tela reagir;")
+    print("- DOM ajuda a encontrar a peça certa da página;")
+    print("- responsividade adapta a interface para diferentes tamanhos de tela;")
+    print("- frontend completo não é só beleza;")
+    print("- uma boa interface precisa ser clara, útil, reativa e adaptável.")
+    print()
+    print("Irlene confirma:")
+    print()
+    print('"Isso ainda não é programação prática."')
+    print('"É visão de interface."')
+    print()
+    print('"Você agora entende a tela antes de aprender a construí-la com ferramentas profissionais."')
+    print()
+    print("Experiência registrada apenas na narrativa.")
+    print("Salvamento real será criado em uma fase futura.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
+def relatorio_final_etapa_5():
+    print()
+    print("=" * 60)
+    print("📋 RELATÓRIO FINAL — A INTERFACE VISUAL")
+    print("=" * 60)
+    print("Irlene aparece na tela e olha diretamente para você.")
+    print()
+    print('"Antes de seguir, revise a interface inteira."')
+    print()
+    print("Relatório da missão: Forjando a Interface Visual")
+    print()
+    print("Você agora sabe que:")
+    print()
+    print("- frontend é a experiência visível do sistema;")
+    print("- a tela precisa existir antes de ficar bonita ou interativa;")
+    print("- HTML organiza a estrutura da página;")
+    print("- CSS cuida da aparência, organização visual e adaptação;")
+    print("- JavaScript adiciona comportamento e reação;")
+    print("- DOM funciona como um mapa vivo da página;")
+    print("- responsividade mantém a tela usável em computador, tablet e celular;")
+    print("- problemas visuais podem ter causas diferentes;")
+    print("- uma boa interface ajuda a pessoa a entender, clicar, ler e agir sem se perder.")
+    print()
+    print("Conclusão:")
+    print()
+    print("Você começou a enxergar que uma tela não é só decoração.")
+    print()
+    print("Ela é uma parte essencial do sistema.")
+    print("É onde o usuário encontra o produto, entende o caminho e toma ações.")
+    print()
+    print("A etapa ainda não marca conclusão permanente nesta versão.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
 def entrar_etapa_5():
     while True:
         print()
@@ -4059,13 +4129,9 @@ def entrar_etapa_5():
         elif escolha == "6":
             prova_dominio_etapa_5()
         elif escolha == "7":
-            print()
-            print("Registro da etapa 05 será criado quando a etapa estiver consolidada.")
-            input("Pressione Enter para voltar...")
+            registro_etapa_5()
         elif escolha == "8":
-            print()
-            print("Relatório Final da etapa 05 será criado no fechamento da etapa.")
-            input("Pressione Enter para voltar...")
+            relatorio_final_etapa_5()
         elif escolha == "0":
             break
         else:
