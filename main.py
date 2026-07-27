@@ -5063,6 +5063,239 @@ def entrar_etapa_6():
             print("Opção inválida.")
 
 
+
+def topico_git_etapa_7():
+    print()
+    print("=" * 60)
+    print("📘 TÓPICO 1: GIT")
+    print("=" * 60)
+    print("Git é como um caderno de mudanças do projeto.")
+    print()
+    print("Ele registra o que mudou, quando mudou e ajuda a voltar no histórico.")
+    print()
+    print("Richard aparece na tela e olha diretamente para você.")
+    print()
+    print('"Antes do Git, muita gente salvava versões no improviso:"')
+    print('"arquivo final, final mesmo, final corrigido."')
+    print()
+    print('"Git nasceu para transformar bagunça em histórico organizado."')
+    print()
+    print("Ideia de sobrevivência:")
+    print("Git guarda a história das mudanças do projeto.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
+def topico_commit_etapa_7():
+    print()
+    print("=" * 60)
+    print("📸 TÓPICO 2: COMMIT")
+    print("=" * 60)
+    print("Commit é como uma fotografia de um momento do projeto.")
+    print()
+    print("Quando algo importante muda, o dev registra essa mudança.")
+    print()
+    print("Esse registro ajuda o time a entender o que foi feito e por quê.")
+    print()
+    print("Richard aponta para uma linha do tempo.")
+    print()
+    print('"Um commit não é só salvar."')
+    print('"É deixar uma marca compreensível na história do projeto."')
+    print()
+    print("Ideia de sobrevivência:")
+    print("commit registra uma mudança com sentido.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
+def topico_branch_etapa_7():
+    print()
+    print("=" * 60)
+    print("🌿 TÓPICO 3: BRANCH")
+    print("=" * 60)
+    print("Às vezes o time precisa trabalhar sem mexer direto na versão principal.")
+    print()
+    print("Branch é uma linha separada de trabalho.")
+    print()
+    print("Ela permite testar, criar e ajustar sem colocar tudo em risco de imediato.")
+    print()
+    print("Richard desenha uma linha principal e uma linha lateral.")
+    print()
+    print('"A branch cria espaço para trabalhar com segurança."')
+    print('"Depois, se fizer sentido, o trabalho volta para a linha principal."')
+    print()
+    print("Ideia de sobrevivência:")
+    print("branch permite trabalhar sem bagunçar a versão principal.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
+def topico_merge_conflito_etapa_7():
+    print()
+    print("=" * 60)
+    print("🔀 TÓPICO 4: MERGE E CONFLITO")
+    print("=" * 60)
+    print("Depois de trabalhar em uma branch, chega a hora de juntar mudanças.")
+    print()
+    print("Merge é o ato de juntar uma linha de trabalho com outra.")
+    print()
+    print("Mas se duas pessoas mexeram no mesmo ponto, o Git pode parar e avisar.")
+    print()
+    print("Esse aviso é um conflito.")
+    print()
+    print("Richard levanta a mão com calma.")
+    print()
+    print('"Conflito não significa que alguém errou."')
+    print('"Significa que o Git precisa de uma decisão humana."')
+    print()
+    print("Ideia de sobrevivência:")
+    print("merge junta mudanças; conflito pede escolha cuidadosa.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
+def topico_github_etapa_7():
+    print()
+    print("=" * 60)
+    print("☁️ TÓPICO 5: GITHUB")
+    print("=" * 60)
+    print("Git guarda a história do projeto.")
+    print("Mas o time também precisa compartilhar essa história.")
+    print()
+    print("GitHub é um lugar na internet onde o repositório pode ficar guardado.")
+    print()
+    print("Ele ajuda o time a colaborar, revisar e acessar o projeto de outros lugares.")
+    print()
+    print("Richard aponta para um repositório online.")
+    print()
+    print('"Git é o caderno."')
+    print('"GitHub é o lugar onde esse caderno pode ficar disponível para o time."')
+    print()
+    print("Ideia de sobrevivência:")
+    print("GitHub ajuda o time a compartilhar e colaborar no projeto.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
+def topico_clone_push_pull_etapa_7():
+    print()
+    print("=" * 60)
+    print("🔁 TÓPICO 6: CLONE, PUSH E PULL")
+    print("=" * 60)
+    print("Quando o projeto está em um repositório online, o time precisa trocar mudanças.")
+    print()
+    print("Clone é pegar uma cópia do projeto pela primeira vez.")
+    print("Push é empurrar suas mudanças para o repositório online.")
+    print("Pull é puxar as mudanças que outras pessoas enviaram.")
+    print()
+    print("Richard mostra o caminho de ida e volta.")
+    print()
+    print('"Clone acontece quando você traz o projeto para sua máquina."')
+    print('"Push envia sua parte."')
+    print('"Pull atualiza sua cópia com o que o time fez."')
+    print()
+    print("Ideia de sobrevivência:")
+    print("clone traz, push envia, pull atualiza.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
+def topico_historico_etapa_7():
+    print()
+    print("=" * 60)
+    print("🕰️ TÓPICO 7: HISTÓRICO DO PROJETO")
+    print("=" * 60)
+    print("Um projeto real cresce com muitas mudanças.")
+    print()
+    print("O histórico mostra como ele evoluiu.")
+    print()
+    print("Ele ajuda a descobrir quando algo nasceu, quando algo quebrou")
+    print("e quem participou de cada mudança.")
+    print()
+    print("Richard abre uma linha do tempo.")
+    print()
+    print('"O histórico é uma memória organizada do trabalho do time."')
+    print('"Sem ele, todo problema vira adivinhação."')
+    print()
+    print("Ideia de sobrevivência:")
+    print("histórico ajuda a investigar e entender a evolução do projeto.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
+def topico_git_github_time_etapa_7():
+    print()
+    print("=" * 60)
+    print("🤝 TÓPICO 8: GIT E GITHUB NO TIME")
+    print("=" * 60)
+    print("Git e GitHub não existem só para guardar código.")
+    print()
+    print("Eles ajudam pessoas a trabalharem juntas sem se perderem.")
+    print()
+    print("Cada pessoa pode trabalhar, registrar, enviar, atualizar e revisar.")
+    print()
+    print("Richard olha diretamente para você.")
+    print()
+    print('"No trabalho real, não basta fazer alteração."')
+    print('"É preciso deixar rastro, conversar com o time e manter o projeto organizado."')
+    print()
+    print("Ideia de sobrevivência:")
+    print("Git e GitHub são ferramentas de colaboração e memória do projeto.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
+def reconhecimento_etapa_7():
+    while True:
+        print()
+        print("=" * 60)
+        print("💡 RECONHECIMENTO: O CADERNO DO TIME")
+        print("=" * 60)
+        print("Richard organiza os primeiros conceitos de Git e GitHub.")
+        print()
+        print("1 - Git")
+        print("2 - Commit")
+        print("3 - Branch")
+        print("4 - Merge e conflito")
+        print("5 - GitHub")
+        print("6 - Clone, Push e Pull")
+        print("7 - Histórico do projeto")
+        print("8 - Git e GitHub no time")
+        print("0 - Voltar à etapa 07")
+        print("=" * 60)
+
+        escolha = input("Escolha uma opção: ")
+
+        if escolha == "1":
+            topico_git_etapa_7()
+        elif escolha == "2":
+            topico_commit_etapa_7()
+        elif escolha == "3":
+            topico_branch_etapa_7()
+        elif escolha == "4":
+            topico_merge_conflito_etapa_7()
+        elif escolha == "5":
+            topico_github_etapa_7()
+        elif escolha == "6":
+            topico_clone_push_pull_etapa_7()
+        elif escolha == "7":
+            topico_historico_etapa_7()
+        elif escolha == "8":
+            topico_git_github_time_etapa_7()
+        elif escolha == "0":
+            break
+        else:
+            print()
+            print("Opção inválida.")
+
 def entrar_etapa_7():
     while True:
         print()
@@ -5095,10 +5328,7 @@ def entrar_etapa_7():
             print("Na próxima fase, vamos organizar a missão usando a aula de origem.")
             input("Pressione Enter para voltar...")
         elif escolha == "2":
-            print()
-            print("Reconhecimento da etapa 07 será criado na Fase B.")
-            print("Aqui vamos entender Git, GitHub, histórico, commits e colaboração.")
-            input("Pressione Enter para voltar...")
+            reconhecimento_etapa_7()
         elif escolha == "3":
             print()
             print("Campo de Treinamento da etapa 07 será criado depois do roteiro.")
