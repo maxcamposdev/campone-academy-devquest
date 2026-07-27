@@ -2469,21 +2469,21 @@ def topico_api_rest_pratica_etapa_4():
         print("PERGUNTA:")
         print("Por que uma API ajuda na conversa entre a tela e o backend?")
         print()
-        print("1 - Porque ela organiza os caminhos dos pedidos, ajudando a tela e o backend a se entenderem.")
-        print("2 - Porque ela troca as cores, fontes e botões que aparecem na tela.")
+        print("1 - Porque ela troca as cores, fontes e botões que aparecem na tela.")
+        print("2 - Porque ela organiza os caminhos dos pedidos, ajudando a tela e o backend a se entenderem.")
         print("3 - Porque ela guarda todos os dados sozinha, sem precisar de backend ou banco.")
         print("=" * 60)
 
         escolha = input("Escolha uma opção: ")
 
-        if escolha == "1":
+        if escolha == "2":
             print()
             print("Renato confirma.")
             print('"Isso. A API funciona como um conjunto de caminhos combinados."')
             print('"A tela sabe por onde pedir, e o backend sabe como responder."')
             input("Pressione Enter para voltar...")
             break
-        elif escolha == "2":
+        elif escolha == "1":
             print()
             print("Renato reancora com calma.")
             print('"Quase. Cores, fontes e botões fazem parte da interface visual."')
@@ -2522,27 +2522,27 @@ def topico_get_etapa_4():
         print("Quando a tela precisa apenas mostrar uma lista de produtos,")
         print("sem criar nem alterar nada, que tipo de pedido faz mais sentido?")
         print()
-        print("1 - GET, porque a tela só quer buscar informações sem mexer nos dados.")
-        print("2 - POST, porque qualquer clique sempre cria alguma coisa nova no sistema.")
-        print("3 - DELETE, porque buscar uma lista significa apagar os dados antigos primeiro.")
+        print("1 - POST, porque qualquer clique sempre cria alguma coisa nova no sistema.")
+        print("2 - DELETE, porque buscar uma lista significa apagar os dados antigos primeiro.")
+        print("3 - GET, porque a tela só quer buscar informações sem mexer nos dados.")
         print("=" * 60)
 
         escolha = input("Escolha uma opção: ")
 
-        if escolha == "1":
+        if escolha == "3":
             print()
             print("Renato confirma.")
             print('"Isso. GET é o pedido de olhar."')
             print('"A tela pede informação, o backend busca e devolve sem alterar os dados."')
             input("Pressione Enter para voltar...")
             break
-        elif escolha == "2":
+        elif escolha == "1":
             print()
             print("Renato reancora com calma.")
             print('"Quase. POST entra quando a tela está enviando algo novo para o sistema criar ou processar."')
             print('"Se a tela só quer ver uma lista, ela está buscando, não criando."')
             input("Pressione Enter para tentar novamente...")
-        elif escolha == "3":
+        elif escolha == "2":
             print()
             print("Renato aponta para a intenção do pedido.")
             print('"Boa tentativa, mas DELETE é usado quando a intenção é apagar algo."')
@@ -2574,21 +2574,21 @@ def topico_post_etapa_4():
         print("Quando a tela envia nome e preço para cadastrar um produto novo,")
         print("que tipo de pedido faz mais sentido?")
         print()
-        print("1 - POST, porque a tela está enviando uma informação nova para o sistema criar ou processar.")
-        print("2 - GET, porque cadastrar produto é só olhar a lista que já existe.")
+        print("1 - GET, porque cadastrar produto é só olhar a lista que já existe.")
+        print("2 - POST, porque a tela está enviando uma informação nova para o sistema criar ou processar.")
         print("3 - DELETE, porque todo cadastro novo apaga automaticamente os produtos antigos.")
         print("=" * 60)
 
         escolha = input("Escolha uma opção: ")
 
-        if escolha == "1":
+        if escolha == "2":
             print()
             print("Renato confirma.")
             print('"Isso. POST é o pedido de enviar algo novo."')
             print('"A tela manda os dados, o backend recebe e o sistema pode criar um novo registro."')
             input("Pressione Enter para voltar...")
             break
-        elif escolha == "2":
+        elif escolha == "1":
             print()
             print("Renato reancora com calma.")
             print('"Quase. GET é usado quando a tela só quer buscar ou olhar informações."')
@@ -2627,28 +2627,28 @@ def topico_put_etapa_4():
         print("Quando uma pessoa altera o preço de um produto que já existe,")
         print("qual ideia combina melhor com esse pedido?")
         print()
-        print("1 - PUT, porque o sistema está atualizando uma informação que já existia.")
-        print("2 - GET, porque mudar preço é apenas olhar o produto sem mexer nele.")
-        print("3 - POST, porque qualquer mudança em algo existente sempre cria um produto duplicado.")
+        print("1 - GET, porque mudar preço é apenas olhar o produto sem mexer nele.")
+        print("2 - POST, porque qualquer mudança em algo existente sempre cria um produto duplicado.")
+        print("3 - PUT, porque o sistema está atualizando uma informação que já existia.")
         print("=" * 60)
 
         escolha = input("Escolha uma opção: ")
 
-        if escolha == "1":
+        if escolha == "3":
             print()
             print("Renato confirma.")
             print('"Isso. PUT entra quando algo existente precisa ser atualizado."')
             print('"O produto já estava no sistema; agora uma informação dele mudou."')
             input("Pressione Enter para voltar...")
             break
-        elif escolha == "2":
+        elif escolha == "1":
             print()
             print("Renato reancora com calma.")
             print('"Quase. GET é o pedido de olhar."')
             print('"Se o preço mudou, o sistema não está só olhando."')
             print('"Ele está alterando uma informação existente."')
             input("Pressione Enter para tentar novamente...")
-        elif escolha == "3":
+        elif escolha == "2":
             print()
             print("Renato aponta para a diferença entre criar e atualizar.")
             print('"Boa tentativa. POST é muito usado quando algo novo precisa ser criado."')
