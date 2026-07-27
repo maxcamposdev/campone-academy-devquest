@@ -78,7 +78,7 @@ def mostrar_mapa():
     print("04. Construindo a Ponte dos Mundos ✅")
     print("05. Forjando a Interface Visual ✅")
     print("06. Erguendo os Escudos de Defesa ✅")
-    print("07. Dominando as Linhas do Tempo")
+    print("07. Dominando as Linhas do Tempo ✅")
     print("08. O Rito da Grande Implantação")
     print("09. Desenhando a Planta-Mestra")
     print()
@@ -99,7 +99,7 @@ def mostrar_etapas_nivel_1():
     print("04. Construindo a Ponte dos Mundos ✅")
     print("05. Forjando a Interface Visual ✅")
     print("06. Erguendo os Escudos de Defesa ✅")
-    print("07. Dominando as Linhas do Tempo")
+    print("07. Dominando as Linhas do Tempo ✅")
     print("08. O Rito da Grande Implantação")
     print("09. Desenhando a Planta-Mestra")
     print("=" * 60)
@@ -5848,6 +5848,73 @@ def prova_dominio_etapa_7():
             print()
             print("Escolha uma das opções: 1, 2 ou 3.")
 
+
+def registro_etapa_7():
+    print()
+    print("=" * 60)
+    print("📝 REGISTRAR EXPERIÊNCIA — O CADERNO DO TIME")
+    print("=" * 60)
+    print("Richard aparece na tela e olha diretamente para você.")
+    print()
+    print("Vamos registrar o que você entendeu sobre Git e GitHub.")
+    print()
+    print("Você reconheceu que:")
+    print()
+    print("- Git guarda a história das mudanças do projeto;")
+    print("- commit registra uma mudança com sentido;")
+    print("- branch cria uma linha segura de trabalho;")
+    print("- merge junta mudanças;")
+    print("- conflito pede decisão humana;")
+    print("- GitHub ajuda o time a compartilhar o repositório;")
+    print("- clone traz uma cópia do projeto;")
+    print("- push envia mudanças;")
+    print("- pull atualiza sua cópia local;")
+    print("- histórico ajuda a investigar a evolução do projeto.")
+    print()
+    print("Richard confirma:")
+    print()
+    print("Isso ainda não é programação prática.")
+    print("É visão de trabalho em equipe.")
+    print()
+    print("Experiência registrada apenas na narrativa.")
+    print("Salvamento real será criado em uma fase futura.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
+def relatorio_final_etapa_7():
+    print()
+    print("=" * 60)
+    print("📋 RELATÓRIO FINAL — O CADERNO DO TIME")
+    print("=" * 60)
+    print("Richard aparece na tela e olha diretamente para você.")
+    print()
+    print("Relatório da missão: Dominando as Linhas do Tempo")
+    print()
+    print("Você agora sabe que:")
+    print()
+    print("- Git é o caderno de mudanças do projeto;")
+    print("- commits registram momentos importantes;")
+    print("- branches permitem trabalhar sem mexer direto na linha principal;")
+    print("- merge junta linhas de trabalho;")
+    print("- conflitos não são desastre, são pedidos de decisão;")
+    print("- GitHub ajuda o time a colaborar pela internet;")
+    print("- clone, push e pull movem o projeto entre sua máquina e o repositório;")
+    print("- o histórico evita adivinhação quando algo quebra.")
+    print()
+    print("Conclusão:")
+    print()
+    print("Você começou a enxergar que um projeto profissional precisa de memória.")
+    print()
+    print("Não basta alterar.")
+    print("É preciso deixar rastro, contexto e caminho para o time.")
+    print()
+    print("A etapa ainda não marca conclusão permanente nesta versão.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
 def entrar_etapa_7():
     while True:
         print()
@@ -5887,13 +5954,9 @@ def entrar_etapa_7():
         elif escolha == "6":
             prova_dominio_etapa_7()
         elif escolha == "7":
-            print()
-            print("Registro da etapa 07 será criado quando a etapa estiver consolidada.")
-            input("Pressione Enter para voltar...")
+            registro_etapa_7()
         elif escolha == "8":
-            print()
-            print("Relatório Final da etapa 07 será criado no fechamento da etapa.")
-            input("Pressione Enter para voltar...")
+            relatorio_final_etapa_7()
         elif escolha == "0":
             break
         else:
