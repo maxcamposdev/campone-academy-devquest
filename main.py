@@ -2555,22 +2555,56 @@ def topico_get_etapa_4():
 
 
 def topico_post_etapa_4():
-    print()
-    print("=" * 60)
-    print("📨 TÓPICO 4: POST — ENVIAR ALGO NOVO")
-    print("=" * 60)
-    print("Às vezes a tela precisa mandar uma informação nova.")
-    print()
-    print("POST é o pedido usado para criar ou enviar dados novos.")
-    print()
-    print("Exemplo:")
-    print("criar uma conta, fazer uma compra ou enviar uma mensagem.")
-    print()
-    print("Ideia de sobrevivência:")
-    print("POST leva algo novo para o backend guardar ou processar.")
-    print("=" * 60)
+    while True:
+        print()
+        print("=" * 60)
+        print("📨 TÓPICO 4: POST — ENVIAR ALGO NOVO")
+        print("=" * 60)
+        print("Às vezes a tela precisa mandar uma informação nova.")
+        print()
+        print("POST é o pedido usado para criar ou enviar dados novos.")
+        print()
+        print("Exemplo:")
+        print("criar uma conta, fazer uma compra ou enviar uma mensagem.")
+        print()
+        print("Ideia de sobrevivência:")
+        print("POST leva algo novo para o backend guardar ou processar.")
+        print()
+        print("PERGUNTA:")
+        print("Quando a tela envia nome e preço para cadastrar um produto novo,")
+        print("que tipo de pedido faz mais sentido?")
+        print()
+        print("1 - POST, porque a tela está enviando uma informação nova para o sistema criar ou processar.")
+        print("2 - GET, porque cadastrar produto é só olhar a lista que já existe.")
+        print("3 - DELETE, porque todo cadastro novo apaga automaticamente os produtos antigos.")
+        print("=" * 60)
 
-    input("Pressione Enter para voltar...")
+        escolha = input("Escolha uma opção: ")
+
+        if escolha == "1":
+            print()
+            print("Renato confirma.")
+            print('"Isso. POST é o pedido de enviar algo novo."')
+            print('"A tela manda os dados, o backend recebe e o sistema pode criar um novo registro."')
+            input("Pressione Enter para voltar...")
+            break
+        elif escolha == "2":
+            print()
+            print("Renato reancora com calma.")
+            print('"Quase. GET é usado quando a tela só quer buscar ou olhar informações."')
+            print('"Aqui a tela está enviando dados novos."')
+            print('"Quando algo novo precisa nascer no sistema, a ideia é POST."')
+            input("Pressione Enter para tentar novamente...")
+        elif escolha == "3":
+            print()
+            print("Renato aponta para a intenção do pedido.")
+            print('"Boa tentativa, mas DELETE é usado quando a intenção é apagar."')
+            print('"Cadastrar um produto novo não apaga os antigos."')
+            print('"A tela está mandando algo novo para ser guardado."')
+            input("Pressione Enter para tentar novamente...")
+        else:
+            print()
+            print("Escolha uma das opções: 1, 2 ou 3.")
 
 
 def topico_put_etapa_4():
