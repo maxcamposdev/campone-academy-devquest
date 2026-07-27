@@ -2503,22 +2503,55 @@ def topico_api_rest_pratica_etapa_4():
 
 
 def topico_get_etapa_4():
-    print()
-    print("=" * 60)
-    print("🔎 TÓPICO 3: GET — BUSCAR DADOS")
-    print("=" * 60)
-    print("Às vezes a tela só quer olhar uma informação.")
-    print()
-    print("GET é o pedido usado para buscar dados sem mudar nada.")
-    print()
-    print("Exemplo:")
-    print("abrir uma lista de produtos, ver um perfil ou carregar um catálogo.")
-    print()
-    print("Ideia de sobrevivência:")
-    print("GET é olhar, não mexer.")
-    print("=" * 60)
+    while True:
+        print()
+        print("=" * 60)
+        print("🔎 TÓPICO 3: GET — BUSCAR DADOS")
+        print("=" * 60)
+        print("Às vezes a tela só quer olhar uma informação.")
+        print()
+        print("GET é o pedido usado para buscar dados sem mudar nada.")
+        print()
+        print("Exemplo:")
+        print("abrir uma lista de produtos, ver um perfil ou carregar um catálogo.")
+        print()
+        print("Ideia de sobrevivência:")
+        print("GET é olhar, não mexer.")
+        print()
+        print("PERGUNTA:")
+        print("Quando a tela precisa apenas mostrar uma lista de produtos,")
+        print("sem criar nem alterar nada, que tipo de pedido faz mais sentido?")
+        print()
+        print("1 - GET, porque a tela só quer buscar informações sem mexer nos dados.")
+        print("2 - POST, porque qualquer clique sempre cria alguma coisa nova no sistema.")
+        print("3 - DELETE, porque buscar uma lista significa apagar os dados antigos primeiro.")
+        print("=" * 60)
 
-    input("Pressione Enter para voltar...")
+        escolha = input("Escolha uma opção: ")
+
+        if escolha == "1":
+            print()
+            print("Renato confirma.")
+            print('"Isso. GET é o pedido de olhar."')
+            print('"A tela pede informação, o backend busca e devolve sem alterar os dados."')
+            input("Pressione Enter para voltar...")
+            break
+        elif escolha == "2":
+            print()
+            print("Renato reancora com calma.")
+            print('"Quase. POST entra quando a tela está enviando algo novo para o sistema criar ou processar."')
+            print('"Se a tela só quer ver uma lista, ela está buscando, não criando."')
+            input("Pressione Enter para tentar novamente...")
+        elif escolha == "3":
+            print()
+            print("Renato aponta para a intenção do pedido.")
+            print('"Boa tentativa, mas DELETE é usado quando a intenção é apagar algo."')
+            print('"Buscar uma lista não apaga nada."')
+            print('"É só olhar o que já existe."')
+            input("Pressione Enter para tentar novamente...")
+        else:
+            print()
+            print("Escolha uma das opções: 1, 2 ou 3.")
 
 
 def topico_post_etapa_4():
