@@ -4139,6 +4139,213 @@ def entrar_etapa_5():
             print("Opção inválida.")
 
 
+
+def topico_login_etapa_6():
+    print()
+    print("=" * 60)
+    print("🔐 TÓPICO 1: LOGIN")
+    print("=" * 60)
+    print("Um sistema sério precisa saber quem está tentando entrar.")
+    print()
+    print("Login é o momento em que a pessoa se apresenta ao sistema.")
+    print()
+    print("Débora aparece na tela e olha diretamente para você.")
+    print()
+    print('"Pensa na entrada de um prédio."')
+    print('"Antes de liberar a catraca, alguém precisa saber quem você é."')
+    print()
+    print("Ideia de sobrevivência:")
+    print("login é o começo da identificação do usuário.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
+def topico_autenticacao_etapa_6():
+    print()
+    print("=" * 60)
+    print("🪪 TÓPICO 2: AUTENTICAÇÃO")
+    print("=" * 60)
+    print("Não basta dizer quem você é.")
+    print("O sistema precisa conferir se aquilo é verdade.")
+    print()
+    print("Autenticação é essa conferência.")
+    print()
+    print("Pode acontecer com senha, digital, código no celular ou outro tipo de prova.")
+    print()
+    print("Débora aponta para uma lista de entrada.")
+    print()
+    print('"Dizer o nome é uma coisa."')
+    print('"Provar que é você é outra."')
+    print()
+    print("Ideia de sobrevivência:")
+    print("autenticação responde: quem é você?")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
+def topico_autorizacao_etapa_6():
+    print()
+    print("=" * 60)
+    print("🚪 TÓPICO 3: AUTORIZAÇÃO")
+    print("=" * 60)
+    print("Entrar no sistema não significa poder mexer em tudo.")
+    print()
+    print("Autorização define o que a pessoa pode acessar ou fazer.")
+    print()
+    print("Um cliente pode ver o próprio pedido.")
+    print("Um funcionário pode ver ferramentas internas.")
+    print("Um administrador pode ter mais permissões.")
+    print()
+    print("Débora aponta para portas diferentes dentro da CampOne.")
+    print()
+    print('"Depois de saber quem você é, o sistema pergunta: o que você pode?"')
+    print()
+    print("Ideia de sobrevivência:")
+    print("autorização responde: o que você pode fazer?")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
+def topico_cookies_etapa_6():
+    print()
+    print("=" * 60)
+    print("🍪 TÓPICO 4: COOKIES")
+    print("=" * 60)
+    print("A web tem um problema:")
+    print("cada pedido pode chegar como se fosse a primeira visita.")
+    print()
+    print("Cookies ajudam o navegador a guardar pequenas informações.")
+    print()
+    print("No contexto de login, eles podem ajudar o sistema a lembrar")
+    print("que aquela pessoa já passou por uma identificação.")
+    print()
+    print("Débora mostra uma pulseira de entrada.")
+    print()
+    print('"Depois que você entra, não precisa mostrar documento a cada porta."')
+    print('"Mas existe um lembrete acompanhando você."')
+    print()
+    print("Ideia de sobrevivência:")
+    print("cookie é um pequeno lembrete guardado pelo navegador.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
+def topico_sessao_etapa_6():
+    print()
+    print("=" * 60)
+    print("⏳ TÓPICO 5: SESSÃO")
+    print("=" * 60)
+    print("Depois que a pessoa entra, o sistema mantém esse acesso por um tempo.")
+    print()
+    print("Esse período é a sessão.")
+    print()
+    print("Sessão não deve durar para sempre.")
+    print("Ela pode expirar por segurança, principalmente em sistemas sensíveis.")
+    print()
+    print("Débora olha diretamente para você.")
+    print()
+    print('"Se alguém pega seu celular desbloqueado, uma sessão eterna vira perigo."')
+    print()
+    print("Ideia de sobrevivência:")
+    print("sessão é o tempo em que o sistema continua reconhecendo você.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
+def topico_token_etapa_6():
+    print()
+    print("=" * 60)
+    print("🎟️ TÓPICO 6: TOKEN")
+    print("=" * 60)
+    print("Depois de entrar, o sistema pode entregar uma prova temporária.")
+    print()
+    print("Essa prova acompanha os próximos pedidos.")
+    print()
+    print("Token é como um crachá digital temporário.")
+    print("Ele ajuda o sistema a reconhecer que aquele pedido vem de alguém já conferido.")
+    print()
+    print("Débora mostra um crachá com validade.")
+    print()
+    print('"O crachá ajuda na passagem, mas não deve valer para sempre."')
+    print()
+    print("Ideia de sobrevivência:")
+    print("token é uma prova temporária usada para reconhecer pedidos.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
+def topico_seguranca_completa_etapa_6():
+    print()
+    print("=" * 60)
+    print("🛡️ TÓPICO 7: SEGURANÇA COMPLETA")
+    print("=" * 60)
+    print("Agora juntamos as peças da portaria digital.")
+    print()
+    print("Login inicia a entrada.")
+    print("Autenticação confere quem é a pessoa.")
+    print("Autorização define o que ela pode fazer.")
+    print("Cookies podem guardar pequenos lembretes no navegador.")
+    print("Sessão mantém o reconhecimento por um tempo.")
+    print("Token pode funcionar como uma prova temporária nos pedidos.")
+    print()
+    print("Débora cruza os braços com calma.")
+    print()
+    print('"Segurança não é impedir tudo."')
+    print('"É deixar a pessoa certa entrar, pelo tempo certo, no lugar certo."')
+    print()
+    print("Ideia de sobrevivência:")
+    print("segurança organiza identidade, permissão e tempo de acesso.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
+def reconhecimento_etapa_6():
+    while True:
+        print()
+        print("=" * 60)
+        print("💡 RECONHECIMENTO: A PORTARIA DIGITAL")
+        print("=" * 60)
+        print("Débora organiza os primeiros conceitos de Login e Segurança.")
+        print()
+        print("1 - Login")
+        print("2 - Autenticação")
+        print("3 - Autorização")
+        print("4 - Cookies")
+        print("5 - Sessão")
+        print("6 - Token")
+        print("7 - Segurança completa")
+        print("0 - Voltar à etapa 06")
+        print("=" * 60)
+
+        escolha = input("Escolha uma opção: ")
+
+        if escolha == "1":
+            topico_login_etapa_6()
+        elif escolha == "2":
+            topico_autenticacao_etapa_6()
+        elif escolha == "3":
+            topico_autorizacao_etapa_6()
+        elif escolha == "4":
+            topico_cookies_etapa_6()
+        elif escolha == "5":
+            topico_sessao_etapa_6()
+        elif escolha == "6":
+            topico_token_etapa_6()
+        elif escolha == "7":
+            topico_seguranca_completa_etapa_6()
+        elif escolha == "0":
+            break
+        else:
+            print()
+            print("Opção inválida.")
+
 def entrar_etapa_6():
     while True:
         print()
@@ -4171,10 +4378,7 @@ def entrar_etapa_6():
             print("Na próxima fase, vamos organizar a missão usando a aula de origem.")
             input("Pressione Enter para voltar...")
         elif escolha == "2":
-            print()
-            print("Reconhecimento da etapa 06 será criado na Fase B.")
-            print("Aqui vamos entender login, identidade, permissão e segurança.")
-            input("Pressione Enter para voltar...")
+            reconhecimento_etapa_6()
         elif escolha == "3":
             print()
             print("Campo de Treinamento da etapa 06 será criado depois do roteiro.")
