@@ -2450,23 +2450,56 @@ def topico_comunicacao_frontend_backend_etapa_4():
 
 
 def topico_api_rest_pratica_etapa_4():
-    print()
-    print("=" * 60)
-    print("🧭 TÓPICO 2: API REST NA PRÁTICA")
-    print("=" * 60)
-    print("Pedido sem caminho combinado vira bagunça.")
-    print()
-    print("A API REST é um jeito organizado de combinar os pedidos")
-    print("entre a tela e o backend.")
-    print()
-    print("Pensa como um cardápio de portas:")
-    print("uma porta para produtos, outra para clientes, outra para pedidos.")
-    print()
-    print("Ideia de sobrevivência:")
-    print("API REST organiza como a tela pede e como o backend entende.")
-    print("=" * 60)
+    while True:
+        print()
+        print("=" * 60)
+        print("🧭 TÓPICO 2: API REST NA PRÁTICA")
+        print("=" * 60)
+        print("Pedido sem caminho combinado vira bagunça.")
+        print()
+        print("A API REST é um jeito organizado de combinar os pedidos")
+        print("entre a tela e o backend.")
+        print()
+        print("Pensa como um cardápio de portas:")
+        print("uma porta para produtos, outra para clientes, outra para pedidos.")
+        print()
+        print("Ideia de sobrevivência:")
+        print("API REST organiza como a tela pede e como o backend entende.")
+        print()
+        print("PERGUNTA:")
+        print("Por que uma API ajuda na conversa entre a tela e o backend?")
+        print()
+        print("1 - Porque ela organiza os caminhos dos pedidos, ajudando a tela e o backend a se entenderem.")
+        print("2 - Porque ela troca as cores, fontes e botões que aparecem na tela.")
+        print("3 - Porque ela guarda todos os dados sozinha, sem precisar de backend ou banco.")
+        print("=" * 60)
 
-    input("Pressione Enter para voltar...")
+        escolha = input("Escolha uma opção: ")
+
+        if escolha == "1":
+            print()
+            print("Renato confirma.")
+            print('"Isso. A API funciona como um conjunto de caminhos combinados."')
+            print('"A tela sabe por onde pedir, e o backend sabe como responder."')
+            input("Pressione Enter para voltar...")
+            break
+        elif escolha == "2":
+            print()
+            print("Renato reancora com calma.")
+            print('"Quase. Cores, fontes e botões fazem parte da interface visual."')
+            print('"A API não cuida da aparência da tela."')
+            print('"Ela ajuda a organizar a conversa entre a tela e o backend."')
+            input("Pressione Enter para tentar novamente...")
+        elif escolha == "3":
+            print()
+            print("Renato aponta para os caminhos da ponte.")
+            print('"Boa tentativa. Guardar dados é papel do banco."')
+            print('"A API não substitui o backend nem o banco."')
+            print('"Ela funciona como um caminho organizado para os pedidos chegarem ao lugar certo."')
+            input("Pressione Enter para tentar novamente...")
+        else:
+            print()
+            print("Escolha uma das opções: 1, 2 ou 3.")
 
 
 def topico_get_etapa_4():
