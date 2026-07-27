@@ -79,7 +79,7 @@ def mostrar_mapa():
     print("05. Forjando a Interface Visual ✅")
     print("06. Erguendo os Escudos de Defesa ✅")
     print("07. Dominando as Linhas do Tempo ✅")
-    print("08. O Rito da Grande Implantação")
+    print("08. O Rito da Grande Implantação ✅")
     print("09. Desenhando a Planta-Mestra")
     print()
     print("🔒 Nível 2: Mundo CampOne — bloqueado")
@@ -100,7 +100,7 @@ def mostrar_etapas_nivel_1():
     print("05. Forjando a Interface Visual ✅")
     print("06. Erguendo os Escudos de Defesa ✅")
     print("07. Dominando as Linhas do Tempo ✅")
-    print("08. O Rito da Grande Implantação")
+    print("08. O Rito da Grande Implantação ✅")
     print("09. Desenhando a Planta-Mestra")
     print("=" * 60)
 
@@ -6665,6 +6665,70 @@ def prova_dominio_etapa_8():
             print()
             print("Escolha uma das opções: 1, 2 ou 3.")
 
+
+def registro_etapa_8():
+    print()
+    print("=" * 60)
+    print("📝 REGISTRAR EXPERIÊNCIA — O SISTEMA NO AR")
+    print("=" * 60)
+    print("Gabriel aparece na tela e olha diretamente para você.")
+    print()
+    print("Vamos registrar o que você entendeu sobre deploy.")
+    print()
+    print("Você reconheceu que:")
+    print()
+    print("- sistema local é onde o dev cria e testa;")
+    print("- deploy leva o sistema para um ambiente acessível;")
+    print("- servidor é a casa onde o sistema fica disponível;")
+    print("- domínio é o nome fácil que a pessoa digita;")
+    print("- DNS aponta esse nome para o servidor correto;")
+    print("- hospedagem, VPS e nuvem são formas de moradia do sistema;")
+    print("- pipeline ajuda a publicar mudanças com mais segurança;")
+    print("- produção é o ambiente usado por pessoas reais;")
+    print("- deploy exige cuidado porque afeta usuários de verdade.")
+    print()
+    print("Gabriel confirma:")
+    print()
+    print("Isso ainda não é programação prática.")
+    print("É visão de publicação.")
+    print()
+    print("Experiência registrada apenas na narrativa.")
+    print("Salvamento real será criado em uma fase futura.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
+def relatorio_final_etapa_8():
+    print()
+    print("=" * 60)
+    print("📋 RELATÓRIO FINAL — O SISTEMA NO AR")
+    print("=" * 60)
+    print("Gabriel aparece na tela e olha diretamente para você.")
+    print()
+    print("Relatório da missão: O Rito da Grande Implantação")
+    print()
+    print("Você agora sabe que:")
+    print()
+    print("- um sistema preso no computador do dev ainda não é produto disponível;")
+    print("- deploy é colocar o sistema em funcionamento para usuários reais;")
+    print("- servidor é onde o sistema fica disponível fora do ambiente local;")
+    print("- domínio e DNS ajudam as pessoas a encontrar o sistema;")
+    print("- hospedagem, VPS e nuvem são formas de dar moradia ao sistema;")
+    print("- pipeline ajuda a levar mudanças para produção com cuidado;")
+    print("- produção é o mundo real do sistema em uso;")
+    print("- o melhor deploy é aquele que o usuário nem percebe.")
+    print()
+    print("Conclusão:")
+    print()
+    print("Deploy não é só colocar algo na internet.")
+    print("É publicar com endereço, ambiente, cuidado e responsabilidade.")
+    print()
+    print("A etapa ainda não marca conclusão permanente nesta versão.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
 def entrar_etapa_8():
     while True:
         print()
@@ -6704,13 +6768,9 @@ def entrar_etapa_8():
         elif escolha == "6":
             prova_dominio_etapa_8()
         elif escolha == "7":
-            print()
-            print("Registro da etapa 08 será criado quando a etapa estiver consolidada.")
-            input("Pressione Enter para voltar...")
+            registro_etapa_8()
         elif escolha == "8":
-            print()
-            print("Relatório Final da etapa 08 será criado no fechamento da etapa.")
-            input("Pressione Enter para voltar...")
+            relatorio_final_etapa_8()
         elif escolha == "0":
             break
         else:
