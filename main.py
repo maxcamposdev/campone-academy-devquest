@@ -3249,6 +3249,205 @@ def entrar_etapa_4():
             print("Opção inválida.")
 
 
+
+def topico_frontend_etapa_5():
+    print()
+    print("=" * 60)
+    print("🖥️ TÓPICO 1: O QUE É FRONTEND")
+    print("=" * 60)
+    print("Frontend é a parte do sistema que o usuário vê e usa.")
+    print()
+    print("É a tela, os botões, os textos, as imagens, os campos e as interações.")
+    print()
+    print("Irlene aparece na tela e olha diretamente para você.")
+    print()
+    print('"Se o backend trabalha por trás, o frontend olha para o usuário."')
+    print('"Ele precisa ser claro, organizado e fácil de usar."')
+    print()
+    print("Ideia de sobrevivência:")
+    print("frontend é a frente visível do sistema.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
+def topico_html_etapa_5():
+    print()
+    print("=" * 60)
+    print("🏗️ TÓPICO 2: HTML — ESTRUTURA DA PÁGINA")
+    print("=" * 60)
+    print("Antes de uma tela ficar bonita ou interativa, ela precisa existir.")
+    print()
+    print("O HTML organiza o que aparece na página:")
+    print("títulos, textos, imagens, botões, links e campos.")
+    print()
+    print("Irlene aponta para uma tela simples.")
+    print()
+    print('"Pensa assim: primeiro a página precisa dizer o que existe nela."')
+    print('"Depois outras partes cuidam da aparência e do comportamento."')
+    print()
+    print("Ideia de sobrevivência:")
+    print("HTML define a estrutura do que existe na tela.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
+def topico_css_etapa_5():
+    print()
+    print("=" * 60)
+    print("🎨 TÓPICO 3: CSS — APARÊNCIA VISUAL")
+    print("=" * 60)
+    print("Depois que a estrutura existe, a tela precisa ganhar forma visual.")
+    print()
+    print("O CSS cuida da aparência:")
+    print("cores, tamanhos, espaçamentos, fontes e organização visual.")
+    print()
+    print("Irlene mostra a mesma tela com e sem estilo.")
+    print()
+    print('"Sem aparência, a informação até existe, mas fica difícil de usar."')
+    print('"Com estilo, a tela ganha clareza, identidade e conforto."')
+    print()
+    print("Ideia de sobrevivência:")
+    print("CSS dá forma visual ao que o HTML colocou na tela.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
+def topico_javascript_etapa_5():
+    print()
+    print("=" * 60)
+    print("⚡ TÓPICO 4: JAVASCRIPT — COMPORTAMENTO DA TELA")
+    print("=" * 60)
+    print("Uma tela não precisa apenas aparecer.")
+    print("Ela também precisa reagir ao usuário.")
+    print()
+    print("JavaScript entra quando algo precisa acontecer:")
+    print("clicar, abrir, fechar, validar, mudar ou responder sem recarregar tudo.")
+    print()
+    print("Irlene toca em um botão da tela.")
+    print()
+    print('"Quando a tela reage ao seu clique, existe comportamento acontecendo."')
+    print('"Essa é a parte viva da interface."')
+    print()
+    print("Ideia de sobrevivência:")
+    print("JavaScript faz a tela reagir.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
+def topico_dom_etapa_5():
+    print()
+    print("=" * 60)
+    print("🧩 TÓPICO 5: DOM — MAPA VIVO DA PÁGINA")
+    print("=" * 60)
+    print("Para mudar uma parte da tela, o sistema precisa encontrar essa parte.")
+    print()
+    print("O DOM é como um mapa vivo da página.")
+    print("Ele permite que a tela encontre um botão, um texto, uma imagem ou um campo específico.")
+    print()
+    print("Irlene aponta para vários botões parecidos.")
+    print()
+    print('"Se existem dez botões, a tela precisa saber exatamente qual foi clicado."')
+    print('"O DOM ajuda a encontrar a peça certa."')
+    print()
+    print("Ideia de sobrevivência:")
+    print("DOM é o mapa que permite mexer em partes específicas da tela.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
+def topico_responsividade_etapa_5():
+    print()
+    print("=" * 60)
+    print("📱 TÓPICO 6: RESPONSIVIDADE — TELA QUE SE ADAPTA")
+    print("=" * 60)
+    print("O usuário pode abrir o sistema no computador, tablet ou celular.")
+    print()
+    print("A tela precisa se reorganizar para continuar fácil de usar.")
+    print()
+    print("Responsividade é essa capacidade de adaptação.")
+    print()
+    print("Irlene coloca duas telas lado a lado.")
+    print()
+    print('"No computador, há mais espaço."')
+    print('"No celular, tudo precisa se ajustar sem quebrar."')
+    print()
+    print("Ideia de sobrevivência:")
+    print("uma interface boa se adapta ao tamanho da tela.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
+def topico_frontend_completo_etapa_5():
+    print()
+    print("=" * 60)
+    print("🧠 TÓPICO 7: FRONTEND COMPLETO")
+    print("=" * 60)
+    print("Agora juntamos as peças da interface visual.")
+    print()
+    print("HTML coloca a estrutura.")
+    print("CSS cuida da aparência.")
+    print("JavaScript adiciona comportamento.")
+    print("DOM ajuda a encontrar e alterar partes da tela.")
+    print("Responsividade faz tudo se adaptar ao dispositivo.")
+    print()
+    print("Irlene olha diretamente para você.")
+    print()
+    print('"Frontend não é só deixar bonito."')
+    print('"É fazer a tela existir, ser clara, reagir e funcionar bem para quem usa."')
+    print()
+    print("Ideia de sobrevivência:")
+    print("frontend é a experiência visível do sistema funcionando.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
+def reconhecimento_etapa_5():
+    while True:
+        print()
+        print("=" * 60)
+        print("💡 RECONHECIMENTO: A INTERFACE VISUAL")
+        print("=" * 60)
+        print("Irlene organiza os primeiros conceitos de Frontend.")
+        print()
+        print("1 - O que é Frontend")
+        print("2 - HTML — estrutura da página")
+        print("3 - CSS — aparência visual")
+        print("4 - JavaScript — comportamento da tela")
+        print("5 - DOM — mapa vivo da página")
+        print("6 - Responsividade — tela que se adapta")
+        print("7 - Frontend completo")
+        print("0 - Voltar à etapa 05")
+        print("=" * 60)
+
+        escolha = input("Escolha uma opção: ")
+
+        if escolha == "1":
+            topico_frontend_etapa_5()
+        elif escolha == "2":
+            topico_html_etapa_5()
+        elif escolha == "3":
+            topico_css_etapa_5()
+        elif escolha == "4":
+            topico_javascript_etapa_5()
+        elif escolha == "5":
+            topico_dom_etapa_5()
+        elif escolha == "6":
+            topico_responsividade_etapa_5()
+        elif escolha == "7":
+            topico_frontend_completo_etapa_5()
+        elif escolha == "0":
+            break
+        else:
+            print()
+            print("Opção inválida.")
+
 def entrar_etapa_5():
     while True:
         print()
@@ -3281,10 +3480,7 @@ def entrar_etapa_5():
             print("Na próxima fase, vamos organizar a missão usando a aula de origem.")
             input("Pressione Enter para voltar...")
         elif escolha == "2":
-            print()
-            print("Reconhecimento da etapa 05 será criado na Fase B.")
-            print("Aqui vamos entender como a tela ganha forma, organização e interação.")
-            input("Pressione Enter para voltar...")
+            reconhecimento_etapa_5()
         elif escolha == "3":
             print()
             print("Campo de Treinamento da etapa 05 será criado depois do roteiro.")
