@@ -5964,6 +5964,198 @@ def entrar_etapa_7():
             print("Opção inválida.")
 
 
+
+def topico_sistema_local_etapa_8():
+    print()
+    print("=" * 60)
+    print("🏠 TÓPICO 1: SISTEMA LOCAL")
+    print("=" * 60)
+    print("Um sistema pode funcionar perfeitamente no computador do desenvolvedor.")
+    print()
+    print("Mas, se só funciona ali, o cliente ainda não consegue usar.")
+    print()
+    print("Gabriel aparece na tela e olha diretamente para você.")
+    print()
+    print("Um sistema preso no computador do dev ainda não virou produto.")
+    print()
+    print("Ideia de sobrevivência:")
+    print("local é o ambiente onde o dev cria e testa antes de publicar.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
+def topico_deploy_etapa_8():
+    print()
+    print("=" * 60)
+    print("🚀 TÓPICO 2: DEPLOY")
+    print("=" * 60)
+    print("Deploy é o momento em que o sistema sai do ambiente privado")
+    print("e vai para um lugar onde outras pessoas conseguem acessar.")
+    print()
+    print("É como mudar de uma garagem fechada para uma loja com endereço aberto.")
+    print()
+    print("Gabriel aponta para uma tela de publicação.")
+    print()
+    print("Deploy não é só apertar um botão.")
+    print("É colocar o sistema no ar com cuidado.")
+    print()
+    print("Ideia de sobrevivência:")
+    print("deploy coloca o sistema em funcionamento para usuários reais.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
+def topico_servidor_deploy_etapa_8():
+    print()
+    print("=" * 60)
+    print("🖥️ TÓPICO 3: SERVIDOR")
+    print("=" * 60)
+    print("Depois do deploy, o sistema precisa morar em algum lugar.")
+    print()
+    print("Esse lugar é um servidor.")
+    print()
+    print("Servidor é a máquina ou ambiente que fica disponível para receber acessos.")
+    print()
+    print("Gabriel olha diretamente para você.")
+    print()
+    print("O servidor é a casa onde o sistema fica funcionando fora do computador do dev.")
+    print()
+    print("Ideia de sobrevivência:")
+    print("servidor mantém o sistema disponível para quem precisa usar.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
+def topico_dominio_dns_etapa_8():
+    print()
+    print("=" * 60)
+    print("🌐 TÓPICO 4: DOMÍNIO E DNS")
+    print("=" * 60)
+    print("Depois que o sistema tem uma casa, as pessoas precisam encontrar essa casa.")
+    print()
+    print("Domínio é o nome fácil que a pessoa digita.")
+    print("DNS é a agenda que liga esse nome ao endereço real do servidor.")
+    print()
+    print("Gabriel desenha uma placa de endereço.")
+    print()
+    print("Sem domínio e DNS configurados, o usuário pode não encontrar o sistema.")
+    print()
+    print("Ideia de sobrevivência:")
+    print("domínio é o nome; DNS aponta esse nome para o servidor certo.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
+def topico_hospedagem_vps_nuvem_etapa_8():
+    print()
+    print("=" * 60)
+    print("🏢 TÓPICO 5: HOSPEDAGEM, VPS E NUVEM")
+    print("=" * 60)
+    print("Existem formas diferentes de dar moradia para um sistema.")
+    print()
+    print("Hospedagem é a empresa ou serviço que oferece o lugar.")
+    print("VPS é como um apartamento separado dentro de uma estrutura maior.")
+    print("Nuvem é uma estrutura flexível que pode crescer conforme a necessidade.")
+    print()
+    print("Gabriel aponta para três tipos de moradia.")
+    print()
+    print("O melhor caminho depende do tamanho, custo, controle e crescimento do projeto.")
+    print()
+    print("Ideia de sobrevivência:")
+    print("hospedagem é a moradia; VPS e nuvem são modelos possíveis dessa moradia.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
+def topico_pipeline_etapa_8():
+    print()
+    print("=" * 60)
+    print("🏭 TÓPICO 6: PIPELINE")
+    print("=" * 60)
+    print("Deploy moderno pode ter uma esteira de segurança.")
+    print()
+    print("Pipeline é uma sequência organizada que pode conferir, testar e publicar mudanças.")
+    print()
+    print("Se algo está errado, a esteira pode parar antes de afetar o usuário.")
+    print()
+    print("Gabriel mostra uma linha de etapas.")
+    print()
+    print("A pipeline ajuda o time a publicar com mais cuidado e menos improviso.")
+    print()
+    print("Ideia de sobrevivência:")
+    print("pipeline é a esteira que ajuda a levar mudanças para produção com segurança.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
+def topico_producao_etapa_8():
+    print()
+    print("=" * 60)
+    print("🌍 TÓPICO 7: PRODUÇÃO")
+    print("=" * 60)
+    print("Produção é o ambiente onde usuários reais usam o sistema.")
+    print()
+    print("Ali, qualquer mudança precisa de cuidado.")
+    print()
+    print("Uma falha em produção pode afetar clientes, dados e a reputação da empresa.")
+    print()
+    print("Gabriel fala com seriedade.")
+    print()
+    print("O melhor deploy é aquele que o usuário nem percebe.")
+    print()
+    print("Ideia de sobrevivência:")
+    print("produção é o mundo real do sistema em funcionamento.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
+def reconhecimento_etapa_8():
+    while True:
+        print()
+        print("=" * 60)
+        print("💡 RECONHECIMENTO: O SISTEMA NO AR")
+        print("=" * 60)
+        print("Gabriel organiza os primeiros conceitos de Deploy.")
+        print()
+        print("1 - Sistema local")
+        print("2 - Deploy")
+        print("3 - Servidor")
+        print("4 - Domínio e DNS")
+        print("5 - Hospedagem, VPS e Nuvem")
+        print("6 - Pipeline")
+        print("7 - Produção")
+        print("0 - Voltar à etapa 08")
+        print("=" * 60)
+
+        escolha = input("Escolha uma opção: ")
+
+        if escolha == "1":
+            topico_sistema_local_etapa_8()
+        elif escolha == "2":
+            topico_deploy_etapa_8()
+        elif escolha == "3":
+            topico_servidor_deploy_etapa_8()
+        elif escolha == "4":
+            topico_dominio_dns_etapa_8()
+        elif escolha == "5":
+            topico_hospedagem_vps_nuvem_etapa_8()
+        elif escolha == "6":
+            topico_pipeline_etapa_8()
+        elif escolha == "7":
+            topico_producao_etapa_8()
+        elif escolha == "0":
+            break
+        else:
+            print()
+            print("Opção inválida.")
+
 def entrar_etapa_8():
     while True:
         print()
@@ -5996,10 +6188,7 @@ def entrar_etapa_8():
             print("Na próxima fase, vamos organizar a missão usando a aula de origem.")
             input("Pressione Enter para voltar...")
         elif escolha == "2":
-            print()
-            print("Reconhecimento da etapa 08 será criado na Fase B.")
-            print("Aqui vamos entender deploy, produção, servidor, domínio e ambiente no ar.")
-            input("Pressione Enter para voltar...")
+            reconhecimento_etapa_8()
         elif escolha == "3":
             print()
             print("Campo de Treinamento da etapa 08 será criado depois do roteiro.")
