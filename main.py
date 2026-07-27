@@ -3408,6 +3408,59 @@ def topico_frontend_completo_etapa_5():
     input("Pressione Enter para voltar...")
 
 
+
+def cena_abertura_etapa_5():
+    print()
+    print("=" * 60)
+    print("🎬 INICIAR MISSÃO: A INTERFACE VISUAL")
+    print("=" * 60)
+    print("Você retorna ao Centro de Operações da CampOne.")
+    print()
+    print("Eloisa já tinha mostrado a Grande Rede.")
+    print("David abriu o Motor Oculto.")
+    print("Letícia organizou a memória do sistema.")
+    print("Renato mostrou como a tela conversa com o backend.")
+    print()
+    print("Agora falta olhar para a própria tela.")
+    print()
+    print("Irlene aparece na tela e olha diretamente para você.")
+    print()
+    print('"Olá. Eu sou Irlene."')
+    print()
+    print('"Minha área é Frontend."')
+    print('"Eu cuido da parte do sistema que o usuário vê, toca e usa."')
+    print()
+    print('"Botões, textos, campos, imagens, organização visual e interação')
+    print('não aparecem por acaso."')
+    print()
+    print('"Uma tela precisa existir, ser clara, reagir e funcionar bem')
+    print('em diferentes tamanhos de tela."')
+    print()
+    print('"Frontend não é só deixar bonito."')
+    print('"É transformar o sistema em uma experiência que uma pessoa consegue usar."')
+    print()
+    print("Nesta etapa, você vai entender:")
+    print()
+    print("- o que é frontend;")
+    print("- como a estrutura da página nasce;")
+    print("- como a aparência visual é organizada;")
+    print("- como a tela reage ao usuário;")
+    print("- como a página encontra partes específicas para mudar;")
+    print("- por que a interface precisa se adaptar ao celular, tablet e computador;")
+    print("- e como tudo isso forma a experiência visual do sistema.")
+    print()
+    print("Irlene aponta para uma tela da CampOne.")
+    print()
+    print('"Antes de aprender a construir telas na prática,')
+    print('você precisa entender o papel de cada peça."')
+    print()
+    print('"Sem decorar código."')
+    print('"Sem sintaxe disfarçada."')
+    print('"Primeiro a ideia. Depois a ferramenta."')
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
 def reconhecimento_etapa_5():
     while True:
         print()
@@ -3475,10 +3528,7 @@ def entrar_etapa_5():
         escolha = input("Escolha uma opção: ")
 
         if escolha == "1":
-            print()
-            print("A interface visual ainda está sendo preparada.")
-            print("Na próxima fase, vamos organizar a missão usando a aula de origem.")
-            input("Pressione Enter para voltar...")
+            cena_abertura_etapa_5()
         elif escolha == "2":
             reconhecimento_etapa_5()
         elif escolha == "3":
