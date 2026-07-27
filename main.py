@@ -2608,22 +2608,56 @@ def topico_post_etapa_4():
 
 
 def topico_put_etapa_4():
-    print()
-    print("=" * 60)
-    print("✏️ TÓPICO 5: PUT — ATUALIZAR DADOS")
-    print("=" * 60)
-    print("O que já existe pode precisar ser corrigido.")
-    print()
-    print("PUT é o pedido usado para atualizar uma informação existente.")
-    print()
-    print("Exemplo:")
-    print("alterar endereço, editar perfil ou mudar o status de um pedido.")
-    print()
-    print("Ideia de sobrevivência:")
-    print("PUT mexe em algo que já existe.")
-    print("=" * 60)
+    while True:
+        print()
+        print("=" * 60)
+        print("✏️ TÓPICO 5: PUT — ATUALIZAR DADOS")
+        print("=" * 60)
+        print("O que já existe pode precisar ser corrigido.")
+        print()
+        print("PUT é o pedido usado para atualizar uma informação existente.")
+        print()
+        print("Exemplo:")
+        print("alterar endereço, editar perfil ou mudar o status de um pedido.")
+        print()
+        print("Ideia de sobrevivência:")
+        print("PUT mexe em algo que já existe.")
+        print()
+        print("PERGUNTA:")
+        print("Quando uma pessoa altera o preço de um produto que já existe,")
+        print("qual ideia combina melhor com esse pedido?")
+        print()
+        print("1 - PUT, porque o sistema está atualizando uma informação que já existia.")
+        print("2 - GET, porque mudar preço é apenas olhar o produto sem mexer nele.")
+        print("3 - POST, porque qualquer mudança em algo existente sempre cria um produto duplicado.")
+        print("=" * 60)
 
-    input("Pressione Enter para voltar...")
+        escolha = input("Escolha uma opção: ")
+
+        if escolha == "1":
+            print()
+            print("Renato confirma.")
+            print('"Isso. PUT entra quando algo existente precisa ser atualizado."')
+            print('"O produto já estava no sistema; agora uma informação dele mudou."')
+            input("Pressione Enter para voltar...")
+            break
+        elif escolha == "2":
+            print()
+            print("Renato reancora com calma.")
+            print('"Quase. GET é o pedido de olhar."')
+            print('"Se o preço mudou, o sistema não está só olhando."')
+            print('"Ele está alterando uma informação existente."')
+            input("Pressione Enter para tentar novamente...")
+        elif escolha == "3":
+            print()
+            print("Renato aponta para a diferença entre criar e atualizar.")
+            print('"Boa tentativa. POST é muito usado quando algo novo precisa ser criado."')
+            print('"Mas aqui o produto já existe."')
+            print('"A ideia principal é atualizar o que já estava lá."')
+            input("Pressione Enter para tentar novamente...")
+        else:
+            print()
+            print("Escolha uma das opções: 1, 2 ou 3.")
 
 
 def topico_delete_etapa_4():
