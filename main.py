@@ -4950,6 +4950,70 @@ def prova_dominio_etapa_6():
             print()
             print("Escolha uma das opções: 1, 2 ou 3.")
 
+
+def registro_etapa_6():
+    print()
+    print("=" * 60)
+    print("📝 REGISTRAR EXPERIÊNCIA — A PORTARIA DIGITAL")
+    print("=" * 60)
+    print("Débora aparece na tela e olha diretamente para você.")
+    print()
+    print("Vamos registrar o que você entendeu sobre os escudos de defesa.")
+    print()
+    print("Você reconheceu que:")
+    print()
+    print("- login é o começo da entrada no sistema;")
+    print("- autenticação confirma quem a pessoa é;")
+    print("- autorização define o que a pessoa pode fazer;")
+    print("- cookies podem guardar pequenos lembretes no navegador;")
+    print("- sessão mantém o reconhecimento por um tempo limitado;")
+    print("- token pode funcionar como uma prova temporária nos pedidos;")
+    print("- nem toda recusa é defeito;")
+    print("- segurança protege pessoas, dados e sistemas.")
+    print()
+    print("Débora confirma:")
+    print("Isso ainda não é programação prática.")
+    print("É visão de segurança.")
+    print()
+    print("Experiência registrada apenas na narrativa.")
+    print("Salvamento real será criado em uma fase futura.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
+def relatorio_final_etapa_6():
+    print()
+    print("=" * 60)
+    print("📋 RELATÓRIO FINAL — A PORTARIA DIGITAL")
+    print("=" * 60)
+    print("Débora aparece na tela e olha diretamente para você.")
+    print()
+    print("Relatório da missão: Erguendo os Escudos de Defesa")
+    print()
+    print("Você agora sabe que:")
+    print()
+    print("- todo sistema sério precisa saber quem está tentando entrar;")
+    print("- login inicia a entrada;")
+    print("- autenticação confere identidade;")
+    print("- autorização controla permissões;")
+    print("- cookies podem guardar pequenos lembres no navegador;")
+    print("- sessão limita o tempo de reconhecimento;")
+    print("- token pode acompanhar pedidos protegidos;")
+    print("- segurança não é travar tudo;")
+    print("- segurança é permitir a pessoa certa, no lugar certo, pelo tempo certo.")
+    print()
+    print("Conclusão:")
+    print()
+    print("Login não é só uma tela com senha.")
+    print("É uma portaria digital.")
+    print("Ela protege o caminho entre pessoa, sistema, dados e permissões.")
+    print()
+    print("A etapa ainda não marca conclusão permanente nesta versão.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
 def entrar_etapa_6():
     while True:
         print()
@@ -4989,13 +5053,9 @@ def entrar_etapa_6():
         elif escolha == "6":
             prova_dominio_etapa_6()
         elif escolha == "7":
-            print()
-            print("Registro da etapa 06 será criado quando a etapa estiver consolidada.")
-            input("Pressione Enter para voltar...")
+            registro_etapa_6()
         elif escolha == "8":
-            print()
-            print("Relatório Final da etapa 06 será criado no fechamento da etapa.")
-            input("Pressione Enter para voltar...")
+            relatorio_final_etapa_6()
         elif escolha == "0":
             break
         else:
