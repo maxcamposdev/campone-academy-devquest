@@ -23,18 +23,7 @@ Não dividir internamente cada etapa agora.
 
 Cada etapa já está isolada em seu próprio módulo.
 
-Dividir cada etapa em arquivos como:
-
-- introducao.py
-- reconhecimento.py
-- campo_treinamento.py
-- laboratorio.py
-- missao.py
-- prova.py
-- registro.py
-- relatorio.py
-
-criaria muitos arquivos neste momento e traria pouco ganho imediato.
+Dividir cada etapa em arquivos como introducao.py, reconhecimento.py, campo_treinamento.py, laboratorio.py, missao.py, prova.py, registro.py e relatorio.py criaria muitos arquivos neste momento e traria pouco ganho imediato.
 
 ## Próximo foco recomendado
 
