@@ -6777,6 +6777,74 @@ def entrar_etapa_8():
             print()
             print("Opção inválida.")
 
+
+def entrar_etapa_9():
+    while True:
+        print()
+        print("=" * 60)
+        print("09. DESENHANDO A PLANTA-MESTRA")
+        print("=" * 60)
+        print("Tema real: Arquitetura")
+        print("Tipo: Treinamento de Sobrevivência")
+        print("Status: Estrutura inicial")
+        print("Mentora prevista: Adria")
+        print()
+        print("CENTRO DE OPERAÇÕES")
+        print("-" * 60)
+        print("1 - Iniciar Missão")
+        print("2 - Reconhecimento")
+        print("3 - Campo de Treinamento")
+        print("4 - Laboratório de Falhas")
+        print("5 - Missão em Produção")
+        print("6 - Prova de Domínio")
+        print("7 - Registrar Experiência")
+        print("8 - Relatório Final")
+        print("0 - Retornar ao Nível 1")
+        print("=" * 60)
+
+        escolha = input("Escolha uma opção: ")
+
+        if escolha == "1":
+            print()
+            print("A planta-mestra ainda está sendo preparada.")
+            print("Na próxima fase, vamos organizar a missão usando a aula de origem.")
+            input("Pressione Enter para voltar...")
+        elif escolha == "2":
+            print()
+            print("Reconhecimento da etapa 09 será criado na Fase B.")
+            print("Aqui vamos entender arquitetura, organização, camadas e responsabilidades.")
+            input("Pressione Enter para voltar...")
+        elif escolha == "3":
+            print()
+            print("Campo de Treinamento da etapa 09 será criado depois do roteiro.")
+            input("Pressione Enter para voltar...")
+        elif escolha == "4":
+            print()
+            print("Laboratório de Falhas da etapa 09 será criado depois do roteiro.")
+            input("Pressione Enter para voltar...")
+        elif escolha == "5":
+            print()
+            print("Missão em Produção da etapa 09 será criada depois do roteiro.")
+            input("Pressione Enter para voltar...")
+        elif escolha == "6":
+            print()
+            print("Prova de Domínio da etapa 09 ainda não será criada.")
+            print("As perguntas precisam ser revisadas antes de virar código.")
+            input("Pressione Enter para voltar...")
+        elif escolha == "7":
+            print()
+            print("Registro da etapa 09 será criado quando a etapa estiver consolidada.")
+            input("Pressione Enter para voltar...")
+        elif escolha == "8":
+            print()
+            print("Relatório Final da etapa 09 será criado no fechamento da etapa.")
+            input("Pressione Enter para voltar...")
+        elif escolha == "0":
+            break
+        else:
+            print()
+            print("Opção inválida.")
+
 def entrar_nivel_1():
     while True:
         print()
@@ -6795,6 +6863,7 @@ def entrar_nivel_1():
         print("7 - Entrar na etapa 06: Erguendo os Escudos de Defesa")
         print("8 - Entrar na etapa 07: Dominando as Linhas do Tempo")
         print("9 - Entrar na etapa 08: O Rito da Grande Implantação")
+        print("10 - Entrar na etapa 09: Desenhando a Planta-Mestra")
         print("0 - Voltar ao menu do jogador")
         print("=" * 60)
 
@@ -6818,6 +6887,8 @@ def entrar_nivel_1():
             entrar_etapa_7()
         elif escolha == "9":
             entrar_etapa_8()
+        elif escolha == "10":
+            entrar_etapa_9()
         elif escolha == "0":
             break
         else:
