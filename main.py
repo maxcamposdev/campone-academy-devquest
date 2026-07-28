@@ -80,7 +80,7 @@ def mostrar_mapa():
     print("06. Erguendo os Escudos de Defesa ✅")
     print("07. Dominando as Linhas do Tempo ✅")
     print("08. O Rito da Grande Implantação ✅")
-    print("09. Desenhando a Planta-Mestra")
+    print("09. Desenhando a Planta-Mestra ✅")
     print()
     print("🔒 Nível 2: Mundo CampOne — bloqueado")
     print("🔒 Nível 3: Missões da Guilda — bloqueado")
@@ -101,7 +101,7 @@ def mostrar_etapas_nivel_1():
     print("06. Erguendo os Escudos de Defesa ✅")
     print("07. Dominando as Linhas do Tempo ✅")
     print("08. O Rito da Grande Implantação ✅")
-    print("09. Desenhando a Planta-Mestra")
+    print("09. Desenhando a Planta-Mestra ✅")
     print("=" * 60)
 
 
@@ -7397,6 +7397,71 @@ def prova_dominio_etapa_9():
             print()
             print("Escolha uma das opções: 1, 2 ou 3.")
 
+
+def registro_etapa_9():
+    print()
+    print("=" * 60)
+    print("📝 REGISTRAR EXPERIÊNCIA — A PLANTA-MESTRA")
+    print("=" * 60)
+    print("Adria aparece na tela e olha diretamente para você.")
+    print()
+    print("Vamos registrar o que você entendeu sobre Arquitetura.")
+    print()
+    print("Você reconheceu que:")
+    print()
+    print("- arquitetura é a planta do sistema;")
+    print("- cliente e servidor são lados separados que conversam;")
+    print("- camadas separam responsabilidades;")
+    print("- API organiza a comunicação entre partes;")
+    print("- um pedido atravessa várias camadas;")
+    print("- diagnóstico melhora quando o time sabe onde procurar;")
+    print("- a planta-mestra junta tudo que a Academy ensinou.")
+    print()
+    print("Adria confirma:")
+    print()
+    print("Isso ainda não é programação prática.")
+    print("É visão de sistema.")
+    print()
+    print("Experiência registrada apenas na narrativa.")
+    print("Salvamento real será criado em uma fase futura.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
+
+def relatorio_final_etapa_9():
+    print()
+    print("=" * 60)
+    print("📋 RELATÓRIO FINAL — A PLANTA-MESTRA")
+    print("=" * 60)
+    print("Adria aparece na tela e olha diretamente para você.")
+    print()
+    print("Relatório da missão: Desenhando a Planta-Mestra")
+    print()
+    print("Você agora sabe que:")
+    print()
+    print("- a internet é o caminho;")
+    print("- o backend aplica regras;")
+    print("- o banco guarda memória;")
+    print("- a API organiza a conversa;")
+    print("- o frontend entrega a experiência visual;")
+    print("- a segurança protege entrada e permissões;")
+    print("- Git e GitHub guardam o histórico do time;")
+    print("- deploy coloca o sistema no ar;")
+    print("- arquitetura junta tudo em uma planta compreensível.")
+    print()
+    print("Conclusão:")
+    print()
+    print("Você concluiu a Academy teórica.")
+    print()
+    print("Agora você não enxerga mais peças soltas.")
+    print("Você enxerga o sistema como uma casa inteira.")
+    print()
+    print("A Academy está pronta para ser fechada antes da futura consolidação da Engine.")
+    print("=" * 60)
+
+    input("Pressione Enter para voltar...")
+
 def entrar_etapa_9():
     while True:
         print()
@@ -7436,13 +7501,9 @@ def entrar_etapa_9():
         elif escolha == "6":
             prova_dominio_etapa_9()
         elif escolha == "7":
-            print()
-            print("Registro da etapa 09 será criado quando a etapa estiver consolidada.")
-            input("Pressione Enter para voltar...")
+            registro_etapa_9()
         elif escolha == "8":
-            print()
-            print("Relatório Final da etapa 09 será criado no fechamento da etapa.")
-            input("Pressione Enter para voltar...")
+            relatorio_final_etapa_9()
         elif escolha == "0":
             break
         else:
