@@ -1,5 +1,6 @@
 from engine.telas import tela_boas_vindas
 from jogador.perfil import criar_jogador, mostrar_status
+from engine.mapa import mostrar_mapa, mostrar_etapas_nivel_1
 
 
 
@@ -7,44 +8,8 @@ from jogador.perfil import criar_jogador, mostrar_status
 
 
 
-def mostrar_mapa():
-    print()
-    print("=" * 60)
-    print("🗺️  MAPA DA CAMPONE ACADEMY")
-    print("=" * 60)
-    print("🔓 Nível 1: A Forja do Código")
-    print()
-    print("01. Decifrando a Grande Rede ✅")
-    print("02. Explorando o Motor Oculto ✅")
-    print("03. Arquivando a História do Mundo ✅")
-    print("04. Construindo a Ponte dos Mundos ✅")
-    print("05. Forjando a Interface Visual ✅")
-    print("06. Erguendo os Escudos de Defesa ✅")
-    print("07. Dominando as Linhas do Tempo ✅")
-    print("08. O Rito da Grande Implantação ✅")
-    print("09. Desenhando a Planta-Mestra ✅")
-    print()
-    print("🔒 Nível 2: Mundo CampOne — bloqueado")
-    print("🔒 Nível 3: Missões da Guilda — bloqueado")
-    print("🔒 Nível 4: Comunidade Central — bloqueado")
-    print("=" * 60)
 
 
-def mostrar_etapas_nivel_1():
-    print()
-    print("=" * 60)
-    print("ETAPAS DO NÍVEL 1: A FORJA DO CÓDIGO")
-    print("=" * 60)
-    print("01. Decifrando a Grande Rede ✅")
-    print("02. Explorando o Motor Oculto ✅")
-    print("03. Arquivando a História do Mundo ✅")
-    print("04. Construindo a Ponte dos Mundos ✅")
-    print("05. Forjando a Interface Visual ✅")
-    print("06. Erguendo os Escudos de Defesa ✅")
-    print("07. Dominando as Linhas do Tempo ✅")
-    print("08. O Rito da Grande Implantação ✅")
-    print("09. Desenhando a Planta-Mestra ✅")
-    print("=" * 60)
 
 
 def topico_internet():
