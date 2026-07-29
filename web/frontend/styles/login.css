@@ -1,0 +1,52 @@
+body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: #060912;
+            background-image: 
+                linear-gradient(rgba(6,9,18,0.55), rgba(6,9,18,0.82)),
+                url('../assets/background.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .login-panel {
+            background: rgba(12, 18, 32, 0.82);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(79, 217, 255, 0.25);
+            box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.6);
+        }
+
+/* ===== CÓDIGOS ANIMADOS ===== */
+
+#codeCanvas{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 0;          /* camada mais baixa de todas */
+    opacity: .28;
+    -webkit-mask-image: linear-gradient(to bottom, black 0%, black 55%, transparent 82%);
+    mask-image: linear-gradient(to bottom, black 0%, black 55%, transparent 82%);
+}
+
+#darkOverlay{
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(to bottom,
+        rgba(6,9,18,.55) 0%,
+        rgba(6,9,18,.5) 55%,
+        rgba(6,9,18,.18) 78%,
+        rgba(6,9,18,0) 92%
+    );
+    z-index: 1;           /* acima do canvas, abaixo do conteúdo */
+    pointer-events: none;
+}
+
+#appContent{
+    position: relative;
+    z-index: 2;            /* login e resto da UI, sempre por cima */
+}
