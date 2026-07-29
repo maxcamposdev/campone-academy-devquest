@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -e
+cd "$(dirname "$0")"
+PYTK="$HOME/.pyenv/versions/py314-tk/bin/python"
+SCRIPT="ferramentas/preview_interface_"
+exec "$PYTK" "${SCRIPT}janela.py"
