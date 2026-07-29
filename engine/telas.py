@@ -1,25 +1,31 @@
 """Telas gerais reutilizáveis da Engine."""
 
+from engine.ui import caixa, menu, titulo
+
+
 def tela_boas_vindas():
-    print("=" * 60)
-    print("        🏕️  CAMPONE ACADEMY")
-    print("=" * 60)
-    print("Construa sua jornada no universo da tecnologia.")
+    titulo("🏕️  CAMPONE ACADEMY", "DevQuest")
+
+    caixa([
+        "Construa sua jornada no universo da tecnologia.",
+        "",
+        "AGÊNCIA: CampOne Academy",
+        "FUNÇÃO: recrutar, preparar e conectar devs",
+        "a empresas parceiras.",
+        "",
+        "FASE ATUAL: Recrutamento CampOne",
+        "PROGRAMA: Treinamento de Sobrevivência",
+        "OBJETIVO: concluir as etapas iniciais",
+        "para desbloquear oportunidades no mundo real.",
+    ])
+
     print()
-    print("AGÊNCIA: CampOne Academy")
-    print("FUNÇÃO: recrutar, preparar e conectar devs")
-    print("a empresas parceiras.")
-    print()
-    print("FASE ATUAL: Recrutamento CampOne")
-    print("PROGRAMA: Treinamento de Sobrevivência")
-    print("OBJETIVO: Concluir as etapas iniciais para desbloquear oportunidades no mundo real da tecnologia.")
-    print()
-    print("-" * 60)
-    print("1 - Novo jogo")
-    print("2 - Carregar jogo 🔒")
-    print("3 - Configurações 🔒")
-    print("4 - Sair")
-    print("-" * 60)
+    menu([
+        ("1", "Novo jogo"),
+        ("2", "Carregar jogo 🔒"),
+        ("3", "Configurações 🔒"),
+        ("4", "Sair"),
+    ])
 
     escolha = input("Escolha uma opção: ")
     return escolha
