@@ -100,6 +100,32 @@
             background: rgba(255,255,255,0.08);
             border: 1px solid rgba(255,255,255,0.18);
         }
+
+        .botao-voltar-padrao {
+            position: fixed;
+            left: 28px;
+            bottom: 28px;
+            z-index: 20;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 18px;
+            border-radius: 16px;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 14px;
+            background: rgba(15, 23, 42, 0.82);
+            border: 1px solid rgba(255,255,255,0.22);
+            box-shadow: 0 14px 30px rgba(0,0,0,0.35);
+            backdrop-filter: blur(12px);
+        }
+
+        .botao-voltar-padrao:hover {
+            background: rgba(37, 99, 235, 0.85);
+            border-color: rgba(103, 232, 249, 0.55);
+        }
+
     </style>
 </head>
 <body>
@@ -140,6 +166,7 @@
                 <a class="button secondary" href="#" onclick="alert('Mundo Prático será integrado depois.')">Ver status</a>
             </article>
         </section>
+        <a class="botao-voltar-padrao" href="../index.html">Voltar</a>
     </main>
 
     <script>
