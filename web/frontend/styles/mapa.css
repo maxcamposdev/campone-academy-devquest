@@ -1,0 +1,120 @@
+body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #060912;
+            color: #ffffff;
+        }
+
+        .page {
+            min-height: 100vh;
+            padding: 40px;
+            background:
+                linear-gradient(rgba(6, 9, 18, 0.82), rgba(6, 9, 18, 0.96)),
+                url('../assets/background.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .topbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 36px;
+        }
+
+        .brand {
+            font-size: 26px;
+            font-weight: 800;
+            color: #67e8f9;
+        }
+
+        .status {
+            color: #cbd5e1;
+            font-size: 14px;
+        }
+
+        .hero {
+            max-width: 980px;
+            margin: 0 auto 32px auto;
+            padding: 28px;
+            border: 1px solid rgba(103, 232, 249, 0.35);
+            border-radius: 24px;
+            background: rgba(15, 23, 42, 0.82);
+            box-shadow: 0 0 40px rgba(56, 189, 248, 0.12);
+        }
+
+        .hero h1 {
+            margin: 0 0 12px 0;
+            font-size: 38px;
+        }
+
+        .hero p {
+            color: #cbd5e1;
+            line-height: 1.6;
+        }
+
+        .grid {
+            max-width: 980px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 18px;
+        }
+
+        .card {
+            padding: 22px;
+            border: 1px solid rgba(148, 163, 184, 0.25);
+            border-radius: 20px;
+            background: rgba(15, 23, 42, 0.76);
+        }
+
+        .card h2 {
+            margin-top: 0;
+            color: #22c55e;
+            font-size: 20px;
+        }
+
+        .locked {
+            opacity: 0.58;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 14px;
+            padding: 12px 18px;
+            border-radius: 14px;
+            background: linear-gradient(90deg, #2563eb, #7c3aed);
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .button.secondary {
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.18);
+        }
+
+        .botao-voltar-padrao {
+            position: fixed;
+            left: 28px;
+            bottom: 28px;
+            z-index: 20;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 18px;
+            border-radius: 16px;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 14px;
+            background: rgba(15, 23, 42, 0.82);
+            border: 1px solid rgba(255,255,255,0.22);
+            box-shadow: 0 14px 30px rgba(0,0,0,0.35);
+            backdrop-filter: blur(12px);
+        }
+
+        .botao-voltar-padrao:hover {
+            background: rgba(37, 99, 235, 0.85);
+            border-color: rgba(103, 232, 249, 0.55);
+        }
