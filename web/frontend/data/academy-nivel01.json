@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "titulo": "Decifrando a Grande Rede",
+    "tema": "Fundamentos da Internet",
+    "mentor": "Eloisa",
+    "status": "disponivel",
+    "rota": "aula-1.html",
+    "descricao": "Entenda como cliente, servidor, DNS, IP, HTTP e HTTPS se conectam."
+  },
+  {
+    "id": 2,
+    "titulo": "Explorando o Motor Oculto",
+    "tema": "Backend",
+    "mentor": "David",
+    "status": "bloqueada",
+    "rota": "#",
+    "descricao": "Conheça o servidor, a lógica de negócio, APIs, rotas e JSON."
+  },
+  {
+    "id": 3,
+    "titulo": "Arquivando a História do Mundo",
+    "tema": "Banco de Dados",
+    "mentor": "Letícia",
+    "status": "bloqueada",
+    "rota": "#",
+    "descricao": "Entenda tabelas, registros, colunas, chaves e relacionamentos."
+  },
+  {
+    "id": 4,
+    "titulo": "Construindo a Ponte dos Mundos",
+    "tema": "Comunicação Frontend ↔ Backend",
+    "mentor": "Renato",
+    "status": "bloqueada",
+    "rota": "#",
+    "descricao": "Veja como tela, backend e dados conversam usando requisições e respostas."
+  },
+  {
+    "id": 5,
+    "titulo": "Forjando a Interface Visual",
+    "tema": "Frontend",
+    "mentor": "Irlene",
+    "status": "bloqueada",
+    "rota": "#",
+    "descricao": "Conheça a parte visual do sistema e como o usuário interage com ela."
+  },
+  {
+    "id": 6,
+    "titulo": "Erguendo os Escudos de Defesa",
+    "tema": "Login e Segurança",
+    "mentor": "Débora",
+    "status": "bloqueada",
+    "rota": "#",
+    "descricao": "Entenda login, autenticação, autorização, sessão, cookies e JWT."
+  },
+  {
+    "id": 7,
+    "titulo": "Dominando as Linhas do Tempo",
+    "tema": "Git e GitHub",
+    "mentor": "Richard",
+    "status": "bloqueada",
+    "rota": "#",
+    "descricao": "Aprenda versionamento, histórico, commit, branch, push e colaboração."
+  },
+  {
+    "id": 8,
+    "titulo": "O Rito da Grande Implantação",
+    "tema": "Deploy",
+    "mentor": "Gabriel",
+    "status": "bloqueada",
+    "rota": "#",
+    "descricao": "Entenda como colocar um sistema no ar e torná-lo acessível."
+  },
+  {
+    "id": 9,
+    "titulo": "Desenhando a Planta-Mestra",
+    "tema": "Arquitetura",
+    "mentor": "Adria",
+    "status": "bloqueada",
+    "rota": "#",
+    "descricao": "Compreenda organização, responsabilidades, camadas e visão macro do sistema."
+  }
+]
