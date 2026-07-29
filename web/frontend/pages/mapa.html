@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa da CampOne Academy</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #060912;
+            color: #ffffff;
+        }
+
+        .page {
+            min-height: 100vh;
+            padding: 40px;
+            background:
+                linear-gradient(rgba(6, 9, 18, 0.82), rgba(6, 9, 18, 0.96)),
+                url('../assets/background.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .topbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 36px;
+        }
+
+        .brand {
+            font-size: 26px;
+            font-weight: 800;
+            color: #67e8f9;
+        }
+
+        .status {
+            color: #cbd5e1;
+            font-size: 14px;
+        }
+
+        .hero {
+            max-width: 980px;
+            margin: 0 auto 32px auto;
+            padding: 28px;
+            border: 1px solid rgba(103, 232, 249, 0.35);
+            border-radius: 24px;
+            background: rgba(15, 23, 42, 0.82);
+            box-shadow: 0 0 40px rgba(56, 189, 248, 0.12);
+        }
+
+        .hero h1 {
+            margin: 0 0 12px 0;
+            font-size: 38px;
+        }
+
+        .hero p {
+            color: #cbd5e1;
+            line-height: 1.6;
+        }
+
+        .grid {
+            max-width: 980px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 18px;
+        }
+
+        .card {
+            padding: 22px;
+            border: 1px solid rgba(148, 163, 184, 0.25);
+            border-radius: 20px;
+            background: rgba(15, 23, 42, 0.76);
+        }
+
+        .card h2 {
+            margin-top: 0;
+            color: #22c55e;
+            font-size: 20px;
+        }
+
+        .locked {
+            opacity: 0.58;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 14px;
+            padding: 12px 18px;
+            border-radius: 14px;
+            background: linear-gradient(90deg, #2563eb, #7c3aed);
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .button.secondary {
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.18);
+        }
+    </style>
+</head>
+<body>
+    <main class="page">
+        <header class="topbar">
+            <div class="brand">CampOne Academy DevQuest</div>
+            <div class="status" id="playerStatus">Carregando jogador...</div>
+        </header>
+
+        <section class="hero">
+            <h1>Mapa da CampOne Academy</h1>
+            <p>
+                Bem-vindo ao mapa da sua jornada. Aqui você acompanha sua evolução,
+                revisa a Academy e acessa as próximas fases desbloqueadas.
+            </p>
+        </section>
+
+        <section class="grid">
+            <article class="card">
+                <h2>✅ Aula 1 — Decifrando a Grande Rede</h2>
+                <p>Tema: Fundamentos da Internet</p>
+                <p>Mentora: Eloisa</p>
+                <p>Status: disponível para revisão e protótipo web.</p>
+                <a class="button" href="aula-1.html">Entrar na Aula 1</a>
+            </article>
+
+            <article class="card locked">
+                <h2>🔒 Aula 2 — Backend</h2>
+                <p>Tema: Motor Oculto do Sistema</p>
+                <p>Status: bloqueada neste protótipo.</p>
+                <a class="button secondary" href="#" onclick="alert('Aula 2 ainda está bloqueada neste protótipo.')">Bloqueada</a>
+            </article>
+
+            <article class="card">
+                <h2>🟡 Mundo Prático</h2>
+                <p>Missão 01 — O Primeiro Dia</p>
+                <p>Status: em desenvolvimento paralelo no jogo Python.</p>
+                <a class="button secondary" href="#" onclick="alert('Mundo Prático será integrado depois.')">Ver status</a>
+            </article>
+        </section>
+    </main>
+
+    <script>
+        const user = JSON.parse(localStorage.getItem("campone_user") || "{}");
+        const nome = user.nome || "Recruta";
+        const nivel = user.nivel || "Recruta";
+        document.getElementById("playerStatus").textContent = `${nome} • Nível: ${nivel}`;
+    </script>
+</body>
+</html>
