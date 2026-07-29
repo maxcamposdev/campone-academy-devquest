@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampOne Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: #060912;
+            background-image: 
+                linear-gradient(rgba(6,9,18,0.55), rgba(6,9,18,0.82)),
+                url('assets/background.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .login-panel {
+            background: rgba(12, 18, 32, 0.82);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(79, 217, 255, 0.25);
+            box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.6);
+        }
+
+/* ===== CÓDIGOS ANIMADOS ===== */
+
+#codeCanvas{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 0;          /* camada mais baixa de todas */
+    opacity: .28;
+    -webkit-mask-image: linear-gradient(to bottom, black 0%, black 55%, transparent 82%);
+    mask-image: linear-gradient(to bottom, black 0%, black 55%, transparent 82%);
+}
+
+#darkOverlay{
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(to bottom,
+        rgba(6,9,18,.55) 0%,
+        rgba(6,9,18,.5) 55%,
+        rgba(6,9,18,.18) 78%,
+        rgba(6,9,18,0) 92%
+    );
+    z-index: 1;           /* acima do canvas, abaixo do conteúdo */
+    pointer-events: none;
+}
+
+#appContent{
+    position: relative;
+    z-index: 2;            /* login e resto da UI, sempre por cima */
+}
+    </style>
+</head>
+<body class="text-white">
+
+<canvas id="codeCanvas"></canvas>
+<div id="darkOverlay"></div>
+
+
+<div id="appContent" class="min-h-screen flex items-center justify-center px-6">
+        <div class="w-full max-w-7xl grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            
+            <!-- LADO ESQUERDO -->
+            <div class="lg:col-span-8 px-4">
+                <div class="flex flex-col md:flex-row items-center gap-8 w-full">
+
+                    <!-- Botões (coluna fixa à esquerda) -->
+                    <div class="flex flex-col gap-3 w-full max-w-[200px] order-2 md:order-1">
+                        <button onclick="startNewGame()"
+                                class="w-full px-8 py-3.5 bg-[#2563eb] hover:bg-blue-600 text-white font-semibold rounded-2xl flex items-center justify-center gap-x-2 text-sm shadow-lg">
+                            <i class="fas fa-play mr-1"></i>
+                            <span>Novo Jogo</span>
+                        </button>
+
+                        <button onclick="loadGame()"
+                                class="w-full px-8 py-3.5 border border-white/30 hover:bg-white/10 text-white font-medium rounded-2xl flex items-center justify-center gap-x-2 text-sm">
+                            <i class="fas fa-folder-open"></i>
+                            <span>Carregar Jogo</span>
+                        </button>
+                    </div>
+
+                    <!-- Logo (grande, centralizada) + frase logo abaixo -->
+                    <div class="flex-1 flex flex-col items-center text-center order-1 md:order-2 min-w-0">
+                        <img src="assets/logo-c1.png" 
+                             alt="CampOne Logo" 
+                             class="w-[246px] h-[246px] sm:w-[352px] sm:h-[352px] lg:w-[506px] lg:h-[506px] object-contain -mb-7 sm:-mb-11 lg:-mb-[70px]">
+                        <p class="text-lg lg:text-xl text-cyan-200 leading-tight whitespace-nowrap">
+                            Construa sua jornada no universo da programação
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- LADO DIREITO - PAINEL DE LOGIN -->
+            <div class="lg:col-span-4">
+                <div class="login-panel w-full max-w-[370px] mx-auto rounded-3xl p-7 border border-white/10">
+                    
+                    <div class="flex items-center gap-x-2 mb-6">
+                        <span class="font-bold text-2xl">LOGIN</span>
+                    </div>
+
+                    <form id="loginForm" onsubmit="handleLogin(event)">
+                        
+                        <div class="mb-4">
+                            <input type="email" id="email" value="max.campos@campone.dev" 
+                                   class="w-full bg-slate-900/70 border border-white/10 focus:border-cyan-400 px-4 py-3 rounded-2xl text-sm"
+                                   placeholder="Email">
+                        </div>
+
+                        <div class="mb-4">
+                            <div class="relative">
+                                <input type="password" id="password" value="campone123" 
+                                       class="w-full bg-slate-900/70 border border-white/10 focus:border-cyan-400 px-4 py-3 rounded-2xl text-sm"
+                                       placeholder="Senha">
+                                <button type="button" onclick="togglePassword(this)" 
+                                        class="absolute right-4 top-3.5 text-white/50">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between mb-5 text-xs">
+                            <label class="flex items-center gap-x-1.5 text-white/70 cursor-pointer">
+                                <input type="checkbox" checked> Lembrar-me
+                            </label>
+                            <a href="#" class="text-cyan-400 hover:underline">Esqueceu a senha?</a>
+                        </div>
+
+                        <button type="submit" 
+                                class="w-full py-3.5 bg-gradient-to-r from-[#6366f1] to-[#a855f7] hover:from-indigo-500 hover:to-purple-600 text-white font-semibold rounded-2xl text-sm">
+                            ENTRAR
+                        </button>
+
+                        <div class="flex items-center gap-x-3 my-4">
+                            <div class="flex-1 h-px bg-white/10"></div>
+                            <span class="text-xs text-white/50">Ou entre com</span>
+                            <div class="flex-1 h-px bg-white/10"></div>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-3">
+                            <button type="button" onclick="socialLogin('github')"
+                                    class="flex items-center justify-center gap-x-2 py-2.5 px-4 border border-white/15 hover:bg-white/5 rounded-2xl text-xs font-medium">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </button>
+                            
+                            <button type="button" onclick="socialLogin('linkedin')"
+                                    class="flex items-center justify-center gap-x-2 py-2.5 px-4 border border-white/15 hover:bg-white/5 rounded-2xl text-xs font-medium">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function togglePassword(el) {
+            const input = el.parentElement.querySelector('input');
+            input.type = input.type === 'password' ? 'text' : 'password';
+        }
+
+        function handleLogin(e) {
+            e.preventDefault();
+            const email = document.getElementById('email').value;
+            
+            localStorage.setItem('campone_user', JSON.stringify({
+                nome: email.split('@')[0] || "Recruta",
+                email: email,
+                nivel: "Recruta",
+                xp: 0
+            }));
+            
+            window.location.href = "mapa.html";
+        }
+
+        function socialLogin(provider) {
+            alert(`Login com ${provider} simulado!`);
+            localStorage.setItem('campone_user', JSON.stringify({
+                nome: "Max Campos",
+                email: "max.campos@campone.dev",
+                nivel: "Recruta"
+            }));
+            window.location.href = "mapa.html";
+        }
+
+        function startNewGame() {
+            document.getElementById('email').value = "recruta.novo@campone.dev";
+            document.getElementById('password').value = "campone123";
+            setTimeout(() => {
+                document.getElementById('loginForm').dispatchEvent(new Event('submit', { bubbles: true }));
+            }, 200);
+        }
+
+        function loadGame() {
+            document.getElementById('email').value = "max.campos@campone.dev";
+            document.getElementById('password').value = "campone123";
+            setTimeout(() => {
+                document.getElementById('loginForm').dispatchEvent(new Event('submit', { bubbles: true }));
+            }, 200);
+        }
+/* =====================================================
+      CAMPONE - CÓDIGOS ANIMADOS DE FUNDO
+===================================================== */
+
+const canvas = document.getElementById("codeCanvas");
+const ctx = canvas.getContext("2d");
+
+let W, H;
+let streams = [];
+
+const COLORS = [
+    "#00ff88",
+    "#7CFC00",
+    "#9CFF2E",
+    "#FFD54F",
+    "#FFC107",
+    "#FF9800",
+    "#FF7043"
+];
+
+const CODES = [
+    "import academy",
+    "from campone.academy import Missao",
+    "class DevJunior:",
+    "def __init__(self):",
+    "self.nivel = 1",
+    "self.xp = 0",
+    "self.missoes = []",
+    "def ganhar_xp(self):",
+    "def subir_nivel(self):",
+    "print('Pensar')",
+    "print('Praticar')",
+    "print('Evoluir')",
+    "while aprendendo:",
+    "estudar()",
+    "praticar()",
+    "evoluir()",
+    "SELECT * FROM devs",
+    "JOIN missoes",
+    "UPDATE jogadores",
+    "INSERT INTO ranking",
+    "const xp = 100;",
+    "let nivel = 5;",
+    "function iniciar(){",
+    "return true;",
+    "player.addXP(50)",
+    "git commit",
+    "npm install",
+    "python main.py",
+    "<html>",
+    "<body>",
+    "<\/body>",
+    "<\/html>"
+];
+
+function resizeCanvas(){
+
+    W = canvas.width = window.innerWidth;
+    H = canvas.height = window.innerHeight;
+
+    streams = [];
+
+    const colSpacing = 130;     // colunas mais espaçadas = menos denso
+    const rowSpacing = 90;      // menos palavras empilhadas por coluna
+    const columns = Math.floor(W / colSpacing);
+    const rowsPerColumn = Math.ceil(H / rowSpacing); // cobre a tela sem exagerar
+
+    for(let i=0;i<columns;i++){
+        for(let r=0;r<rowsPerColumn;r++){
+
+            streams.push({
+
+                x: i * colSpacing + Math.random()*20,
+
+                y: (r * rowSpacing) - Math.random()*H,
+
+                speed: 0.3 + Math.random()*0.6,
+
+                color: COLORS[Math.floor(Math.random()*COLORS.length)],
+
+                text: CODES[Math.floor(Math.random()*CODES.length)],
+
+                font: 12 + Math.random()*4
+
+            });
+
+        }
+    }
+
+}
+
+resizeCanvas();
+
+window.addEventListener("resize", resizeCanvas);
+
+function animateCode(){
+
+    ctx.clearRect(0,0,W,H);
+
+    streams.forEach(stream=>{
+
+        ctx.font = stream.font + "px Consolas";
+
+        ctx.fillStyle = stream.color;
+
+        ctx.shadowBlur = 4;
+
+        ctx.shadowColor = stream.color;
+
+        ctx.fillText(
+
+            stream.text,
+
+            stream.x,
+
+            stream.y
+
+        );
+
+        stream.y += stream.speed;
+
+        if(stream.y > H + 40){
+
+            stream.y = -150;
+
+            stream.color = COLORS[Math.floor(Math.random()*COLORS.length)];
+
+            stream.text = CODES[Math.floor(Math.random()*CODES.length)];
+
+            stream.font = 13 + Math.random()*5;
+
+        }
+
+    });
+
+    requestAnimationFrame(animateCode);
+
+}
+
+animateCode();
+    </script>
+</body>
+</html>
