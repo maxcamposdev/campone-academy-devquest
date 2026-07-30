@@ -17,14 +17,12 @@ async function carregarAula1() {
         <span>Objetivo: compreender a Grande Rede</span>
     `;
 
-    const contexto = document.getElementById("aulaContexto");
-    contexto.innerHTML = `
+    document.getElementById("aulaContexto").innerHTML = `
         <h2>${aula.contexto.titulo}</h2>
         ${aula.contexto.paragrafos.map((paragrafo) => `<p>${paragrafo}</p>`).join("")}
     `;
 
-    const fala = document.getElementById("falaMentora");
-    fala.innerHTML = `
+    document.getElementById("falaMentora").innerHTML = `
         <div class="personagem-card">
             <div class="personagem-avatar">
                 <span>${aula.fala_mentora.personagem.charAt(0)}</span>
@@ -43,8 +41,7 @@ async function carregarAula1() {
         </div>
     `;
 
-    const etapas = document.getElementById("aulaEtapas");
-    etapas.innerHTML = aula.etapas.map((etapa) => `
+    document.getElementById("aulaEtapas").innerHTML = aula.etapas.map((etapa) => `
         <div class="step">
             <h3>${etapa.titulo}</h3>
             <p>${etapa.descricao}</p>
@@ -54,9 +51,6 @@ async function carregarAula1() {
     document.getElementById("checkpointTitulo").textContent = aula.checkpoint.titulo;
     document.getElementById("checkpointTexto").textContent = aula.checkpoint.texto;
 }
-
-carregarAula1();
-
 
 function iniciarAula() {
     if (!aulaAtual || !aulaAtual.etapas || aulaAtual.etapas.length === 0) {
@@ -69,6 +63,11 @@ function iniciarAula() {
     const painelInicio = document.getElementById("painelInicioAula");
     if (painelInicio) {
         painelInicio.classList.add("hidden");
+    }
+
+    const checkpoint = document.getElementById("checkpointAula");
+    if (checkpoint) {
+        checkpoint.classList.add("hidden");
     }
 
     renderizarEtapaAtual();
@@ -117,7 +116,6 @@ function proximaEtapa() {
     mostrarCheckpoint();
 }
 
-
 function etapaAnterior() {
     if (!aulaAtual || indiceEtapaAtual === 0) {
         return;
@@ -126,7 +124,6 @@ function etapaAnterior() {
     indiceEtapaAtual -= 1;
     renderizarEtapaAtual();
 }
-
 
 function mostrarCheckpoint() {
     const checkpoint = aulaAtual.checkpoint;
@@ -143,6 +140,8 @@ function mostrarCheckpoint() {
     `).join("");
 
     document.getElementById("checkpointFeedback").textContent = "";
+    document.getElementById("checkpointFeedback").className = "checkpoint-feedback";
+    document.getElementById("conclusaoAula").classList.add("hidden");
     document.getElementById("checkpointAula").classList.remove("hidden");
 
     document.getElementById("checkpointAula").scrollIntoView({
@@ -170,3 +169,33 @@ function responderCheckpoint(indice) {
         }
     }
 }
+
+
+function abrirMenuAula() {
+    const menu = document.getElementById("menuAulaOverlay");
+    if (menu) {
+        menu.classList.remove("hidden");
+    }
+}
+
+function fecharMenuAula() {
+    const menu = document.getElementById("menuAulaOverlay");
+    if (menu) {
+        menu.classList.add("hidden");
+    }
+}
+
+function salvarProgressoManual() {
+    const progresso = {
+        aula: 1,
+        status: localStorage.getItem("campone_aula_1_status") || "em_andamento",
+        checkpoint: localStorage.getItem("campone_aula_1_checkpoint") || "pendente",
+        parteAtual: indiceEtapaAtual + 1,
+        atualizadoEm: new Date().toISOString()
+    };
+
+    localStorage.setItem("campone_aula_1_save", JSON.stringify(progresso));
+    alert("Progresso salvo neste navegador.");
+}
+
+carregarAula1();

@@ -12,7 +12,11 @@
         <div class="container">
             <div class="topbar">
                 <div class="brand">CAMPONE ACADEMY DEVQUEST</div>
-                <div class="badge" id="aulaBadge">Recrutamento • Nível 1</div>
+
+                <div class="top-actions">
+                    <div class="badge" id="aulaBadge">Recrutamento • Nível 1</div>
+                    <button class="menu-button" type="button" onclick="abrirMenuAula()">Menu</button>
+                </div>
             </div>
 
             <section class="header">
@@ -35,30 +39,13 @@
             <section class="scene start-panel" id="painelInicioAula">
                 <h2>🚀 Pronto para começar?</h2>
                 <p>
-                    A próxima fase vai transformar esta aula em uma jornada navegável,
-                    com uma etapa por vez, decisões, validações e registro do aprendizado.
+                    Inicie a jornada desta aula quando estiver pronto.
+                    Você verá uma parte por vez e poderá avançar no seu ritmo.
                 </p>
                 <button class="start-button" type="button" onclick="iniciarAula()">
                     Começar Aula
                 </button>
-            </section>
-
-            <section class="scene etapa-ativa hidden" id="etapaAtiva">
-                <span class="etapa-label" id="etapaIndicador">Parte da aula</span>
-                <h2 id="etapaAtivaTitulo"></h2>
-                <p id="etapaAtivaDescricao"></p>
-
-                <div class="etapa-actions">
-                    <button id="botaoAnteriorEtapa" class="secondary-button" type="button" onclick="etapaAnterior()">
-                        Anterior
-                    </button>
-
-                    <button id="botaoProximoEtapa" class="start-button" type="button" onclick="proximaEtapa()">
-                        Próximo
-                    </button>
-                </div>
-            </section>
-
+</div>
             <section class="scene checkpoint hidden" id="checkpointAula">
                 <h2 id="checkpointTitulo">Checkpoint</h2>
                 <p id="checkpointTexto"></p>
@@ -72,6 +59,23 @@
                     <a class="finish-button" href="mapa.html">Finalizar Aula</a>
                 </div>
             </section>
+
+        </div>
+
+        <div class="menu-aula-overlay hidden" id="menuAulaOverlay">
+            <div class="menu-aula-modal">
+                <div class="menu-aula-header">
+                    <h2>Menu da Aula</h2>
+                    <button type="button" class="menu-aula-fechar" onclick="fecharMenuAula()">×</button>
+                </div>
+
+                <div class="menu-aula-actions">
+                    <button type="button" onclick="fecharMenuAula()">Continuar Aula</button>
+                    <button type="button" onclick="salvarProgressoManual()">Salvar Progresso</button>
+                    <a href="mapa.html">Mapa da Academy</a>
+                    <a href="../index.html">Tela de Login</a>
+                </div>
+            </div>
         </div>
 
         <a class="botao-voltar-padrao" href="mapa.html">Voltar</a>
