@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #0a0a1a 0%, #1a1a3a 50%, #0a0a2a 100%);
+    color: #e0e0ff;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cena-container {
+    max-width: 800px;
+    width: 90%;
+    padding: 40px;
+    position: relative;
+}
+
+.local-badge {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: rgba(100, 100, 255, 0.2);
+    border: 1px solid rgba(100, 100, 255, 0.4);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: #8888cc;
+}
+
+.personagem-area {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.personagem-emoji {
+    font-size: 120px;
+    line-height: 1;
+    margin-bottom: 10px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.personagem-nome {
+    font-size: 1.2rem;
+    color: #aaaadd;
+    font-weight: 600;
+}
+
+.acao-texto {
+    text-align: center;
+    font-style: italic;
+    color: #8888bb;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+.fala-container {
+    background: rgba(50, 50, 100, 0.3);
+    border: 1px solid rgba(100, 100, 200, 0.3);
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 30px;
+    min-height: 100px;
+}
+
+.fala-texto {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #d0d0ff;
+}
+
+.opcoes-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.opcao-btn {
+    background: rgba(80, 80, 180, 0.2);
+    border: 1px solid rgba(100, 100, 200, 0.4);
+    border-radius: 8px;
+    padding: 16px 20px;
+    color: #c0c0ff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-align: left;
+}
+
+.opcao-btn:hover {
+    background: rgba(100, 100, 200, 0.4);
+    border-color: rgba(120, 120, 255, 0.6);
+    transform: translateX(5px);
+}
+
+.opcao-btn.correta {
+    background: rgba(50, 180, 50, 0.2);
+    border-color: rgba(50, 180, 50, 0.5);
+}
+
+.opcao-btn.errada {
+    background: rgba(180, 50, 50, 0.2);
+    border-color: rgba(180, 50, 50, 0.5);
+}
+
+.botoes-acao {
+    text-align: center;
+}
+
+.btn-proximo {
+    background: linear-gradient(135deg, #4040aa, #6060cc);
+    border: none;
+    border-radius: 8px;
+    padding: 14px 40px;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-proximo:hover {
+    background: linear-gradient(135deg, #5050bb, #7070dd);
+    transform: scale(1.05);
+}
+
+.hidden {
+    display: none;
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.feedback-area {
+    padding: 20px;
+    background: rgba(60, 60, 120, 0.3);
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.feedback-acao {
+    color: #aaaacc;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.feedback-fala {
+    color: #d0d0ff;
+    margin-bottom: 8px;
+}
+
+.btn-tentar {
+    background: rgba(180, 150, 50, 0.3);
+    border: 1px solid rgba(200, 170, 60, 0.5);
+    border-radius: 8px;
+    padding: 12px 24px;
+    color: #ffdd88;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: all 0.3s;
+}
+
+.btn-tentar:hover {
+    background: rgba(200, 170, 60, 0.4);
+}

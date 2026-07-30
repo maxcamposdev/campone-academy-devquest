@@ -1,73 +1,214 @@
 {
   "id": 1,
-  "titulo": "Aula 1 — Decifrando a Grande Rede",
+  "titulo": "Decifrando a Grande Rede",
   "tema": "Fundamentos da Internet",
   "mentora": "Eloisa",
-  "fase": "Recrutamento",
-  "nivel": "Nível 1",
-  "cargo_jogador": "Recruta",
-  "resumo": "Antes de escrever código, o jogador precisa entender como a internet funciona. Esta aula apresenta a base da comunicação digital: cliente, servidor, requisição, resposta, DNS, IP, HTTP e HTTPS.",
-  "contexto": {
-    "titulo": "🏢 Contexto da CampOne",
-    "paragrafos": [
-      "Você acaba de iniciar sua jornada como Recruta da CampOne Academy.",
-      "Antes de conhecer backend, frontend ou banco de dados, precisa entender como um pedido sai do seu computador e chega até um servidor.",
-      "A proposta não é decorar termos técnicos. É enxergar o caminho real que a informação percorre dentro de um sistema."
-    ]
-  },
-  "fala_mentora": {
-    "personagem": "Eloisa",
-    "cargo": "Analista de Recrutamento e Seleção — CampOne",
-    "avatar_status": "Imagem futura",
-    "audio_status": "Narração futura",
-    "titulo": "👩‍💼 Eloisa",
-    "fala": "Todo sistema começa com uma comunicação. Alguém pede, outro responde. Quando você entende esse caminho, deixa de ver a internet como mágica e começa a enxergar a arquitetura por trás dela."
-  },
-  "etapas": [
+  "cargo_mentora": "Analista de Recrutamento e Seleção — CampOne",
+  "cenas": [
     {
-      "ordem": "ETAPA 01",
-      "titulo": "Cliente e Servidor",
-      "descricao": "Entender quem faz o pedido e quem responde dentro de um sistema web."
+      "id": 1,
+      "personagem": "Eloisa",
+      "emoji": "👩‍💼",
+      "local": "CampOne Academy — Entrada",
+      "acao": "Eloisa aparece na entrada da CampOne Academy.",
+      "falas": [
+        "Bem-vindo(a) à CampOne Academy.",
+        "Eu sou Eloisa.",
+        "Faço parte da equipe de recrutamento da CampOne."
+      ]
     },
     {
-      "ordem": "ETAPA 02",
-      "titulo": "DNS e IP",
-      "descricao": "Descobrir como um nome de site encontra o endereço correto na rede."
+      "id": 2,
+      "personagem": "Eloisa",
+      "emoji": "👩‍💼",
+      "local": "CampOne Academy — Entrada",
+      "acao": "Eloisa olha para você como quem reconhece um novo começo.",
+      "falas": [
+        "A CampOne Academy é uma agência que recruta, prepara e avalia devs.",
+        "Ela acompanha sua evolução e abre portas para empresas parceiras."
+      ]
     },
     {
-      "ordem": "ETAPA 03",
-      "titulo": "HTTP e HTTPS",
-      "descricao": "Entender o protocolo da conversa e a diferença entre conexão comum e segura."
+      "id": 3,
+      "personagem": "Eloisa",
+      "emoji": "👩‍💼",
+      "local": "CampOne Academy — Entrada",
+      "acao": "Eloisa se aproxima e fala mais baixo.",
+      "falas": [
+        "Você ainda não foi contratado.",
+        "Neste momento, você participa do recrutamento da CampOne.",
+        "Nosso objetivo é avaliar sua lógica, sua interpretação de problemas e sua compreensão sobre como os sistemas realmente funcionam."
+      ]
     },
     {
-      "ordem": "ETAPA 04",
-      "titulo": "Requisição e Resposta",
-      "descricao": "Visualizar o fluxo completo entre navegador, servidor e retorno dos dados."
-    }
-  ],
-  "checkpoint": {
-    "titulo": "🛑 Checkpoint da Aula",
-    "texto": "Antes de concluir, confirme se você entendeu a base da Grande Rede.",
-    "pergunta": "Na comunicação web, qual é a relação correta entre cliente e servidor?",
-    "opcoes": [
-      {
-        "id": 1,
-        "texto": "O cliente guarda os dados e o servidor apenas mostra a tela.",
-        "correta": false,
-        "feedback": "Não. Quem normalmente guarda/processa os dados é o servidor. O cliente faz pedidos e exibe respostas."
-      },
-      {
-        "id": 2,
-        "texto": "O cliente faz um pedido e o servidor processa e responde.",
-        "correta": true,
-        "feedback": "Correto. Essa é a base da comunicação web: cliente pede, servidor responde."
-      },
-      {
-        "id": 3,
-        "texto": "O servidor depende do navegador para saber onde os dados ficam salvos.",
-        "correta": false,
-        "feedback": "Não. O servidor é quem controla a lógica e acessa os dados necessários."
+      "id": 4,
+      "personagem": "Eloisa",
+      "emoji": "👩‍💼",
+      "local": "CampOne Academy — Entrada",
+      "acao": "Eloisa aponta para o prédio atrás dela.",
+      "falas": [
+        "Ao concluir este treinamento, você estará preparado para buscar novas oportunidades em empresas parceiras.",
+        "Antes de qualquer código, você precisa enxergar o território.",
+        "Todo aplicativo, site ou sistema esconde um caminho invisível."
+      ]
+    },
+    {
+      "id": 5,
+      "personagem": "Eloisa",
+      "emoji": "👩‍💼",
+      "local": "CampOne Academy — Entrada",
+      "acao": "Eloisa sorri e te convida a entrar.",
+      "falas": [
+        "Nesta etapa, sua missão é decifrar a Grande Rede.",
+        "Você vai entender como um pedido sai da tela, atravessa a internet, chega ao servidor e volta como resposta."
+      ],
+      "tipo": "missao"
+    },
+    {
+      "id": 6,
+      "personagem": "Eloisa",
+      "emoji": "👩‍💼",
+      "local": "CampOne Academy — Sala de Treinamento",
+      "acao": "Eloisa senta na sua frente e abre uma apresentação.",
+      "falas": [
+        "Antes de qualquer código, você precisa entender a estrada.",
+        "A internet é uma rede gigante de computadores conectados.",
+        "Antes dela, cada computador era quase uma ilha."
+      ]
+    },
+    {
+      "id": 7,
+      "personagem": "Eloisa",
+      "emoji": "👩‍💼",
+      "local": "CampOne Academy — Sala de Treinamento",
+      "acao": "Eloisa aponta para um diagrama na tela.",
+      "falas": [
+        "Quando você abre um site ou aplicativo, seu dispositivo envia um pedido por essa rede.",
+        "Esse pedido viaja até outro computador, chamado servidor, e depois volta com uma resposta."
+      ]
+    },
+    {
+      "id": 8,
+      "personagem": "Eloisa",
+      "emoji": "👩‍💼",
+      "local": "CampOne Academy — Sala de Treinamento",
+      "acao": "Eloisa te olha diretamente nos olhos.",
+      "falas": [
+        "O que é a internet dentro do caminho invisível dos sistemas?"
+      ],
+      "tipo": "pergunta",
+      "opcoes": [
+        {
+          "id": 1,
+          "texto": "Um aplicativo específico que guarda todos os sites."
+        },
+        {
+          "id": 2,
+          "texto": "Uma rede de computadores conectados por onde pedidos e respostas viajam."
+        },
+        {
+          "id": 3,
+          "texto": "Um banco de dados gigante onde ficam salvas todas as informações."
+        }
+      ],
+      "resposta_correta": 2,
+      "feedbacks": {
+        "1": {
+          "personagem": "Eloisa",
+          "emoji": "👩‍💼",
+          "acao": "Eloisa inclina a cabeça.",
+          "falas": [
+            "Um aplicativo pode usar a internet, mas ele não é a internet.",
+            "O app é uma porta que você usa. A internet é a rede por onde o pedido viaja."
+          ]
+        },
+        "2": {
+          "personagem": "Eloisa",
+          "emoji": "👩‍💼",
+          "acao": "Eloisa confirma com um sorriso.",
+          "falas": [
+            "Isso. A internet é a estrada da Grande Rede.",
+            "É por ela que os pedidos saem do cliente, chegam ao servidor e voltam como resposta."
+          ]
+        },
+        "3": {
+          "personagem": "Eloisa",
+          "emoji": "👩‍💼",
+          "acao": "Eloisa balança a cabeça.",
+          "falas": [
+            "Guardar informações é papel de bancos de dados e servidores.",
+            "A internet não é a despensa. Ela é o caminho por onde as informações viajam."
+          ]
+        }
       }
-    ]
-  }
+    },
+    {
+      "id": 9,
+      "personagem": "Eloisa",
+      "emoji": "👩‍💼",
+      "local": "CampOne Academy — Sala de Treinamento",
+      "acao": "Eloisa continua a explicação.",
+      "falas": [
+        "Toda conversa na web tem dois lados: quem pede e quem responde.",
+        "Cliente é quem faz o pedido. Na maioria das vezes, o cliente é o navegador ou o aplicativo.",
+        "Servidor é quem recebe o pedido, processa e devolve uma resposta. Ele fica em outro computador, preparado para atender muitas pessoas."
+      ]
+    },
+    {
+      "id": 10,
+      "personagem": "Eloisa",
+      "emoji": "👩‍💼",
+      "local": "CampOne Academy — Sala de Treinamento",
+      "acao": "Eloisa te olha diretamente nos olhos.",
+      "falas": [
+        "Na conversa entre cliente e servidor, quem faz o pedido e quem responde?"
+      ],
+      "tipo": "pergunta",
+      "opcoes": [
+        {
+          "id": 1,
+          "texto": "O cliente faz o pedido, e o servidor recebe, processa e responde."
+        },
+        {
+          "id": 2,
+          "texto": "O servidor faz o pedido, e o cliente guarda tudo no banco."
+        },
+        {
+          "id": 3,
+          "texto": "O cliente e o servidor fazem a mesma função ao mesmo tempo."
+        }
+      ],
+      "resposta_correta": 1,
+      "feedbacks": {
+        "1": {
+          "personagem": "Eloisa",
+          "emoji": "👩‍💼",
+          "acao": "Eloisa valida com um aceno.",
+          "falas": [
+            "Exato. Cliente é quem pede. Servidor é quem responde.",
+            "Essa divisão é uma das bases dos sistemas web."
+          ]
+        },
+        "2": {
+          "personagem": "Eloisa",
+          "emoji": "👩‍💼",
+          "acao": "Eloisa balança a cabeça.",
+          "falas": [
+            "O servidor não é quem começa o pedido nesse fluxo.",
+            "Normalmente, quem inicia é o cliente: navegador, app ou tela.",
+            "O servidor fica do outro lado, preparado para responder."
+          ]
+        },
+        "3": {
+          "personagem": "Eloisa",
+          "emoji": "👩‍💼",
+          "acao": "Eloisa sorri com paciência.",
+          "falas": [
+            "Eles conversam, mas não fazem a mesma função.",
+            "Um lado pede. O outro responde."
+          ]
+        }
+      }
+    }
+  ]
 }

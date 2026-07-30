@@ -3,100 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 1 — Decifrando a Grande Rede</title>
-    <link rel="stylesheet" href="../styles/aula-1.css">
+    <title>CampOne Academy — Aula 1</title>
+    <link rel="stylesheet" href="../styles/aula-1-narrativo.css">
 </head>
-
 <body>
-    <main class="page">
-        <div class="container">
-            <div class="topbar">
-                <div class="brand">CAMPONE ACADEMY DEVQUEST</div>
-
-                <div class="top-actions">
-                    <div class="badge" id="aulaBadge">Recrutamento • Nível 1</div>
-                    <button class="menu-button" type="button" onclick="abrirMenuAula()">Menu</button>
-                </div>
-            </div>
-
-            <section class="header">
-                <h1 id="aulaTitulo">Carregando aula...</h1>
-                <p id="aulaResumo">Preparando conteúdo.</p>
-
-                <div class="meta" id="aulaMeta"></div>
-            </section>
-
-            <section class="grid">
-                <article class="scene" id="aulaContexto"></article>
-                <article class="scene" id="falaMentora"></article>
-            </section>
-
-            <section class="scene">
-                <h2>🧭 Jornada da Aula</h2>
-                <div class="steps" id="aulaEtapas"></div>
-            </section>
-
-            <section class="scene start-panel" id="painelInicioAula">
-                <h2>🚀 Pronto para começar?</h2>
-                <p>
-                    Inicie a jornada desta aula quando estiver pronto.
-                    Você verá uma parte por vez e poderá avançar no seu ritmo.
-                </p>
-                <button class="start-button" type="button" onclick="iniciarAula()">
-                    Começar Aula
-                </button>
-            </section>
-
-            <section class="scene etapa-ativa hidden" id="etapaAtiva">
-                <span class="etapa-label" id="etapaIndicador">Parte da aula</span>
-                <h2 id="etapaAtivaTitulo"></h2>
-                <p id="etapaAtivaDescricao"></p>
-
-                <div class="etapa-actions">
-                    <button id="botaoAnteriorEtapa" class="secondary-button" type="button" onclick="etapaAnterior()">
-                        Anterior
-                    </button>
-
-                    <button id="botaoProximoEtapa" class="start-button" type="button" onclick="proximaEtapa()">
-                        Próximo
-                    </button>
-                </div>
-            </section>
-
-            <section class="scene checkpoint hidden" id="checkpointAula">
-                <h2 id="checkpointTitulo">Checkpoint</h2>
-                <p id="checkpointTexto"></p>
-
-                <div class="checkpoint-question" id="checkpointPergunta"></div>
-                <div class="checkpoint-options" id="checkpointOpcoes"></div>
-                <div class="checkpoint-feedback" id="checkpointFeedback"></div>
-
-                <div class="conclusao-aula hidden" id="conclusaoAula">
-                    <p>Aula 1 concluída. Seu progresso foi registrado neste protótipo.</p>
-                    <a class="finish-button" href="mapa.html">Finalizar Aula</a>
-                </div>
-            </section>
+    <div class="cena-container">
+        <div class="local-badge" id="localBadge"></div>
+        <div class="personagem-area">
+            <div class="personagem-emoji" id="personagemEmoji"></div>
+            <div class="personagem-nome" id="personagemNome"></div>
         </div>
-
-        <div class="menu-aula-overlay hidden" id="menuAulaOverlay">
-            <div class="menu-aula-modal">
-                <div class="menu-aula-header">
-                    <h2>Menu da Aula</h2>
-                    <button type="button" class="menu-aula-fechar" onclick="fecharMenuAula()">×</button>
-                </div>
-
-                <div class="menu-aula-actions">
-                    <button type="button" onclick="fecharMenuAula()">Continuar Aula</button>
-                    <button type="button" onclick="salvarProgressoManual()">Salvar Progresso</button>
-                    <a href="mapa.html">Mapa da Academy</a>
-                    <a href="../index.html">Tela de Login</a>
-                </div>
-            </div>
+        <div class="acao-texto" id="acaoTexto"></div>
+        <div class="fala-container">
+            <div class="fala-texto" id="falaTexto"></div>
         </div>
-
-        <a class="botao-voltar-padrao" href="mapa.html">Voltar</a>
-    </main>
-
-    <script src="../js/aula-1.js"></script>
+        <div class="opcoes-container hidden" id="opcoesContainer"></div>
+        <div class="botoes-acao">
+            <button class="btn-proximo" id="btnProximo" onclick="proximaCena()">Próximo ▶</button>
+        </div>
+    </div>
+    <script src="../js/aula-1-narrativo.js"></script>
 </body>
 </html>

@@ -1,0 +1,295 @@
+]633;E;echo "=== ESTRUTURA ===";e0d34dc5-92f8-43c9-b69e-579da28f87fd]633;C=== ESTRUTURA ===
+./web/frontend/index.html
+./web/frontend/pages/aula-1.html
+./web/frontend/pages/mapa.html
+./web/frontend/styles/login.css
+./web/frontend/styles/aula-1.css
+./web/frontend/styles/mapa.css
+
+=== CONTEÚDO DOS HTML ===
+--- ./web/frontend/index.html ---
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampOne Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="styles/login.css">
+
+</head>
+<body class="text-white">
+
+<canvas id="codeCanvas"></canvas>
+<div id="darkOverlay"></div>
+
+
+<div id="appContent" class="min-h-screen flex items-center justify-center px-6">
+        <div class="w-full max-w-7xl grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            
+            <!-- LADO ESQUERDO -->
+            <div class="lg:col-span-8 px-4">
+                <div class="flex flex-col md:flex-row items-center gap-8 w-full">
+
+                    <!-- Botões (coluna fixa à esquerda) -->
+                    <div class="flex flex-col gap-3 w-full max-w-[200px] order-2 md:order-1">
+                        <button onclick="startNewGame()"
+                                class="w-full px-8 py-3.5 bg-[#2563eb] hover:bg-blue-600 text-white font-semibold rounded-2xl flex items-center justify-center gap-x-2 text-sm shadow-lg">
+                            <i class="fas fa-play mr-1"></i>
+                            <span>Novo Jogo</span>
+                        </button>
+
+                        <button onclick="loadGame()"
+                                class="w-full px-8 py-3.5 border border-white/30 hover:bg-white/10 text-white font-medium rounded-2xl flex items-center justify-center gap-x-2 text-sm">
+                            <i class="fas fa-folder-open"></i>
+                            <span>Carregar Jogo</span>
+                        </button>
+                    </div>
+
+                    <!-- Logo (grande, centralizada) + frase logo abaixo -->
+                    <div class="flex-1 flex flex-col items-center text-center order-1 md:order-2 min-w-0">
+                        <img src="assets/logo-c1.png" 
+                             alt="CampOne Logo" 
+                             class="w-[246px] h-[246px] sm:w-[352px] sm:h-[352px] lg:w-[506px] lg:h-[506px] object-contain -mb-7 sm:-mb-11 lg:-mb-[70px]">
+                        <p class="text-lg lg:text-xl text-cyan-200 leading-tight whitespace-nowrap">
+                            Construa sua jornada no universo da programação
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- LADO DIREITO - PAINEL DE LOGIN -->
+            <div class="lg:col-span-4">
+                <div class="login-panel w-full max-w-[370px] mx-auto rounded-3xl p-7 border border-white/10">
+                    
+                    <div class="flex items-center gap-x-2 mb-6">
+                        <span class="font-bold text-2xl">LOGIN</span>
+                    </div>
+
+                    <form id="loginForm" onsubmit="handleLogin(event)">
+                        
+                        <div class="mb-4">
+                            <input type="email" id="email" value="max.campos@campone.dev" 
+                                   class="w-full bg-slate-900/70 border border-white/10 focus:border-cyan-400 px-4 py-3 rounded-2xl text-sm"
+                                   placeholder="Email">
+                        </div>
+
+                        <div class="mb-4">
+                            <div class="relative">
+                                <input type="password" id="password" value="campone123" 
+                                       class="w-full bg-slate-900/70 border border-white/10 focus:border-cyan-400 px-4 py-3 rounded-2xl text-sm"
+                                       placeholder="Senha">
+                                <button type="button" onclick="togglePassword(this)" 
+                                        class="absolute right-4 top-3.5 text-white/50">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between mb-5 text-xs">
+                            <label class="flex items-center gap-x-1.5 text-white/70 cursor-pointer">
+                                <input type="checkbox" checked> Lembrar-me
+                            </label>
+                            <a href="#" class="text-cyan-400 hover:underline">Esqueceu a senha?</a>
+                        </div>
+
+                        <button type="submit" 
+                                class="w-full py-3.5 bg-gradient-to-r from-[#6366f1] to-[#a855f7] hover:from-indigo-500 hover:to-purple-600 text-white font-semibold rounded-2xl text-sm">
+                            ENTRAR
+                        </button>
+
+                        <div class="flex items-center gap-x-3 my-4">
+                            <div class="flex-1 h-px bg-white/10"></div>
+                            <span class="text-xs text-white/50">Ou entre com</span>
+                            <div class="flex-1 h-px bg-white/10"></div>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-3">
+                            <button type="button" onclick="socialLogin('github')"
+                                    class="flex items-center justify-center gap-x-2 py-2.5 px-4 border border-white/15 hover:bg-white/5 rounded-2xl text-xs font-medium">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </button>
+                            
+                            <button type="button" onclick="socialLogin('linkedin')"
+                                    class="flex items-center justify-center gap-x-2 py-2.5 px-4 border border-white/15 hover:bg-white/5 rounded-2xl text-xs font-medium">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/login.js"></script>
+</body>
+</html>
+
+--- ./web/frontend/pages/aula-1.html ---
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 1 — Decifrando a Grande Rede</title>
+    <link rel="stylesheet" href="../styles/aula-1.css">
+</head>
+
+<body>
+    <main class="page">
+        <div class="container">
+            <div class="topbar">
+                <div class="brand">CAMPONE ACADEMY DEVQUEST</div>
+
+                <div class="top-actions">
+                    <div class="badge" id="aulaBadge">Recrutamento • Nível 1</div>
+                    <button class="menu-button" type="button" onclick="abrirMenuAula()">Menu</button>
+                </div>
+            </div>
+
+            <section class="header">
+                <h1 id="aulaTitulo">Carregando aula...</h1>
+                <p id="aulaResumo">Preparando conteúdo.</p>
+
+                <div class="meta" id="aulaMeta"></div>
+            </section>
+
+            <section class="grid">
+                <article class="scene" id="aulaContexto"></article>
+                <article class="scene" id="falaMentora"></article>
+            </section>
+
+            <section class="scene">
+                <h2>🧭 Jornada da Aula</h2>
+                <div class="steps" id="aulaEtapas"></div>
+            </section>
+
+            <section class="scene start-panel" id="painelInicioAula">
+                <h2>🚀 Pronto para começar?</h2>
+                <p>
+                    Inicie a jornada desta aula quando estiver pronto.
+                    Você verá uma parte por vez e poderá avançar no seu ritmo.
+                </p>
+                <button class="start-button" type="button" onclick="iniciarAula()">
+                    Começar Aula
+                </button>
+            </section>
+
+            <section class="scene etapa-ativa hidden" id="etapaAtiva">
+                <span class="etapa-label" id="etapaIndicador">Parte da aula</span>
+                <h2 id="etapaAtivaTitulo"></h2>
+                <p id="etapaAtivaDescricao"></p>
+
+                <div class="etapa-actions">
+                    <button id="botaoAnteriorEtapa" class="secondary-button" type="button" onclick="etapaAnterior()">
+                        Anterior
+                    </button>
+
+                    <button id="botaoProximoEtapa" class="start-button" type="button" onclick="proximaEtapa()">
+                        Próximo
+                    </button>
+                </div>
+            </section>
+
+            <section class="scene checkpoint hidden" id="checkpointAula">
+                <h2 id="checkpointTitulo">Checkpoint</h2>
+                <p id="checkpointTexto"></p>
+
+                <div class="checkpoint-question" id="checkpointPergunta"></div>
+                <div class="checkpoint-options" id="checkpointOpcoes"></div>
+                <div class="checkpoint-feedback" id="checkpointFeedback"></div>
+
+                <div class="conclusao-aula hidden" id="conclusaoAula">
+                    <p>Aula 1 concluída. Seu progresso foi registrado neste protótipo.</p>
+                    <a class="finish-button" href="mapa.html">Finalizar Aula</a>
+                </div>
+            </section>
+        </div>
+
+        <div class="menu-aula-overlay hidden" id="menuAulaOverlay">
+            <div class="menu-aula-modal">
+                <div class="menu-aula-header">
+                    <h2>Menu da Aula</h2>
+                    <button type="button" class="menu-aula-fechar" onclick="fecharMenuAula()">×</button>
+                </div>
+
+                <div class="menu-aula-actions">
+                    <button type="button" onclick="fecharMenuAula()">Continuar Aula</button>
+                    <button type="button" onclick="salvarProgressoManual()">Salvar Progresso</button>
+                    <a href="mapa.html">Mapa da Academy</a>
+                    <a href="../index.html">Tela de Login</a>
+                </div>
+            </div>
+        </div>
+
+        <a class="botao-voltar-padrao" href="mapa.html">Voltar</a>
+    </main>
+
+    <script src="../js/aula-1.js"></script>
+</body>
+</html>
+
+--- ./web/frontend/pages/mapa.html ---
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa da CampOne Academy</title>
+    <link rel="stylesheet" href="../styles/mapa.css">
+</head>
+<body>
+    <main class="page">
+        <header class="topbar">
+            <div class="brand">CampOne Academy DevQuest</div>
+            <div class="status" id="playerStatus"></div>
+        </header>
+
+        <section class="hero">
+            <h1>Mapa da CampOne Academy</h1>
+            <p>
+                Bem-vindo ao mapa da sua jornada. Aqui você acompanha sua evolução,
+                revisa a Academy e acessa as próximas fases desbloqueadas.
+            </p>
+        </section>
+
+        <section class="progress-panel">
+            <div>
+                <span class="progress-label">Programa atual</span>
+                <h2>Recrutamento CampOne</h2>
+                <p>Academy — Nível 1</p>
+            </div>
+
+            <div class="progress-grid">
+                <div class="progress-item">
+                    <strong>Colaborador</strong>
+                    <span id="colaboradorAtual">Recruta — Jogador</span>
+                </div>
+
+                <div class="progress-item">
+                    <strong>Protótipo</strong>
+                    <span id="progressoAcademyValor">0/9 etapas concluídas</span>
+                </div>
+
+                <div class="progress-item">
+                    <strong>Próximo marco</strong>
+                    <span>Iniciar Mundo Prático como Trainee</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid" id="academyGrid">
+            <article class="card">
+                <h2>Carregando Academy...</h2>
+                <p>Preparando mapa das etapas.</p>
+            </article>
+        </section>
+        <a class="botao-voltar-padrao" href="../index.html">Voltar</a>
+    </main>
+    <script src="../js/mapa.js"></script>
+</body>
+</html>
+
