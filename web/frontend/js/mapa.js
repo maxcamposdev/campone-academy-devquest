@@ -1,18 +1,51 @@
 const user = JSON.parse(localStorage.getItem("campone_user") || "{}");
-const nome = user.nome || "Recruta";
-const nivel = user.nivel || "Recruta";
+const nome = user.nome || "Jogador";
 
 document.getElementById("playerStatus").textContent = "";
 
-const colaboradorAtual = document.getElementById("colaboradorAtual");
-if (colaboradorAtual) {
-    colaboradorAtual.textContent = `${nivel} — ${nome || "Jogador"}`;
-}
-
 const grid = document.getElementById("academyGrid");
 
+function obterNomeExibicao() {
+    if (!nome || nome === "Recruta") {
+        return "Jogador";
+    }
+
+    return nome;
+}
+
+function chaveStatusAula(etapa) {
+    return "campone_aula_" + etapa.id + "_status";
+}
+
+function contarAulasConcluidas(etapas) {
+    return etapas.filter((etapa) =>
+        localStorage.getItem(chaveStatusAula(etapa)) === "concluida"
+    ).length;
+}
+
+function calcularCargoColaborador(etapas) {
+    const concluidas = contarAulasConcluidas(etapas);
+
+    if (concluidas >= 9) {
+        return "Trainee";
+    }
+
+    return "Recruta";
+}
+
+function atualizarColaborador(etapas) {
+    const colaboradorAtual = document.getElementById("colaboradorAtual");
+
+    if (!colaboradorAtual) {
+        return;
+    }
+
+    const cargo = calcularCargoColaborador(etapas);
+    colaboradorAtual.textContent = cargo + " — " + obterNomeExibicao();
+}
+
 function criarCardEtapa(etapa) {
-    const concluida = localStorage.getItem("campone_aula_" + etapa.id + "_status") === "concluida";
+    const concluida = localStorage.getItem(chaveStatusAula(etapa)) === "concluida";
     const bloqueada = etapa.status === "bloqueada" && !concluida;
 
     const statusIcone = concluida ? "✅" : (bloqueada ? "🔒" : "🟢");
@@ -37,18 +70,15 @@ function criarCardEtapa(etapa) {
     return artigo;
 }
 
-
 function atualizarPainelProgresso(etapas) {
-    const concluidas = etapas.filter((etapa) =>
-        localStorage.getItem("campone_aula_" + etapa.id + "_status") === "concluida"
-    ).length;
-
+    const concluidas = contarAulasConcluidas(etapas);
     const itemPrototipo = document.getElementById("progressoAcademyValor");
 
     if (itemPrototipo) {
         itemPrototipo.textContent = `${concluidas}/9 etapas concluídas`;
     }
 }
+
 async function carregarAcademy() {
     try {
         const resposta = await fetch("../data/academy-nivel01.json");
@@ -56,6 +86,7 @@ async function carregarAcademy() {
 
         grid.innerHTML = "";
 
+        atualizarColaborador(etapas);
         atualizarPainelProgresso(etapas);
 
         etapas.forEach((etapa) => {
