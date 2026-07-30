@@ -161,16 +161,36 @@ function fecharMenuAula() {
 }
 
 function salvarProgressoManual() {
+    const user = JSON.parse(localStorage.getItem("campone_user") || "{}");
+    const etapaAtual = aulaAtual && aulaAtual.etapas
+        ? aulaAtual.etapas[indiceEtapaAtual]
+        : null;
+
     const progresso = {
-        aula: 1,
-        status: localStorage.getItem("campone_aula_1_status") || "em_andamento",
-        checkpoint: localStorage.getItem("campone_aula_1_checkpoint") || "pendente",
-        parteAtual: indiceEtapaAtual + 1,
+        jogador: {
+            nome: user.nome || "Jogador",
+            nivel: user.nivel || "Recruta"
+        },
+        aula: {
+            id: 1,
+            titulo: aulaAtual ? aulaAtual.titulo : "Aula 1",
+            status: localStorage.getItem("campone_aula_1_status") || "em_andamento",
+            checkpoint: localStorage.getItem("campone_aula_1_checkpoint") || "pendente",
+            parteAtual: indiceEtapaAtual + 1,
+            parteAtualTitulo: etapaAtual ? etapaAtual.titulo : "Não iniciada",
+            totalPartes: aulaAtual && aulaAtual.etapas ? aulaAtual.etapas.length : 0
+        },
         atualizadoEm: new Date().toISOString()
     };
 
     localStorage.setItem("campone_aula_1_save", JSON.stringify(progresso));
-    alert("Progresso salvo neste navegador.");
+
+    alert(
+        "Progresso salvo!\n\n" +
+        "Jogador: " + progresso.jogador.nome + "\n" +
+        "Aula: " + progresso.aula.titulo + "\n" +
+        "Parte atual: " + progresso.aula.parteAtualTitulo
+    );
 }
 
 carregarAula1();
