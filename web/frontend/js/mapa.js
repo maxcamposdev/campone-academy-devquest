@@ -4,6 +4,11 @@ const nivel = user.nivel || "Recruta";
 
 document.getElementById("playerStatus").textContent = "";
 
+const colaboradorAtual = document.getElementById("colaboradorAtual");
+if (colaboradorAtual) {
+    colaboradorAtual.textContent = `${nivel} — ${nome || "Jogador"}`;
+}
+
 const grid = document.getElementById("academyGrid");
 
 function criarCardEtapa(etapa) {
