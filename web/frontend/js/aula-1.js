@@ -114,7 +114,7 @@ function proximaEtapa() {
         return;
     }
 
-    alert("Você chegou ao fim das partes iniciais da Aula 1. A próxima fase será o checkpoint.");
+    mostrarCheckpoint();
 }
 
 
@@ -125,4 +125,42 @@ function etapaAnterior() {
 
     indiceEtapaAtual -= 1;
     renderizarEtapaAtual();
+}
+
+
+function mostrarCheckpoint() {
+    const checkpoint = aulaAtual.checkpoint;
+
+    document.getElementById("checkpointTitulo").textContent = checkpoint.titulo;
+    document.getElementById("checkpointTexto").textContent = checkpoint.texto;
+    document.getElementById("checkpointPergunta").textContent = checkpoint.pergunta;
+
+    const opcoes = document.getElementById("checkpointOpcoes");
+    opcoes.innerHTML = checkpoint.opcoes.map((opcao, indice) => `
+        <button class="checkpoint-option" type="button" onclick="responderCheckpoint(${indice})">
+            ${opcao.texto}
+        </button>
+    `).join("");
+
+    document.getElementById("checkpointFeedback").textContent = "";
+    document.getElementById("checkpointAula").classList.remove("hidden");
+
+    document.getElementById("checkpointAula").scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+    });
+}
+
+function responderCheckpoint(indice) {
+    const opcao = aulaAtual.checkpoint.opcoes[indice];
+    const feedback = document.getElementById("checkpointFeedback");
+
+    feedback.textContent = opcao.feedback;
+    feedback.className = opcao.correta
+        ? "checkpoint-feedback correto"
+        : "checkpoint-feedback incorreto";
+
+    if (opcao.correta) {
+        localStorage.setItem("campone_aula_1_checkpoint", "concluido");
+    }
 }

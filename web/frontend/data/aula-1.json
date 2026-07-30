@@ -47,6 +47,27 @@
   ],
   "checkpoint": {
     "titulo": "🛑 Checkpoint da Aula",
-    "texto": "Esta ainda é a primeira interface web da aula. O próximo passo será transformar cada etapa em uma tela navegável, com explicação, decisão do jogador, validação e registro do aprendizado."
+    "texto": "Antes de concluir, confirme se você entendeu a base da Grande Rede.",
+    "pergunta": "Na comunicação web, qual é a relação correta entre cliente e servidor?",
+    "opcoes": [
+      {
+        "id": 1,
+        "texto": "O cliente guarda os dados e o servidor apenas mostra a tela.",
+        "correta": false,
+        "feedback": "Não. Quem normalmente guarda/processa os dados é o servidor. O cliente faz pedidos e exibe respostas."
+      },
+      {
+        "id": 2,
+        "texto": "O cliente faz um pedido e o servidor processa e responde.",
+        "correta": true,
+        "feedback": "Correto. Essa é a base da comunicação web: cliente pede, servidor responde."
+      },
+      {
+        "id": 3,
+        "texto": "O servidor depende do navegador para saber onde os dados ficam salvos.",
+        "correta": false,
+        "feedback": "Não. O servidor é quem controla a lógica e acessa os dados necessários."
+      }
+    ]
   }
 }
