@@ -1,22 +1,22 @@
 body {
-            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-            background: #060912;
-            background-image: 
-                linear-gradient(rgba(6,9,18,0.55), rgba(6,9,18,0.82)),
-                url('../assets/background.png');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            position: relative;
-            overflow: hidden;
-        }
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: #060912;
+    background-image: 
+        linear-gradient(rgba(6,9,18,0.55), rgba(6,9,18,0.82)),
+        url('../assets/background.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
 
-        .login-panel {
-            background: rgba(12, 18, 32, 0.82);
-            backdrop-filter: blur(20px);
-            border: 1px solid rgba(79, 217, 255, 0.25);
-            box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.6);
-        }
+.login-panel {
+    background: rgba(12, 18, 32, 0.82);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(79, 217, 255, 0.25);
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.6);
+}
 
 /* ===== CÓDIGOS ANIMADOS ===== */
 
@@ -48,5 +48,88 @@ body {
 
 #appContent{
     position: relative;
-    z-index: 2;            /* login e resto da UI, sempre por cima */
+    z-index: 3;            /* login e resto da UI, sempre por cima de tudo */
+}
+
+/* ===== FUMAÇA DA XÍCARA ===== */
+.coffee-smoke{
+    position: fixed;
+    transform: translate(-50%, -100%);
+    background-image: url('../assets/fumaca.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    pointer-events: none;
+    z-index: 1;
+    mix-blend-mode: screen;
+}
+
+#coffeeSmoke1{
+    left: 27%;
+    top: 78%;
+    width: 42vw;
+    max-width: 420px;
+    min-width: 280px;
+    aspect-ratio: 1 / 1;
+    opacity: 0.9;
+}
+
+#coffeeSmoke2{
+    left: 25.7%;
+    top: 77.3%;
+    width: 36vw;
+    max-width: 370px;
+    min-width: 240px;
+    aspect-ratio: 1 / 1;
+    opacity: 0.45;
+    filter: blur(2px);
+}
+
+#coffeeSmoke3{
+    left: 28.3%;
+    top: 77.3%;
+    width: 36vw;
+    max-width: 370px;
+    min-width: 240px;
+    aspect-ratio: 1 / 1;
+    opacity: 0.4;
+    filter: blur(2px);
+}
+
+/* ===== TELAS HOLOGRÁFICAS DE FUNDO ===== */
+.holo-screen{
+    position: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    pointer-events: none;
+    z-index: 0;              /* mesmo nível do codeCanvas — como o canvas vem depois no HTML, ele fica visualmente por cima */
+    opacity: 0.9;
+    filter: drop-shadow(0 0 18px rgba(79,217,255,0.35));
+}
+
+#hologramLeft{
+    background-image: url('../assets/tela-holografica-1.webp');
+    top: 6%;
+    left: -2%;
+    width: 34vw;
+    max-width: 560px;
+    min-width: 260px;
+    aspect-ratio: 16 / 9;
+}
+
+#hologramRight{
+    top: 6%;
+    right: 2%;
+    width: 26vw;
+    max-width: 400px;
+    min-width: 220px;
+    aspect-ratio: 16 / 9;
+}
+
+/* vídeo holográfico (lado direito) — object-fit/object-position no lugar de background-size/position */
+.holo-video{
+    object-fit: contain;
+    object-position: center;
+    mix-blend-mode: screen; /* remove o fundo escuro do vídeo; se ficar estranho, apague esta linha */
 }
