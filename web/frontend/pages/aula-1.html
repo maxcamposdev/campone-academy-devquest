@@ -45,7 +45,24 @@
                 <button class="start-button" type="button" onclick="iniciarAula()">
                     Começar Aula
                 </button>
-</div>
+            </section>
+
+            <section class="scene etapa-ativa hidden" id="etapaAtiva">
+                <span class="etapa-label" id="etapaIndicador">Parte da aula</span>
+                <h2 id="etapaAtivaTitulo"></h2>
+                <p id="etapaAtivaDescricao"></p>
+
+                <div class="etapa-actions">
+                    <button id="botaoAnteriorEtapa" class="secondary-button" type="button" onclick="etapaAnterior()">
+                        Anterior
+                    </button>
+
+                    <button id="botaoProximoEtapa" class="start-button" type="button" onclick="proximaEtapa()">
+                        Próximo
+                    </button>
+                </div>
+            </section>
+
             <section class="scene checkpoint hidden" id="checkpointAula">
                 <h2 id="checkpointTitulo">Checkpoint</h2>
                 <p id="checkpointTexto"></p>
@@ -59,7 +76,6 @@
                     <a class="finish-button" href="mapa.html">Finalizar Aula</a>
                 </div>
             </section>
-
         </div>
 
         <div class="menu-aula-overlay hidden" id="menuAulaOverlay">

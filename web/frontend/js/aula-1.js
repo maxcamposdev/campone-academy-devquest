@@ -60,15 +60,8 @@ function iniciarAula() {
 
     indiceEtapaAtual = 0;
 
-    const painelInicio = document.getElementById("painelInicioAula");
-    if (painelInicio) {
-        painelInicio.classList.add("hidden");
-    }
-
-    const checkpoint = document.getElementById("checkpointAula");
-    if (checkpoint) {
-        checkpoint.classList.add("hidden");
-    }
+    document.getElementById("painelInicioAula").classList.add("hidden");
+    document.getElementById("checkpointAula").classList.add("hidden");
 
     renderizarEtapaAtual();
 }
@@ -83,18 +76,12 @@ function renderizarEtapaAtual() {
     document.getElementById("etapaIndicador").textContent =
         `Parte ${indiceEtapaAtual + 1} de ${aulaAtual.etapas.length}`;
 
-    const botaoAnterior = document.getElementById("botaoAnteriorEtapa");
-    const botaoProximo = document.getElementById("botaoProximoEtapa");
+    document.getElementById("botaoAnteriorEtapa").disabled = indiceEtapaAtual === 0;
 
-    if (botaoAnterior) {
-        botaoAnterior.disabled = indiceEtapaAtual === 0;
-    }
-
-    if (botaoProximo) {
-        botaoProximo.textContent = indiceEtapaAtual === aulaAtual.etapas.length - 1
+    document.getElementById("botaoProximoEtapa").textContent =
+        indiceEtapaAtual === aulaAtual.etapas.length - 1
             ? "Concluir partes"
             : "Próximo";
-    }
 
     document.getElementById("etapaAtiva").scrollIntoView({
         behavior: "smooth",
@@ -132,8 +119,7 @@ function mostrarCheckpoint() {
     document.getElementById("checkpointTexto").textContent = checkpoint.texto;
     document.getElementById("checkpointPergunta").textContent = checkpoint.pergunta;
 
-    const opcoes = document.getElementById("checkpointOpcoes");
-    opcoes.innerHTML = checkpoint.opcoes.map((opcao, indice) => `
+    document.getElementById("checkpointOpcoes").innerHTML = checkpoint.opcoes.map((opcao, indice) => `
         <button class="checkpoint-option" type="button" onclick="responderCheckpoint(${indice})">
             ${opcao.texto}
         </button>
@@ -162,27 +148,16 @@ function responderCheckpoint(indice) {
     if (opcao.correta) {
         localStorage.setItem("campone_aula_1_checkpoint", "concluido");
         localStorage.setItem("campone_aula_1_status", "concluida");
-
-        const conclusao = document.getElementById("conclusaoAula");
-        if (conclusao) {
-            conclusao.classList.remove("hidden");
-        }
+        document.getElementById("conclusaoAula").classList.remove("hidden");
     }
 }
 
-
 function abrirMenuAula() {
-    const menu = document.getElementById("menuAulaOverlay");
-    if (menu) {
-        menu.classList.remove("hidden");
-    }
+    document.getElementById("menuAulaOverlay").classList.remove("hidden");
 }
 
 function fecharMenuAula() {
-    const menu = document.getElementById("menuAulaOverlay");
-    if (menu) {
-        menu.classList.add("hidden");
-    }
+    document.getElementById("menuAulaOverlay").classList.add("hidden");
 }
 
 function salvarProgressoManual() {
