@@ -274,3 +274,27 @@ body {
 .start-button:hover {
     filter: brightness(1.12);
 }
+
+
+.hidden {
+    display: none;
+}
+
+.etapa-ativa {
+    border-color: rgba(103, 232, 249, 0.42);
+    background: rgba(2, 6, 23, 0.86);
+}
+
+.etapa-label {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: #67e8f9;
+    font-size: 13px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.etapa-actions {
+    margin-top: 18px;
+}

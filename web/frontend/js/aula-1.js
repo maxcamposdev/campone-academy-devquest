@@ -1,6 +1,9 @@
+let aulaAtual = null;
+
 async function carregarAula1() {
     const resposta = await fetch("../data/aula-1.json");
     const aula = await resposta.json();
+    aulaAtual = aula;
 
     document.getElementById("aulaTitulo").textContent = aula.titulo;
     document.getElementById("aulaResumo").textContent = aula.resumo;
@@ -55,5 +58,19 @@ carregarAula1();
 
 
 function iniciarAula() {
-    alert("Na próxima fase, a Aula 1 será dividida em etapas navegáveis.");
+    if (!aulaAtual || !aulaAtual.etapas || aulaAtual.etapas.length === 0) {
+        alert("Conteúdo da aula ainda não carregado.");
+        return;
+    }
+
+    const primeiraEtapa = aulaAtual.etapas[0];
+
+    document.getElementById("etapaAtivaTitulo").textContent = primeiraEtapa.titulo;
+    document.getElementById("etapaAtivaDescricao").textContent = primeiraEtapa.descricao;
+    document.getElementById("etapaAtiva").classList.remove("hidden");
+
+    document.getElementById("etapaAtiva").scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+    });
 }
