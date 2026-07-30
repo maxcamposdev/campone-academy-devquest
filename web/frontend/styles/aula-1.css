@@ -298,3 +298,30 @@ body {
 .etapa-actions {
     margin-top: 18px;
 }
+
+
+.secondary-button {
+    margin-top: 14px;
+    padding: 13px 20px;
+    border-radius: 16px;
+    color: #ffffff;
+    font-weight: 900;
+    cursor: pointer;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.18);
+}
+
+.secondary-button:hover:not(:disabled) {
+    background: rgba(255,255,255,0.16);
+}
+
+.secondary-button:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+}
+
+.etapa-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}

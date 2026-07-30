@@ -75,7 +75,15 @@ function renderizarEtapaAtual() {
     document.getElementById("etapaAtivaDescricao").textContent = etapa.descricao;
     document.getElementById("etapaAtiva").classList.remove("hidden");
 
+    document.getElementById("etapaIndicador").textContent =
+        `Parte ${indiceEtapaAtual + 1} de ${aulaAtual.etapas.length}`;
+
+    const botaoAnterior = document.getElementById("botaoAnteriorEtapa");
     const botaoProximo = document.getElementById("botaoProximoEtapa");
+
+    if (botaoAnterior) {
+        botaoAnterior.disabled = indiceEtapaAtual === 0;
+    }
 
     if (botaoProximo) {
         botaoProximo.textContent = indiceEtapaAtual === aulaAtual.etapas.length - 1
@@ -101,4 +109,14 @@ function proximaEtapa() {
     }
 
     alert("Você chegou ao fim das partes iniciais da Aula 1. A próxima fase será o checkpoint.");
+}
+
+
+function etapaAnterior() {
+    if (!aulaAtual || indiceEtapaAtual === 0) {
+        return;
+    }
+
+    indiceEtapaAtual -= 1;
+    renderizarEtapaAtual();
 }

@@ -33,11 +33,15 @@
             </section>
 
             <section class="scene etapa-ativa hidden" id="etapaAtiva">
-                <span class="etapa-label">Parte da aula</span>
+                <span class="etapa-label" id="etapaIndicador">Parte da aula</span>
                 <h2 id="etapaAtivaTitulo"></h2>
                 <p id="etapaAtivaDescricao"></p>
 
                 <div class="etapa-actions">
+                    <button id="botaoAnteriorEtapa" class="secondary-button" type="button" onclick="etapaAnterior()">
+                        Anterior
+                    </button>
+
                     <button id="botaoProximoEtapa" class="start-button" type="button" onclick="proximaEtapa()">
                         Próximo
                     </button>
