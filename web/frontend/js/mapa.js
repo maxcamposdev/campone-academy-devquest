@@ -7,7 +7,7 @@ document.getElementById("playerStatus").textContent = "";
 const grid = document.getElementById("academyGrid");
 
 function criarCardEtapa(etapa) {
-    const concluida = localStorage.getItem(`campone_aula_${etapa.id}_status`) === "concluida";
+    const concluida = localStorage.getItem("campone_aula_" + etapa.id + "_status") === "concluida";
     const bloqueada = etapa.status === "bloqueada" && !concluida;
 
     const statusIcone = concluida ? "✅" : (bloqueada ? "🔒" : "🟢");
