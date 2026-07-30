@@ -162,5 +162,11 @@ function responderCheckpoint(indice) {
 
     if (opcao.correta) {
         localStorage.setItem("campone_aula_1_checkpoint", "concluido");
+        localStorage.setItem("campone_aula_1_status", "concluida");
+
+        const conclusao = document.getElementById("conclusaoAula");
+        if (conclusao) {
+            conclusao.classList.remove("hidden");
+        }
     }
 }
