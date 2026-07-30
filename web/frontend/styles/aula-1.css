@@ -401,3 +401,132 @@ body {
     font-weight: 900;
     background: linear-gradient(90deg, #16a34a, #2563eb);
 }
+
+
+.top-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.menu-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9px 14px;
+    border-radius: 14px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 13px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.18);
+}
+
+.menu-button:hover {
+    background: rgba(37, 99, 235, 0.85);
+    border-color: rgba(103, 232, 249, 0.55);
+}
+
+
+.menu-button {
+    border: 0;
+    cursor: pointer;
+}
+
+.menu-aula-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background: rgba(2, 6, 23, 0.72);
+    backdrop-filter: blur(10px);
+}
+
+.menu-aula-modal {
+    width: min(460px, 100%);
+    padding: 24px;
+    border-radius: 24px;
+    background: rgba(15, 23, 42, 0.96);
+    border: 1px solid rgba(103, 232, 249, 0.35);
+    box-shadow: 0 24px 60px rgba(0,0,0,0.45);
+}
+
+.menu-aula-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 12px;
+}
+
+.menu-aula-header h2 {
+    margin: 0;
+    color: #22c55e;
+}
+
+.menu-aula-fechar {
+    width: 36px;
+    height: 36px;
+    border: 0;
+    border-radius: 999px;
+    cursor: pointer;
+    color: #ffffff;
+    background: rgba(255,255,255,0.10);
+    font-size: 22px;
+    line-height: 1;
+}
+
+.menu-aula-modal p {
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+.menu-aula-actions {
+    display: grid;
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.menu-aula-actions button,
+.menu-aula-actions a {
+    width: 100%;
+    min-height: 44px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px;
+    border-radius: 14px;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 900;
+    border: 1px solid rgba(255,255,255,0.16);
+    background: rgba(37, 99, 235, 0.72);
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.menu-aula-actions button:hover,
+.menu-aula-actions a:hover {
+    background: rgba(124, 58, 237, 0.82);
+}
+
+.menu-aula-actions button:focus,
+.menu-aula-actions a:focus {
+    outline: 2px solid rgba(103, 232, 249, 0.65);
+    outline-offset: 2px;
+}
+
+
+
+.menu-aula-overlay.hidden {
+    display: none;
+}
