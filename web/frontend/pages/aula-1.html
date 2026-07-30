@@ -12,89 +12,35 @@
         <div class="container">
             <div class="topbar">
                 <div class="brand">CAMPONE ACADEMY DEVQUEST</div>
-                <div class="badge">Recrutamento • Nível 1</div>
+                <div class="badge" id="aulaBadge">Recrutamento • Nível 1</div>
             </div>
 
             <section class="header">
-                <h1>Aula 1 — Decifrando a Grande Rede</h1>
-                <p>
-                    Antes de escrever código, o jogador precisa entender como a internet funciona.
-                    Esta aula apresenta a base da comunicação digital: cliente, servidor,
-                    requisição, resposta, DNS, IP, HTTP e HTTPS.
-                </p>
+                <h1 id="aulaTitulo">Carregando aula...</h1>
+                <p id="aulaResumo">Preparando conteúdo.</p>
 
-                <div class="meta">
-                    <span>Mentora: Eloisa</span>
-                    <span>Status: Protótipo Web</span>
-                    <span>Cargo do jogador: Recruta</span>
-                    <span>Objetivo: compreender a Grande Rede</span>
-                </div>
+                <div class="meta" id="aulaMeta"></div>
             </section>
 
             <section class="grid">
-                <article class="scene">
-                    <h2>🏢 Contexto da CampOne</h2>
-                    <p>
-                        Você acaba de iniciar sua jornada como Recruta da CampOne Academy.
-                        Antes de conhecer backend, frontend ou banco de dados, precisa entender
-                        como um pedido sai do seu computador e chega até um servidor.
-                    </p>
-                    <p>
-                        A proposta não é decorar termos técnicos. É enxergar o caminho real
-                        que a informação percorre dentro de um sistema.
-                    </p>
-                </article>
-
-                <article class="scene">
-                    <h2>👩‍💼 Eloisa</h2>
-                    <p class="fala">
-                        "Todo sistema começa com uma comunicação. Alguém pede, outro responde.
-                        Quando você entende esse caminho, deixa de ver a internet como mágica
-                        e começa a enxergar a arquitetura por trás dela."
-                    </p>
-                </article>
+                <article class="scene" id="aulaContexto"></article>
+                <article class="scene" id="falaMentora"></article>
             </section>
 
             <section class="scene">
                 <h2>🧭 Jornada da Aula</h2>
-                <div class="steps">
-                    <div class="step">
-                        <small>ETAPA 01</small>
-                        <h3>Cliente e Servidor</h3>
-                        <p>Entender quem faz o pedido e quem responde dentro de um sistema web.</p>
-                    </div>
-
-                    <div class="step">
-                        <small>ETAPA 02</small>
-                        <h3>DNS e IP</h3>
-                        <p>Descobrir como um nome de site encontra o endereço correto na rede.</p>
-                    </div>
-
-                    <div class="step">
-                        <small>ETAPA 03</small>
-                        <h3>HTTP e HTTPS</h3>
-                        <p>Entender o protocolo da conversa e a diferença entre conexão comum e segura.</p>
-                    </div>
-
-                    <div class="step">
-                        <small>ETAPA 04</small>
-                        <h3>Requisição e Resposta</h3>
-                        <p>Visualizar o fluxo completo entre navegador, servidor e retorno dos dados.</p>
-                    </div>
-                </div>
+                <div class="steps" id="aulaEtapas"></div>
             </section>
 
             <section class="scene checkpoint">
-                <h2>🛑 Checkpoint da Aula</h2>
-                <p>
-                    Esta ainda é a primeira interface web da aula. O próximo passo será transformar
-                    cada etapa acima em uma tela navegável, com explicação, decisão do jogador,
-                    validação e registro do aprendizado.
-                </p>
+                <h2 id="checkpointTitulo">Checkpoint</h2>
+                <p id="checkpointTexto"></p>
             </section>
         </div>
 
         <a class="botao-voltar-padrao" href="mapa.html">Voltar</a>
     </main>
+
+    <script src="../js/aula-1.js"></script>
 </body>
 </html>

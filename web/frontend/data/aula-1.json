@@ -1,0 +1,49 @@
+{
+  "id": 1,
+  "titulo": "Aula 1 — Decifrando a Grande Rede",
+  "tema": "Fundamentos da Internet",
+  "mentora": "Eloisa",
+  "fase": "Recrutamento",
+  "nivel": "Nível 1",
+  "cargo_jogador": "Recruta",
+  "resumo": "Antes de escrever código, o jogador precisa entender como a internet funciona. Esta aula apresenta a base da comunicação digital: cliente, servidor, requisição, resposta, DNS, IP, HTTP e HTTPS.",
+  "contexto": {
+    "titulo": "🏢 Contexto da CampOne",
+    "paragrafos": [
+      "Você acaba de iniciar sua jornada como Recruta da CampOne Academy.",
+      "Antes de conhecer backend, frontend ou banco de dados, precisa entender como um pedido sai do seu computador e chega até um servidor.",
+      "A proposta não é decorar termos técnicos. É enxergar o caminho real que a informação percorre dentro de um sistema."
+    ]
+  },
+  "fala_mentora": {
+    "personagem": "Eloisa",
+    "titulo": "👩‍💼 Eloisa",
+    "fala": "Todo sistema começa com uma comunicação. Alguém pede, outro responde. Quando você entende esse caminho, deixa de ver a internet como mágica e começa a enxergar a arquitetura por trás dela."
+  },
+  "etapas": [
+    {
+      "ordem": "ETAPA 01",
+      "titulo": "Cliente e Servidor",
+      "descricao": "Entender quem faz o pedido e quem responde dentro de um sistema web."
+    },
+    {
+      "ordem": "ETAPA 02",
+      "titulo": "DNS e IP",
+      "descricao": "Descobrir como um nome de site encontra o endereço correto na rede."
+    },
+    {
+      "ordem": "ETAPA 03",
+      "titulo": "HTTP e HTTPS",
+      "descricao": "Entender o protocolo da conversa e a diferença entre conexão comum e segura."
+    },
+    {
+      "ordem": "ETAPA 04",
+      "titulo": "Requisição e Resposta",
+      "descricao": "Visualizar o fluxo completo entre navegador, servidor e retorno dos dados."
+    }
+  ],
+  "checkpoint": {
+    "titulo": "🛑 Checkpoint da Aula",
+    "texto": "Esta ainda é a primeira interface web da aula. O próximo passo será transformar cada etapa em uma tela navegável, com explicação, decisão do jogador, validação e registro do aprendizado."
+  }
+}
