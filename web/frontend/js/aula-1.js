@@ -53,3 +53,8 @@ async function carregarAula1() {
 }
 
 carregarAula1();
+
+
+function iniciarAula() {
+    alert("Na próxima fase, a Aula 1 será dividida em etapas navegáveis.");
+}
