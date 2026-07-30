@@ -7,16 +7,18 @@ document.getElementById("playerStatus").textContent = "";
 const grid = document.getElementById("academyGrid");
 
 function criarCardEtapa(etapa) {
-    const bloqueada = etapa.status === "bloqueada";
-    const statusIcone = bloqueada ? "🔒" : "✅";
-    const statusTexto = bloqueada ? "Bloqueada" : "Disponível";
+    const concluida = localStorage.getItem(`campone_aula_${etapa.id}_status`) === "concluida";
+    const bloqueada = etapa.status === "bloqueada" && !concluida;
+
+    const statusIcone = concluida ? "✅" : (bloqueada ? "🔒" : "🟢");
+    const statusTexto = concluida ? "Concluída" : (bloqueada ? "Bloqueada" : "Disponível");
 
     const artigo = document.createElement("article");
     artigo.className = bloqueada ? "card locked" : "card";
 
     const acao = bloqueada
         ? `<a class="button secondary" href="#" onclick="alert('Esta etapa ainda está bloqueada neste protótipo.')">Bloqueada</a>`
-        : `<a class="button" href="${etapa.rota}">Entrar na Aula ${etapa.id}</a>`;
+        : `<a class="button" href="${etapa.rota}">${concluida ? "Revisar Aula" : "Entrar na Aula " + etapa.id}</a>`;
 
     artigo.innerHTML = `
         <h2>${statusIcone} Aula ${etapa.id} — ${etapa.titulo}</h2>
@@ -30,12 +32,27 @@ function criarCardEtapa(etapa) {
     return artigo;
 }
 
+
+function atualizarPainelProgresso(etapas) {
+    const concluidas = etapas.filter((etapa) =>
+        localStorage.getItem(`campone_aula_${etapa.id}_status`) === "concluida"
+    ).length;
+
+    const itemPrototipo = document.getElementById("progressoAcademyValor");
+
+    if (itemPrototipo) {
+        itemPrototipo.textContent = `${concluidas}/9 etapas concluídas`;
+    }
+}
+
 async function carregarAcademy() {
     try {
         const resposta = await fetch("../data/academy-nivel01.json");
         const etapas = await resposta.json();
 
         grid.innerHTML = "";
+
+        atualizarPainelProgresso(etapas);
 
         etapas.forEach((etapa) => {
             grid.appendChild(criarCardEtapa(etapa));
