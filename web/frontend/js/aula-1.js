@@ -65,6 +65,12 @@ function iniciarAula() {
     }
 
     indiceEtapaAtual = 0;
+
+    const painelInicio = document.getElementById("painelInicioAula");
+    if (painelInicio) {
+        painelInicio.classList.add("hidden");
+    }
+
     renderizarEtapaAtual();
 }
 
