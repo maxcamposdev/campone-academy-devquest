@@ -42,7 +42,6 @@ async function carregarAula1() {
     const etapas = document.getElementById("aulaEtapas");
     etapas.innerHTML = aula.etapas.map((etapa) => `
         <div class="step">
-            <small>${etapa.ordem}</small>
             <h3>${etapa.titulo}</h3>
             <p>${etapa.descricao}</p>
         </div>
