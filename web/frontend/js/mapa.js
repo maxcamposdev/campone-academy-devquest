@@ -35,7 +35,7 @@ function criarCardEtapa(etapa) {
 
 function atualizarPainelProgresso(etapas) {
     const concluidas = etapas.filter((etapa) =>
-        localStorage.getItem(`campone_aula_${etapa.id}_status`) === "concluida"
+        localStorage.getItem("campone_aula_" + etapa.id + "_status") === "concluida"
     ).length;
 
     const itemPrototipo = document.getElementById("progressoAcademyValor");
@@ -44,7 +44,6 @@ function atualizarPainelProgresso(etapas) {
         itemPrototipo.textContent = `${concluidas}/9 etapas concluídas`;
     }
 }
-
 async function carregarAcademy() {
     try {
         const resposta = await fetch("../data/academy-nivel01.json");
