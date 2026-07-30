@@ -21,8 +21,22 @@ async function carregarAula1() {
 
     const fala = document.getElementById("falaMentora");
     fala.innerHTML = `
-        <h2>${aula.fala_mentora.titulo}</h2>
-        <p class="fala">"${aula.fala_mentora.fala}"</p>
+        <div class="personagem-card">
+            <div class="personagem-avatar">
+                <span>${aula.fala_mentora.personagem.charAt(0)}</span>
+                <small>${aula.fala_mentora.avatar_status}</small>
+            </div>
+
+            <div class="personagem-conteudo">
+                <h2>${aula.fala_mentora.titulo}</h2>
+                <strong>${aula.fala_mentora.cargo}</strong>
+                <p class="fala">"${aula.fala_mentora.fala}"</p>
+
+                <button class="audio-futuro" type="button" onclick="alert('Narração será adicionada em uma fase futura.')">
+                    ▶ Ouvir narração futura
+                </button>
+            </div>
+        </div>
     `;
 
     const etapas = document.getElementById("aulaEtapas");
