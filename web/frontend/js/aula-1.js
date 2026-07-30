@@ -1,4 +1,5 @@
 let aulaAtual = null;
+let indiceEtapaAtual = 0;
 
 async function carregarAula1() {
     const resposta = await fetch("../data/aula-1.json");
@@ -63,14 +64,41 @@ function iniciarAula() {
         return;
     }
 
-    const primeiraEtapa = aulaAtual.etapas[0];
+    indiceEtapaAtual = 0;
+    renderizarEtapaAtual();
+}
 
-    document.getElementById("etapaAtivaTitulo").textContent = primeiraEtapa.titulo;
-    document.getElementById("etapaAtivaDescricao").textContent = primeiraEtapa.descricao;
+function renderizarEtapaAtual() {
+    const etapa = aulaAtual.etapas[indiceEtapaAtual];
+
+    document.getElementById("etapaAtivaTitulo").textContent = etapa.titulo;
+    document.getElementById("etapaAtivaDescricao").textContent = etapa.descricao;
     document.getElementById("etapaAtiva").classList.remove("hidden");
+
+    const botaoProximo = document.getElementById("botaoProximoEtapa");
+
+    if (botaoProximo) {
+        botaoProximo.textContent = indiceEtapaAtual === aulaAtual.etapas.length - 1
+            ? "Concluir partes"
+            : "Próximo";
+    }
 
     document.getElementById("etapaAtiva").scrollIntoView({
         behavior: "smooth",
         block: "center"
     });
+}
+
+function proximaEtapa() {
+    if (!aulaAtual) {
+        return;
+    }
+
+    if (indiceEtapaAtual < aulaAtual.etapas.length - 1) {
+        indiceEtapaAtual += 1;
+        renderizarEtapaAtual();
+        return;
+    }
+
+    alert("Você chegou ao fim das partes iniciais da Aula 1. A próxima fase será o checkpoint.");
 }
